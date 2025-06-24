@@ -1,0 +1,1199 @@
+{
+  "categories": [
+    {
+      "category": "Pathology Testing",
+      "tests": [
+        {
+          "id": "pathology-testing",
+          "name": "Pathology Testing",
+          "subName": "Pathology",
+          "description": "Advanced pathology testing provides precise, reliable results to support accurate diagnoses and effective treatment plans.",
+          "fullDetails": "Pathology testing is a critical component of modern medicine, serving as the foundation for diagnosing and treating various health conditions. At Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD), we leverage cutting-edge technology to provide precise, reliable, and timely pathology results, ensuring that every patient receives the best care possible.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Pathology Testing",
+              "content": "Our pathology services help in the detection, diagnosis, and monitoring of diseases by analyzing tissues, blood, and other bodily fluids. Our highly advanced pathology department is equipped to deliver exceptional accuracy in test results."
+            },
+            {
+              "title": "🧬 What is Pathology?",
+              "content": "Pathology is the branch of medicine that studies the causes and effects of diseases. It plays a vital role in understanding how diseases develop, spread, and respond to treatments."
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Pathology Testing?",
+              "content": "At Agapelove Medical Laboratory & Diagnostics Ltd, we prioritize:\n-  ✅ Efficiency in delivering reports\n- ✅ Cutting-edge equipment and expert pathologists\n- ✅ Fast turnaround time for patient care",
+              "content": [
+                "✅ Accuracy in test results\n-",
+                "✅ Efficiency in delivering reports",
+                "✅ Cutting-edge equipment and expert pathologists",
+                "✅ Fast turnaround time for patient care"
+              ]
+            },
+            {
+              "title": "📌 How Pathology Testing Works",
+              "content": [
+                "🩸 Sample Collection – A medical professional collects a sample.",
+                "🧪 Processing & Examination – The sample is analyzed using specialized equipment.",
+                "📋 Interpretation by Pathologists – Experts review and generate a report.",
+                "📤 Report Delivery – Results are sent for consultation.",
+                "🏥 Follow-Up & Treatment – A treatment plan is developed if needed."
+              ]
+            },
+            {
+              "title": "🏥 Common Conditions Diagnosed Through Pathology Testing",
+              "content": [
+                "🩸 Blood Disorders",
+                "🦠 Infectious Diseases",
+                "🦠 Cancer Detection",
+                "🫁 Autoimmune Disorders",
+                "🫀 Cardiovascular Conditions"
+              ]
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book an Appointment Now",
+          "image": "img/pathology-tes-img.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Microbiology Testing",
+      "tests": [
+        {
+          "id": "microbiology-testing",
+          "name": "Microbiology Testing",
+          "subName": "Microbiology",
+          "description": "We offer comprehensive microbiology tests to identify pathogens and ensure accurate diagnoses for effective treatment.",
+          "fullDetails": "Microbiology testing plays a critical role in diagnosing infectious diseases by identifying microorganisms such as bacteria, viruses, fungi, and parasites. At Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD), we utilize advanced techniques and tools to deliver accurate results that help in the effective management of infections. Our microbiology tests aid in detecting infectious agents, understanding their antibiotic resistance, and ensuring precise treatment.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Microbiology Testing",
+              "content": "Microbiology testing involves the identification and analysis of pathogens that cause infections. These pathogens are detected using cultures, microscopic examination, and molecular techniques. Our lab performs these tests with high precision to assist healthcare providers in formulating appropriate treatment plans."
+            },
+            {
+              "title": "🦠 Types of Microorganisms Tested",
+              "content": [
+                "Bacteria 🦠",
+                "Viruses 🦠",
+                "Fungi 🍄",
+                "Parasites 🦠"
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Microbiology Testing?",
+              "content": [
+                "✅ Accuracy and reliability in results",
+                "✅ Use of cutting-edge diagnostic methods",
+                "✅ Expertise of experienced microbiologists",
+                "✅ Fast and efficient turnaround time"
+              ]
+            },
+            {
+              "title": "📌 How Microbiology Testing Works",
+              "content": [
+                "1️⃣ Sample Collection – A sample is collected from the infected area (blood, urine, sputum, etc.)",
+                "2️⃣ Culturing & Incubation – The sample is cultured to allow pathogens to grow.",
+                "3️⃣ Identification – Microorganisms are identified using molecular methods or microscopy.",
+                "4️⃣ Sensitivity Testing – Testing is done to determine the effectiveness of antibiotics.",
+                "5️⃣ Report – A comprehensive report is generated with the test results."
+              ]
+            },
+            {
+              "title": "🏥 Common Infections Diagnosed Through Microbiology Testing",
+              "content": [
+                "Urinary Tract Infections (UTIs)",
+                "Respiratory Infections (e.g., Pneumonia, Tuberculosis)",
+                "Gastrointestinal Infections",
+                "Bloodstream Infections (Sepsis)",
+                "Fungal Infections",
+                "Skin and Soft Tissue Infections"
+              ]
+            },
+            {
+              "title": "🧬 Antibiotic Resistance Testing",
+              "content": "Antibiotic resistance is a growing concern in microbiology. Our tests not only identify the microorganisms but also determine their resistance to specific antibiotics, ensuring that treatment is both effective and targeted."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book an Appointment Now",
+          "image": "img/microbiology-test-img.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Biochemistry Testing",
+      "tests": [
+        {
+          "id": "biochemistry-testing",
+          "name": "Biochemistry Testing",
+          "subName": "Biochemistry",
+          "description": "Our biochemistry tests provide critical insights into your body's metabolic functions, helping to diagnose and manage a variety of health conditions.",
+          "fullDetails": "Biochemistry testing is essential for assessing your body's metabolism, organ function, and overall health. At Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD), we offer a wide range of tests that help in diagnosing diseases, monitoring chronic conditions, and ensuring your body's biochemical balance is maintained. Our tests include blood glucose levels, cholesterol, liver and kidney function, electrolytes, and more.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Biochemistry Testing",
+              "content": "Biochemistry testing focuses on measuring the chemical substances and metabolic markers in your blood, urine, and other bodily fluids. These tests help us understand how well your body is functioning and whether any organs or systems are out of balance."
+            },
+            {
+              "title": "🧬 Key Biochemical Markers Tested",
+              "content": [
+                "Blood Glucose 🩸",
+                "Cholesterol 🧬",
+                "Electrolytes (Sodium, Potassium) 🧪",
+                "Liver Function Tests (ALT, AST, Bilirubin) 🏥",
+                "Kidney Function Tests (Creatinine, Urea) 🧬",
+                "Proteins (Albumin, Total Protein) 🔬"
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Biochemistry Testing?",
+              "content": [
+                "✅ Advanced equipment and technology for accurate results",
+                "✅ Expertise in interpreting biochemistry data",
+                "✅ Quick results turnaround time",
+                "✅ Reliable and trustworthy test outcomes"
+              ]
+            },
+            {
+              "title": "📌 How Biochemistry Testing Works",
+              "content": [
+                "1️⃣ Sample Collection – Blood or urine is collected from the patient.",
+                "2️⃣ Sample Analysis – The sample is analyzed using high-precision laboratory equipment.",
+                "3️⃣ Interpretation – The results are reviewed by skilled biochemists to identify any abnormalities.",
+                "4️⃣ Report Generation – A detailed report is created and sent to the healthcare provider for diagnosis.",
+                "5️⃣ Follow-Up – If necessary, further tests or treatments are recommended based on the results."
+              ]
+            },
+            {
+              "title": "🏥 Common Biochemical Conditions Diagnosed",
+              "content": [
+                "Diabetes Mellitus (Blood Glucose Abnormalities)",
+                "Hyperlipidemia (High Cholesterol)",
+                "Liver Diseases (Hepatitis, Cirrhosis)",
+                "Kidney Diseases (Chronic Kidney Disease)",
+                "Electrolyte Imbalance (Sodium, Potassium)",
+                "Nutritional Deficiencies (Albumin, Total Protein)"
+              ]
+            },
+            {
+              "title": "🧬 Importance of Regular Biochemistry Testing",
+              "content": "Regular biochemistry testing helps in the early detection of diseases, monitoring chronic conditions, and optimizing treatment plans. It ensures that you maintain optimal health and are proactively addressing any underlying health issues."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book an Appointment Now",
+          "image": "img/biochemistry-testing.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Histopathology Testing",
+      "tests": [
+        {
+          "id": "histopathology-testing",
+          "name": "Histopathology Testing",
+          "subName": "Histopathology",
+          "description": "Our histopathology tests help diagnose tissue-related diseases, offering accurate results for effective treatment planning.",
+          "fullDetails": "Histopathology testing is crucial for diagnosing tissue-related diseases and understanding disease progression. At Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD), we offer comprehensive histopathology services to assist healthcare providers in diagnosing conditions such as cancers, infections, and inflammatory disorders. By examining tissue samples under a microscope, our expert pathologists provide detailed insights to guide treatment plans.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Histopathology Testing",
+              "content": "Histopathology testing involves the examination of tissue samples under a microscope to detect abnormalities and diagnose diseases. This process is vital for identifying conditions such as cancers, infections, and autoimmune diseases that affect tissues."
+            },
+            {
+              "title": "🧬 Key Areas Diagnosed Through Histopathology Testing",
+              "content": [
+                "Cancer Detection 🧬",
+                "Infections (Bacterial, Viral, Fungal) 🦠",
+                "Inflammatory Diseases 🩺",
+                "Autoimmune Disorders 🧪",
+                "Liver, Kidney, and Lung Diseases 🫁"
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Histopathology Testing?",
+              "content": [
+                "✅ Highly skilled and experienced pathologists",
+                "✅ State-of-the-art laboratory equipment",
+                "✅ Fast and accurate results",
+                "✅ Comprehensive test reports and timely diagnosis"
+              ]
+            },
+            {
+              "title": "📌 How Histopathology Testing Works",
+              "content": [
+                "1️⃣ Sample Collection – A tissue sample is collected via biopsy or surgery.",
+                "2️⃣ Sample Preparation – The tissue sample is processed and prepared for microscopic examination.",
+                "3️⃣ Microscopic Analysis – Pathologists examine the tissue sample to identify abnormalities.",
+                "4️⃣ Report Generation – The results are compiled into a report and sent to the referring doctor.",
+                "5️⃣ Follow-Up – Further tests or treatments may be recommended depending on the results."
+              ]
+            },
+            {
+              "title": "🏥 Common Conditions Diagnosed Through Histopathology Testing",
+              "content": [
+                "Cancerous Growths (e.g., Breast, Lung, and Colon Cancer) 🧬",
+                "Infections (e.g., Tuberculosis, Fungal Infections) 🦠",
+                "Inflammatory Conditions (e.g., Rheumatoid Arthritis) 🔬",
+                "Liver Diseases (e.g., Cirrhosis, Hepatitis) 🏥",
+                "Autoimmune Disorders (e.g., Lupus) 🧪"
+              ]
+            },
+            {
+              "title": "🧬 Importance of Histopathology Testing",
+              "content": "Histopathology testing plays a critical role in accurately diagnosing and monitoring various tissue-related diseases. It helps detect early signs of cancer, infections, and chronic conditions, ensuring timely and appropriate treatment."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book an Appointment Now",
+          "image": "img/histopathology.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Hematology Testing",
+      "tests": [
+        {
+          "id": "hematology-testing",
+          "name": "Hematology Testing",
+          "subName": "Hematology",
+          "description": "Our hematology tests provide detailed insights into your blood composition, helping to diagnose various blood disorders and conditions.",
+          "fullDetails": "Hematology testing is crucial for evaluating the cellular components of your blood and diagnosing various blood-related conditions. At Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD), we offer a comprehensive range of hematology tests that assess red blood cells, white blood cells, platelets, and other blood parameters. Our tests help in diagnosing anemia, infections, clotting disorders, and other hematological conditions.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Hematology Testing",
+              "content": "Hematology testing involves analyzing the cellular components of blood, including red blood cells, white blood cells, and platelets. These tests provide valuable information about your overall health, helping in the diagnosis and management of various blood disorders."
+            },
+            {
+              "title": "🩸 Key Hematological Parameters Tested",
+              "content": [
+                "Red Blood Cell Count (RBC) ���",
+                "Hemoglobin (HGB) ���",
+                "Mean Corpuscular Hemoglobin (MCH) ���",
+                "Mean Corpuscular Hemoglobin Concentration (MCHC) ���",
+                "Red Blood Cell Distribution Width (RDW) ���",
+                "Platelet Count (PLT) ���",
+                "Platelet Volume (PVC) ���",
+                "Platelet Mean Volume (PMV) ���",
+                "Platelet Density (PDW) ���"
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Hematology Testing?",
+              "content": [
+                "✅ State-of-the-art hematology analyzers for accurate results",
+                "✅ Experienced hematologists and lab technicians",
+                "✅ Comprehensive testing for various blood disorders",
+                "✅ Quick turnaround time for test reports"
+              ]
+            },
+            {
+              "title": "📌 How Hematology Testing Works",
+              "content": [
+                "1️��� Sample Collection – Blood is collected from the patient.",
+                "2️��� Sample Analysis – The sample is analyzed using high-quality hematology analyzers.",
+                "3️��� Interpretation – The results are reviewed by skilled hematologists to identify any abnormalities.",
+                "4️��� Report Generation – A detailed report is created and sent to the healthcare provider for diagnosis.",
+                "5️��� Follow-Up – If necessary, further tests or treatments are recommended based on the results."
+            
+                ]
+            },
+            {
+              "title": "🩸 Common Blood Disorders Diagnosed",
+              "content": [
+                "Anemia (Iron Deficiency, Vitamin B12 Deficiency)",
+                "Leukemia (Blood Cancer)",
+                "Thrombocytopenia (Low Platelet Count)",
+                "Hemophilia (Clotting Disorder)",
+                "Polycythemia (High Red Blood Cell Count)"
+              ]
+            },
+            {
+              "title": "🧬 Importance of Hematology Testing",
+              "content": "Hematology testing is essential for diagnosing blood disorders, monitoring treatment responses, and evaluating overall health. Regular hematology tests help in detecting abnormalities early and ensuring timely intervention for better health outcomes."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book an Appointment Now",
+          "image": "img/hematology.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Urine Testing",
+      "tests": [
+        {
+          "id": "urine-testing",
+          "name": "Urine Tests",
+          "subName": "Urine Analysis",
+          "description": "Our urine tests provide important insights into your kidney function and overall health, helping diagnose various conditions early.",
+          "fullDetails": "Urine testing is one of the most common diagnostic tools to assess overall health and monitor kidney function. At Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD), we offer comprehensive urine tests to help diagnose a variety of conditions, including kidney diseases, urinary tract infections (UTIs), diabetes, and dehydration. Our tests are highly accurate and provide essential information for early disease detection and management.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Urine Testing",
+              "content": "Urine testing involves the analysis of urine samples to detect abnormalities or signs of disease. It helps assess kidney function, diagnose infections, and monitor chronic conditions such as diabetes."
+            },
+            {
+              "title": "🧬 Key Conditions Diagnosed Through Urine Testing",
+              "content": [
+                "Kidney Disease 🧑‍⚕️",
+                "Urinary Tract Infections (UTIs) 🦠",
+                "Diabetes Monitoring 🩸",
+                "Dehydration 💧",
+                "Protein or Blood in Urine 🔬"
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Urine Testing?",
+              "content": [
+                "✅ Non-invasive and easy testing method",
+                "✅ Highly accurate and fast results",
+                "✅ Expert analysis by experienced medical professionals",
+                "✅ Comprehensive test reports for better diagnosis and treatment"
+              ]
+            },
+            {
+              "title": "📌 How Urine Testing Works",
+              "content": [
+                "1️⃣ Sample Collection – A urine sample is collected in a sterile container.",
+                "2️⃣ Laboratory Analysis – The sample is analyzed in our laboratory for various parameters, such as pH, protein levels, glucose, and cells.",
+                "3️⃣ Result Interpretation – The test results are interpreted by our experienced professionals.",
+                "4️⃣ Report Generation – A detailed report is generated and sent to the referring physician.",
+                "5️⃣ Follow-Up – Based on the results, additional tests or treatments may be recommended."
+              ]
+            },
+            {
+              "title": "🏥 Common Conditions Monitored with Urine Testing",
+              "content": [
+                "Kidney Infections 🩺",
+                "Bladder Infections 🦠",
+                "Chronic Kidney Disease 🧑‍⚕️",
+                "Diabetic Kidney Disease 💉",
+                "Urinary Retention and Blockage 🔒"
+              ]
+            },
+            {
+              "title": "🧬 Importance of Urine Testing",
+              "content": "Urine testing provides valuable insights into your kidney health and overall well-being. It helps in detecting early signs of kidney damage, infections, and metabolic imbalances, allowing for timely treatment and prevention of more serious conditions."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book an Appointment Now",
+          "image": "img/urine-testing.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Blood Testing",
+      "tests": [
+        {
+          "id": "blood-testing",
+          "name": "Blood Tests",
+          "subName": "Blood Analysis",
+          "description": "Our blood tests offer vital information about your health status, helping to detect early signs of diseases and ensure timely treatment.",
+          "fullDetails": "Blood testing is one of the most essential diagnostic tools in modern medicine. It provides crucial insights into your overall health, enabling the detection of various conditions such as infections, anemia, diabetes, and heart disease. At Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD), we use state-of-the-art technology to perform accurate and comprehensive blood tests that support effective diagnoses and treatment planning.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Blood Testing",
+              "content": "Blood tests are laboratory tests that analyze a sample of your blood to help detect medical conditions and evaluate organ function. They are key in diagnosing infections, checking for chronic diseases, and monitoring medication effects."
+            },
+            {
+              "title": "🧬 Key Conditions Diagnosed Through Blood Testing",
+              "content": [
+                "Anemia 🩸",
+                "Diabetes 🧬",
+                "Heart Disease 💖",
+                "Infections 🦠",
+                "Liver Disease 🍋",
+                "Kidney Disease 🧑‍⚕️"
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Blood Testing?",
+              "content": [
+                "✅ Comprehensive range of blood tests available",
+                "✅ High accuracy and reliability",
+                "✅ Fast result turnaround for timely decision-making",
+                "✅ Expert interpretation of results by qualified professionals",
+                "✅ Safe and hygienic testing process"
+              ]
+            },
+            {
+              "title": "📌 How Blood Testing Works",
+              "content": [
+                "1️⃣ Sample Collection – Blood is drawn from a vein in your arm by a trained phlebotomist.",
+                "2️⃣ Laboratory Analysis – The sample is analyzed using specialized laboratory equipment to measure different parameters.",
+                "3️⃣ Result Interpretation – Blood test results are carefully examined by qualified medical professionals.",
+                "4️⃣ Report Generation – A detailed blood test report is generated.",
+                "5️⃣ Follow-Up – Based on the results, further testing or treatment may be recommended."
+              ]
+            },
+            {
+              "title": "🏥 Common Tests Included in Blood Testing",
+              "content": [
+                "Complete Blood Count (CBC) 🩸",
+                "Blood Sugar Level Tests 🍬",
+                "Cholesterol Profile 🫀",
+                "Liver Function Tests 🍊",
+                "Kidney Function Tests 🧑‍⚕️"
+              ]
+            },
+            {
+              "title": "🧬 Importance of Blood Testing",
+              "content": "Blood testing is a vital tool for the early detection of health conditions. It helps in identifying risks related to chronic diseases, such as heart disease and diabetes, and allows healthcare providers to monitor your health status over time."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book an Appointment Now",
+          "image": "img/blood-testing.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Fever Testing",
+      "tests": [
+        {
+          "id": "fever-testing",
+          "name": "Fever Tests",
+          "subName": "Fever Diagnosis",
+          "description": "Our fever tests help identify the underlying cause of your fever, enabling accurate diagnosis and the right course of treatment.",
+          "fullDetails": "Fever is a common symptom of many different diseases and infections. It can be caused by bacteria, viruses, or other medical conditions. At Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD), we conduct precise fever testing to help identify the cause of the fever and ensure that appropriate treatment is administered. Our tests cover a wide range of conditions that can cause fever, from infections to inflammatory disorders.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Fever Testing",
+              "content": "Fever testing involves a series of diagnostic tests that help identify the cause of a fever. It is essential to determine whether the fever is due to an infection, an autoimmune disorder, or another underlying condition."
+            },
+            {
+              "title": "🧬 Key Causes of Fever",
+              "content": [
+                "Bacterial Infections 🦠",
+                "Viral Infections 🦠",
+                "Inflammatory Diseases 🧬",
+                "Heatstroke ☀️",
+                "Medications Reactions 💊"
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Fever Testing?",
+              "content": [
+                "✅ Accurate identification of fever causes",
+                "✅ Comprehensive range of fever-related tests",
+                "✅ Fast and reliable results",
+                "✅ Expert medical professionals to interpret results",
+                "✅ Timely diagnosis and treatment planning"
+              ]
+            },
+            {
+              "title": "📌 How Fever Testing Works",
+              "content": [
+                "1️⃣ Clinical Evaluation – A healthcare professional evaluates the patient's symptoms and medical history.",
+                "2️⃣ Sample Collection – A blood or other relevant sample is collected for analysis.",
+                "3️⃣ Laboratory Testing – The sample is analyzed for signs of infection, inflammation, or other causes of fever.",
+                "4️⃣ Result Interpretation – The results are reviewed and interpreted by a medical professional.",
+                "5️⃣ Treatment – Based on the results, a treatment plan is developed, which may include medication or further testing."
+              ]
+            },
+            {
+              "title": "🏥 Common Conditions Diagnosed Through Fever Testing",
+              "content": [
+                "Malaria 🦠",
+                "Typhoid Fever 💉",
+                "Tuberculosis 🫁",
+                "Dengue Fever 🦟",
+                "COVID-19 🦠"
+              ]
+            },
+            {
+              "title": "🧬 Importance of Fever Testing",
+              "content": "Fever is an indicator of an underlying issue, and timely testing is crucial for identifying serious conditions. Fever testing helps healthcare providers determine whether the fever is caused by a mild infection or a more severe health condition requiring immediate attention."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book an Appointment Now",
+          "image": "img/fever-testing.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Allergy Testing",
+      "tests": [
+        {
+          "id": "allergy-testing",
+          "name": "Allergy Tests",
+          "subName": "Allergy Diagnosis",
+          "description": "Our allergy tests help identify specific allergens, offering insightful results to manage and prevent allergic reactions.",
+          "fullDetails": "Allergy tests are essential for identifying the substances causing allergic reactions in the body. These tests help diagnose various allergies, such as those related to pollen, pet dander, food, dust mites, and more. At Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD), we offer a variety of allergy tests to pinpoint the allergens and provide precise, actionable results to prevent and manage allergies effectively.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Allergy Testing",
+              "content": "Allergy testing is a diagnostic procedure that helps in identifying allergens—substances that trigger an allergic reaction in the body. The tests help detect allergies to various substances, including food, environmental elements, and chemicals."
+            },
+            {
+              "title": "🧬 Types of Allergies Tested",
+              "content": [
+                "Pollen Allergies 🌸",
+                "Food Allergies 🍽️",
+                "Pet Dander Allergies 🐕",
+                "Dust Mite Allergies 🌪️",
+                "Drug Allergies 💊"
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Allergy Testing?",
+              "content": [
+                "✅ Comprehensive allergy tests for various allergens",
+                "✅ Accurate identification of allergens causing reactions",
+                "✅ Expert interpretation of test results",
+                "✅ Personalized recommendations for managing allergies",
+                "✅ Fast and reliable results"
+              ]
+            },
+            {
+              "title": "📌 How Allergy Testing Works",
+              "content": [
+                "1️⃣ Sample Collection – A blood or skin sample is taken for testing.",
+                "2️⃣ Allergy Testing – The sample is analyzed for the presence of allergens.",
+                "3️⃣ Result Interpretation – The results are reviewed and interpreted by an expert allergist.",
+                "4️⃣ Treatment Plan – Based on the results, a treatment plan or allergy management plan is created."
+              ]
+            },
+            {
+              "title": "🏥 Common Allergies Diagnosed Through Testing",
+              "content": [
+                "Pollen Allergies 🌸",
+                "Food Sensitivities 🥜",
+                "Pet Dander Reactions 🐈",
+                "Mold Allergies 🍄",
+                "Insect Stings 🐝"
+              ]
+            },
+            {
+              "title": "🧬 Importance of Allergy Testing",
+              "content": "Allergy testing helps identify the specific triggers that cause allergic reactions. By pinpointing these allergens, individuals can avoid them and receive treatment to manage symptoms, improving their quality of life."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book an Appointment Now",
+          "image": "img/allergy-testing.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Paternity Testing",
+      "tests": [
+        {
+          "id": "paternity-testing",
+          "name": "Paternity Testing",
+          "subName": "DNA Testing",
+          "description": "Paternity testing determines biological fatherhood by comparing DNA profiles of the child, the alleged father, and sometimes the mother.",
+          "fullDetails": "Paternity testing is a scientific procedure that helps establish the biological relationship between a child and an alleged father. By comparing DNA samples from the child and the potential father, the test determines the likelihood of biological fatherhood with an extremely high degree of accuracy. In some cases, the mother's DNA may also be analyzed to exclude certain genetic factors.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Paternity Testing",
+              "content": "Paternity testing compares DNA profiles from the child and the alleged father to confirm biological parentage. It’s a crucial test in legal matters, personal relationships, and family planning."
+            },
+            {
+              "title": "🧬 How Paternity Testing Works",
+              "content": [
+                "1️⃣ Sample Collection – A DNA sample is collected, usually from the inside of the cheek (buccal swab) of the child and the alleged father.",
+                "2️⃣ DNA Analysis – The DNA samples are analyzed to identify matching genetic markers between the child and the alleged father.",
+                "3️⃣ Result Interpretation – The test results provide the probability of paternity, typically with 99.99% accuracy when the father is the biological parent."
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Paternity Testing?",
+              "content": [
+                "✅ High accuracy in determining biological fatherhood",
+                "✅ Confidentiality of test results",
+                "✅ Quick turnaround time",
+                "✅ Legal-grade results available upon request",
+                "✅ Experienced genetic experts for analysis"
+              ]
+            },
+            {
+              "title": "📌 Types of Paternity Testing Available",
+              "content": [
+                "🔍 Legal Paternity Test – Used for court or legal purposes.",
+                "🔍 Non-Legal Paternity Test – For personal knowledge or peace of mind."
+              ]
+            },
+            {
+              "title": "🏥 Legal Implications of Paternity Testing",
+              "content": "Paternity testing can be used to resolve legal disputes such as child custody, inheritance rights, or child support cases. A legal paternity test is conducted under strict chain-of-custody procedures to ensure the test results are admissible in court."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book a Paternity Test Now",
+          "image": "img/paternity-testing.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Mycobacteria PCR",
+      "tests": [
+        {
+          "id": "mycobacteria-pcr",
+          "name": "Mycobacteria PCR",
+          "subName": "PCR Testing",
+          "description": "Mycobacteria PCR detects the genetic material of mycobacteria, aiding in the rapid diagnosis of infections like tuberculosis.",
+          "fullDetails": "Mycobacteria PCR (Polymerase Chain Reaction) is a diagnostic test that identifies the DNA or RNA of mycobacteria, the bacteria responsible for diseases such as tuberculosis (TB) and leprosy. The test allows for rapid detection of these infections, providing essential information for treatment planning. PCR tests are highly sensitive and can detect infections even in early stages or in patients who are asymptomatic.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Mycobacteria PCR",
+              "content": "Mycobacteria PCR works by detecting the genetic material of mycobacteria in a sample (e.g., sputum, blood, tissue). It is a highly sensitive and specific method used for diagnosing infections such as tuberculosis and other mycobacterial diseases."
+            },
+            {
+              "title": "🧬 How Mycobacteria PCR Works",
+              "content": [
+                "1️⃣ Sample Collection – A sample is collected from the patient, such as sputum, blood, or tissue.",
+                "2️⃣ DNA Extraction – The DNA is extracted from the sample, isolating the genetic material of any mycobacteria present.",
+                "3️⃣ Amplification & Detection – Using PCR technology, the mycobacteria DNA is amplified, making it detectable even in small quantities.",
+                "4️⃣ Result Interpretation – The test provides results that indicate the presence or absence of mycobacteria in the sample."
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Mycobacteria PCR?",
+              "content": [
+                "✅ Rapid and accurate diagnosis of mycobacterial infections",
+                "✅ High sensitivity for detecting early or latent infections",
+                "✅ Utilizes state-of-the-art PCR technology",
+                "✅ Suitable for both symptomatic and asymptomatic patients",
+                "✅ Quick turnaround time for timely diagnosis and treatment"
+              ]
+            },
+            {
+              "title": "📌 Common Conditions Diagnosed Through Mycobacteria PCR",
+              "content": [
+                "🦠 Tuberculosis (TB)",
+                "🦠 Leprosy",
+                "🦠 Non-tuberculous Mycobacteria (NTM) Infections"
+              ]
+            },
+            {
+              "title": "🏥 Importance of Mycobacteria PCR Testing",
+              "content": "Mycobacteria PCR is crucial for diagnosing TB and other mycobacterial diseases, particularly in cases where traditional diagnostic methods (such as culture or microscopy) might not provide accurate or timely results. Early detection leads to quicker and more effective treatment, helping to prevent the spread of infectious diseases."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book a Mycobacteria PCR Test Now",
+          "image": "img/mycobacteria-pcr.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Viral Load",
+      "tests": [
+        {
+          "id": "viral-load",
+          "name": "Viral Load",
+          "subName": "Viral Testing",
+          "description": "Viral load measures the amount of a virus in a patient's bloodstream to monitor infection severity and treatment effectiveness.",
+          "fullDetails": "Viral load testing is used to measure the concentration of a virus in a patient's blood, typically focusing on viruses such as HIV, hepatitis, and others. This test is crucial for monitoring the progression of the infection, assessing the effectiveness of antiviral treatments, and determining if any changes in the treatment regimen are needed. By measuring viral load, healthcare providers can track how well the body is responding to treatment and whether the virus is becoming resistant.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Viral Load Testing",
+              "content": "Viral load testing provides valuable insights into the severity of a viral infection and is typically used in the management of chronic viral diseases. By quantifying the number of virus particles in the blood, it helps to assess the risk of disease progression and the effectiveness of treatment protocols."
+            },
+            {
+              "title": "🧬 How Viral Load Testing Works",
+              "content": [
+                "1️⃣ Sample Collection – A blood sample is taken from the patient.",
+                "2️⃣ Virus Detection – The blood sample is processed to detect the virus and quantify its concentration using advanced techniques like PCR (Polymerase Chain Reaction).",
+                "3️⃣ Viral Load Quantification – The viral load is measured, indicating the amount of virus present in the bloodstream.",
+                "4️⃣ Result Interpretation – The viral load result helps determine the infection's severity and guide treatment decisions."
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Viral Load Testing?",
+              "content": [
+                "✅ Accurate and reliable results for monitoring viral infections",
+                "✅ Advanced technology for precise viral load quantification",
+                "✅ Essential for managing chronic viral infections such as HIV and hepatitis",
+                "✅ Helps assess the effectiveness of antiviral treatments",
+                "✅ Fast turnaround time for timely treatment adjustments"
+              ]
+            },
+            {
+              "title": "📌 Common Conditions Monitored with Viral Load Testing",
+              "content": [
+                "🦠 HIV (Human Immunodeficiency Virus)",
+                "🦠 Hepatitis B and C",
+                "🦠 Other chronic viral infections"
+              ]
+            },
+            {
+              "title": "🏥 Importance of Viral Load Testing",
+              "content": "Viral load testing is critical for managing chronic viral infections, ensuring patients receive the most effective treatment. It allows healthcare providers to track how well treatment is working and make necessary adjustments. For diseases like HIV, it is used to determine the patient's response to antiretroviral therapy (ART) and monitor for any signs of drug resistance."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book a Viral Load Test Now",
+          "image": "img/viral-load.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Sequencing",
+      "tests": [
+        {
+          "id": "sequencing",
+          "name": "Sequencing",
+          "subName": "Genetic Testing",
+          "description": "Sequencing determines the precise order of nucleotides in a DNA or RNA molecule, providing detailed genetic information.",
+          "fullDetails": "Sequencing is a powerful tool used to determine the exact sequence of nucleotides (the building blocks of DNA and RNA) in a given genetic material. By mapping the order of these nucleotides, sequencing provides valuable insights into the genetic makeup of an organism, helping identify genetic mutations, inherited diseases, and other conditions. It plays a crucial role in personalized medicine, allowing treatments to be tailored based on an individual’s genetic profile.",
+          "sections": [
+            {
+              "title": "🔬 Understanding Sequencing",
+              "content": "Sequencing is a technique that involves decoding the genetic material of an organism. By determining the precise order of DNA or RNA molecules, sequencing helps scientists and doctors understand the genetic basis of diseases, identify mutations, and predict treatment responses."
+            },
+            {
+              "title": "🧬 Types of Sequencing",
+              "content": [
+                "1️⃣ DNA Sequencing – Identifies the order of nucleotides in a DNA molecule, useful for identifying genetic disorders and mutations.",
+                "2️⃣ RNA Sequencing – Decodes RNA sequences, providing insights into gene expression and cellular function.",
+                "3️⃣ Whole Genome Sequencing – Sequencing the entire genome of an organism to detect variations across all genes.",
+                "4️⃣ Targeted Sequencing – Focuses on specific regions of the genome, commonly used for gene mutation testing."
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Sequencing?",
+              "content": [
+                "✅ High-accuracy sequencing for precise genetic data",
+                "✅ Advanced technology for DNA and RNA analysis",
+                "✅ Expert geneticists to interpret results and provide insights",
+                "✅ Ideal for personalized medicine and disease prevention",
+                "✅ Fast turnaround time for results"
+              ]
+            },
+            {
+              "title": "📌 Applications of Sequencing",
+              "content": [
+                "🧬 Genetic Disorder Diagnosis – Detects mutations in genes that lead to genetic diseases.",
+                "🧬 Cancer Genomics – Identifies genetic mutations in cancer cells to inform personalized treatment options.",
+                "🧬 Pharmacogenomics – Assesses how an individual’s genetic makeup affects their response to drugs.",
+                "🧬 Ancestry Testing – Traces genetic heritage and ancestry through sequencing techniques."
+              ]
+            },
+            {
+              "title": "🏥 Importance of Sequencing",
+              "content": "Sequencing provides critical insights into an individual’s genetic blueprint. It is invaluable in diagnosing genetic diseases, understanding inherited conditions, and enabling personalized medicine. With sequencing, doctors can choose the best treatment options based on a patient's unique genetic profile, leading to more effective and targeted therapies."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book a Sequencing Test Now",
+          "image": "img/sequencing.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Sequence Analysis",
+      "tests": [
+        {
+          "id": "sequence-analysis",
+          "name": "Sequence Analysis",
+          "subName": "Genomic Testing",
+          "description": "Sequence analysis involves comparing and interpreting nucleotide or protein sequences to understand their structure and function. It helps identify mutations.",
+          "fullDetails": "Sequence analysis is a process used to compare and interpret nucleotide or protein sequences to understand their structural and functional roles. This technique is essential for identifying genetic mutations, studying the genetic basis of diseases, and exploring the function of specific genes or proteins. By analyzing sequence data, researchers and clinicians can uncover important insights into the molecular mechanisms that drive health conditions, such as inherited diseases or cancer.",
+          "sections": [
+            {
+              "title": "🔬 What is Sequence Analysis?",
+              "content": "Sequence analysis is the examination and interpretation of nucleotide or protein sequences to understand their structure, function, and role in health and disease. By comparing sequences, we can identify genetic mutations that may be linked to diseases, as well as uncover critical insights into gene and protein functions."
+            },
+            {
+              "title": "🧬 Key Techniques in Sequence Analysis",
+              "content": [
+                "1️⃣ Alignment – Aligning nucleotide or protein sequences to identify similarities, differences, and mutations.",
+                "2️⃣ Comparative Analysis – Comparing sequences from different organisms to study evolutionary relationships or functional properties.",
+                "3️⃣ Mutation Detection – Identifying genetic variations that could be associated with diseases or traits.",
+                "4️⃣ Functional Annotation – Determining the function of genes or proteins by analyzing their sequence features."
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Sequence Analysis?",
+              "content": [
+                "✅ Advanced sequence analysis techniques for accurate results",
+                "✅ Expertise in interpreting complex genomic data",
+                "✅ Fast and reliable reports for timely diagnosis",
+                "✅ Equipped with the latest tools for precise mutation detection",
+                "✅ Providing insights into genetic health and disease prevention"
+              ]
+            },
+            {
+              "title": "📌 Applications of Sequence Analysis",
+              "content": [
+                "🧬 Genetic Mutation Detection – Identifying mutations associated with genetic disorders and diseases.",
+                "🧬 Cancer Genomics – Analyzing genetic mutations in cancer cells to tailor personalized treatments.",
+                "🧬 Protein Function Prediction – Understanding how mutations in proteins affect their function and role in health.",
+                "🧬 Evolutionary Studies – Comparing sequences to study the evolution of species and genetic diversity."
+              ]
+            },
+            {
+              "title": "🏥 Importance of Sequence Analysis",
+              "content": "Sequence analysis is crucial for identifying mutations, studying genetic variations, and understanding the molecular basis of diseases. It provides key insights into personalized medicine, helping doctors choose the most effective treatments based on an individual’s genetic makeup. Sequence analysis also aids in the early detection of genetic diseases, allowing for timely intervention and better patient outcomes."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book a Sequence Analysis Test Now",
+          "image": "img/sequence-analysis.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "DNA Extraction",
+      "tests": [
+        {
+          "id": "dna-extraction",
+          "name": "DNA Extraction",
+          "subName": "Genomic Testing",
+          "description": "DNA extraction isolates DNA from cells or tissues for use in genetic analysis, diagnostics, or research.",
+          "fullDetails": "DNA extraction is a laboratory technique used to isolate DNA from cells or tissues for use in genetic analysis, diagnostics, or research. This process involves breaking down cell membranes to release DNA, followed by purification and concentration. Once isolated, DNA can be analyzed to study genetic material, detect genetic disorders, or explore genetic markers linked to diseases. DNA extraction is a fundamental step in genetic research, forensics, medical diagnostics, and personalized medicine.",
+          "sections": [
+            {
+              "title": "🔬 What is DNA Extraction?",
+              "content": "DNA extraction is the process of isolating DNA from a sample, such as blood, saliva, or tissue. The extracted DNA is then used in genetic testing, research, or diagnostics. The extraction method varies based on the type of sample and the downstream applications, ensuring high-quality DNA suitable for analysis."
+            },
+            {
+              "title": "🧬 Steps in DNA Extraction",
+              "content": [
+                "1️⃣ Sample Collection – The first step involves collecting a biological sample, such as blood, saliva, or tissue.",
+                "2️⃣ Cell Lysis – The cells are broken open to release the DNA into a solution.",
+                "3️⃣ DNA Purification – The DNA is purified by removing proteins and other contaminants.",
+                "4️⃣ Precipitation – DNA is precipitated out of solution and collected.",
+                "5️⃣ DNA Analysis – The isolated DNA can now be used for genetic testing or research."
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for DNA Extraction?",
+              "content": [
+                "✅ Expertise in extracting high-quality DNA for precise analysis.",
+                "✅ Advanced extraction methods to ensure DNA purity.",
+                "✅ Reliable results for diagnostics and research.",
+                "✅ Timely and efficient DNA isolation processes.",
+                "✅ Suitable for various sample types and applications."
+              ]
+            },
+            {
+              "title": "📌 Applications of DNA Extraction",
+              "content": [
+                "🧬 Genetic Disease Diagnosis – DNA extraction is used to identify genetic mutations or disorders.",
+                "🧬 Forensic Analysis – In criminal investigations, DNA extraction is crucial for identifying individuals from samples.",
+                "🧬 Genetic Research – DNA extraction enables the study of gene functions, mutations, and genetic markers.",
+                "🧬 Personalized Medicine – DNA analysis can guide treatment options based on genetic factors."
+              ]
+            },
+            {
+              "title": "🏥 Importance of DNA Extraction",
+              "content": "DNA extraction is a crucial step in molecular biology, forensic science, and medical diagnostics. By isolating high-quality DNA from a variety of biological samples, it allows researchers and clinicians to study the genetic makeup of individuals, detect genetic disorders, and develop personalized treatment plans based on a patient’s genetic profile."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book a DNA Extraction Test Now",
+          "image": "img/dna-extraction.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "PCR Testing",
+      "tests": [
+        {
+          "id": "pcr-testing",
+          "name": "PCR Testing",
+          "subName": "Polymerase Chain Reaction",
+          "description": "PCR (Polymerase Chain Reaction) amplifies specific DNA sequences for detection, analysis, or research purposes.",
+          "fullDetails": "Polymerase Chain Reaction (PCR) is a revolutionary technique used to amplify specific DNA sequences, enabling the detection and analysis of tiny amounts of genetic material. PCR has wide applications in diagnostics, forensic science, genetic research, and pathogen detection. The process involves repeated cycles of DNA denaturation, annealing, and elongation, allowing researchers to produce millions of copies of a target DNA sequence from a small sample. PCR is essential for detecting pathogens like viruses, identifying genetic mutations, and conducting molecular research.",
+          "sections": [
+            {
+              "title": "🔬 What is PCR?",
+              "content": "PCR is a laboratory technique used to amplify specific segments of DNA. By creating millions of copies of a small DNA sample, PCR allows scientists and clinicians to detect, analyze, and study genetic material with high precision. It is widely used in medical diagnostics, forensic analysis, and genetic research."
+            },
+            {
+              "title": "🧬 Steps in PCR",
+              "content": [
+                "1️⃣ Denaturation – The DNA sample is heated to separate the strands of the DNA.",
+                "2️⃣ Annealing – Short DNA primers bind to the target DNA sequences.",
+                "3️⃣ Elongation – The DNA polymerase enzyme adds new nucleotides to extend the DNA strand.",
+                "4️⃣ Amplification – The DNA is copied multiple times, exponentially increasing the amount of target DNA.",
+                "5️⃣ Detection – The amplified DNA is analyzed for further testing, identification, or research."
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for PCR Testing?",
+              "content": [
+                "✅ Highly sensitive and accurate PCR tests for early detection of diseases.",
+                "✅ Expert laboratory technicians skilled in PCR techniques.",
+                "✅ Reliable results for a variety of applications, including pathogen detection and genetic analysis.",
+                "✅ Fast turnaround time for diagnostic PCR testing.",
+                "✅ Cutting-edge PCR technology for accurate and reproducible results."
+              ]
+            },
+            {
+              "title": "📌 Applications of PCR Testing",
+              "content": [
+                "🦠 Infectious Disease Detection – PCR is used to detect the genetic material of viruses, bacteria, and other pathogens, such as the SARS-CoV-2 virus responsible for COVID-19.",
+                "🧬 Genetic Disease Diagnosis – PCR can identify genetic mutations associated with inherited diseases.",
+                "🔬 Forensic Science – PCR is used in forensic investigations to analyze DNA samples from crime scenes.",
+                "🧪 Research – PCR is a fundamental technique in genetic research, used to study gene expression, mutations, and genetic variations."
+              ]
+            },
+            {
+              "title": "🏥 Importance of PCR Testing",
+              "content": "PCR testing is essential for detecting diseases at an early stage by amplifying small amounts of DNA or RNA to detectable levels. This technique enables accurate diagnosis, faster response times, and targeted treatment. PCR is widely used in detecting infections, identifying genetic disorders, and researching genetic mutations."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book a PCR Test Now",
+          "image": "img/pcr-testing.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "DNA and RNA Measurements",
+      "tests": [
+        {
+          "id": "dna-rna-measurements",
+          "name": "DNA and RNA Measurements",
+          "subName": "Nucleic Acid Quantification",
+          "description": "DNA and RNA measurements involve quantifying nucleic acids to assess their concentration and purity, often using spectrophotometry or fluorometry.",
+          "fullDetails": "DNA and RNA quantification is an essential process in molecular biology and genomics. By measuring the concentration and purity of nucleic acids, scientists can ensure the accuracy and reliability of genetic analyses. Methods such as spectrophotometry and fluorometry are commonly used to assess the quality of DNA and RNA samples. These measurements are crucial in applications such as gene expression analysis, sequencing, PCR, and cloning. Accurate quantification allows for optimal sample preparation and reliable downstream applications.",
+          "sections": [
+            {
+              "title": "🔬 What Are DNA and RNA Measurements?",
+              "content": "DNA and RNA measurements are crucial techniques used to quantify the concentration of nucleic acids. These measurements help ensure the integrity of the genetic material being studied and provide accurate data for molecular research, diagnostics, and therapeutics."
+            },
+            {
+              "title": "🧬 Techniques Used in DNA and RNA Quantification",
+              "content": [
+                "1️⃣ **Spectrophotometry** – This method uses UV light to measure the absorbance of DNA or RNA at specific wavelengths (typically 260 nm for nucleic acids), providing an estimate of concentration and purity.",
+                "2️⃣ **Fluorometry** – Involves using fluorescent dyes that specifically bind to DNA or RNA. The fluorescence emitted is proportional to the amount of nucleic acids in the sample.",
+                "3️⃣ **Agarose Gel Electrophoresis** – This technique helps visualize DNA or RNA fragments, allowing for an assessment of sample quality and size distribution."
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for DNA and RNA Measurements?",
+              "content": [
+                "✅ High-precision nucleic acid quantification using advanced spectrophotometric and fluorometric techniques.",
+                "✅ Accurate assessment of DNA and RNA concentration and purity for reliable research and diagnostics.",
+                "✅ State-of-the-art equipment ensuring reproducible results and efficient sample preparation.",
+                "✅ Expert technicians trained in molecular biology to provide reliable measurements."
+              ]
+            },
+            {
+              "title": "📌 Applications of DNA and RNA Measurements",
+              "content": [
+                "🧬 **Gene Expression Studies** – Accurate quantification of RNA is essential for analyzing gene expression levels in various biological samples.",
+                "🔬 **PCR and Sequencing** – DNA and RNA measurements are crucial for optimizing PCR reactions and ensuring the success of sequencing experiments.",
+                "🧪 **Cloning and Recombinant DNA Techniques** – Nucleic acid quantification ensures optimal DNA and RNA quality for cloning and protein expression experiments.",
+                "🦠 **Pathogen Detection** – DNA and RNA quantification is used in diagnostics to detect and measure the presence of pathogens."
+              ]
+            },
+            {
+              "title": "🏥 Importance of DNA and RNA Measurements",
+              "content": "DNA and RNA measurements are essential in molecular biology and biotechnology. Accurate quantification is critical for a wide range of applications, including gene expression analysis, diagnostics, and research. By assessing the quality and concentration of nucleic acids, researchers ensure that their experimental results are reliable and reproducible."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book a DNA/RNA Measurement Now",
+          "image": "img/dna-rna-measurement.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Genetic Mutation Identification",
+      "tests": [
+        {
+          "id": "genetic-mutation-identification",
+          "name": "Genetic Mutation Identification",
+          "subName": "Genetic Analysis",
+          "description": "Genetic mutation identification involves detecting changes in DNA sequences that may cause diseases or alter biological functions.",
+          "fullDetails": "Genetic mutation identification is a critical tool in modern medicine and genetic research. By analyzing DNA sequences, we can detect mutations that may be associated with a wide range of diseases, including cancer, genetic disorders, and other health conditions. With cutting-edge technology, we are able to precisely identify these mutations, helping to guide diagnosis, treatment, and prevention strategies. Understanding genetic mutations can also help in personalized medicine by tailoring treatments based on an individual's genetic profile.",
+          "sections": [
+            {
+              "title": "🔬 What is Genetic Mutation Identification?",
+              "content": "Genetic mutation identification refers to the process of detecting changes or alterations in the DNA sequence that may result in diseases or modify biological functions. These mutations can occur in different forms, including single nucleotide polymorphisms (SNPs), insertions, deletions, and large-scale chromosomal changes."
+            },
+            {
+              "title": "🧬 How Does Genetic Mutation Identification Work?",
+              "content": [
+                "1️⃣ **Sample Collection** – A blood, saliva, or tissue sample is collected from the patient for DNA extraction.",
+                "2️⃣ **DNA Extraction** – DNA is extracted from the collected sample to be analyzed.",
+                "3️⃣ **Mutation Detection** – Advanced techniques like **PCR** (Polymerase Chain Reaction), **Next-Generation Sequencing (NGS)**, and **Microarrays** are used to identify specific mutations in the genetic code.",
+                "4️⃣ **Analysis & Interpretation** – The detected mutations are analyzed to determine their significance and potential link to diseases.",
+                "5️⃣ **Result Reporting** – The results are reported, providing information on any detected genetic mutations and their potential impact on health."
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Genetic Mutation Identification?",
+              "content": [
+                "✅ State-of-the-art genetic analysis technology ensuring high accuracy in mutation detection.",
+                "✅ Expert genetic counselors available to interpret results and guide you through the next steps.",
+                "✅ Fast turnaround times for timely decision-making in diagnosis and treatment.",
+                "✅ Comprehensive testing to identify a wide range of genetic mutations associated with diseases."
+              ]
+            },
+            {
+              "title": "📌 Applications of Genetic Mutation Identification",
+              "content": [
+                "🧬 **Cancer Genomics** – Identifying mutations in cancer-related genes to guide treatment decisions, such as **targeted therapies** and **immunotherapy**.",
+                "🧬 **Genetic Disorder Diagnosis** – Identifying mutations linked to genetic disorders like **cystic fibrosis**, **Huntington's disease**, and **sickle cell anemia**.",
+                "🧬 **Personalized Medicine** – Tailoring treatments based on an individual's unique genetic makeup to maximize effectiveness and minimize side effects.",
+                "🧬 **Carrier Screening** – Testing individuals for mutations that may affect offspring, helping to identify inherited conditions."
+              ]
+            },
+            {
+              "title": "🏥 Importance of Genetic Mutation Identification",
+              "content": "Genetic mutation identification plays a critical role in understanding the genetic basis of diseases, providing essential information for personalized healthcare and treatment plans. By identifying mutations early, patients can benefit from more accurate diagnoses, more targeted treatments, and better health outcomes. It also contributes to advancing genetic research and improving our understanding of human genetics."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book a Genetic Mutation Test Now",
+          "image": "img/genetic-mutation-identification.jpg"
+        }
+      ]
+    },
+
+    {
+      "category": "Infectious and Non-Infectious Disease Screening",
+      "tests": [
+        {
+          "id": "disease-screening",
+          "name": "Infectious and Non-Infectious Disease Screening",
+          "subName": "Disease Screening",
+          "description": "Infectious and non-infectious disease screening identifies the presence of diseases or conditions.",
+          "fullDetails": "Infectious and non-infectious disease screening involves testing to detect a wide variety of diseases, from viral infections to chronic conditions. These screenings are essential for identifying diseases that may not present clear symptoms but can still significantly impact health. By conducting routine screenings, we can help detect conditions early, allowing for timely intervention and better management of both infectious and non-infectious diseases.",
+          "sections": [
+            {
+              "title": "🔬 What is Infectious and Non-Infectious Disease Screening?",
+              "content": "Disease screening involves testing individuals to detect the presence of infectious or non-infectious conditions. Infectious diseases are caused by pathogens like bacteria, viruses, fungi, or parasites, while non-infectious diseases include chronic conditions such as diabetes, hypertension, and cancer."
+            },
+            {
+              "title": "🧬 How Disease Screening Works?",
+              "content": [
+                "1️⃣ **Sample Collection** – A blood, urine, or tissue sample is collected from the individual to test for various diseases.",
+                "2️⃣ **Testing** – Laboratory tests like **blood cultures**, **PCR tests**, and **serology** are used to detect infections or markers for non-infectious diseases.",
+                "3️⃣ **Analysis & Interpretation** – The results are analyzed to identify the presence of diseases or risk factors.",
+                "4️⃣ **Result Reporting** – The results are delivered to the patient with clear guidance on next steps or treatment if necessary."
+              ]
+            },
+            {
+              "title": "🏆 Why Choose AMLAD for Disease Screening?",
+              "content": [
+                "✅ Comprehensive screenings for both infectious and non-infectious diseases.",
+                "✅ State-of-the-art testing facilities for accurate and timely results.",
+                "✅ Fast processing time for quick diagnosis and effective treatment planning.",
+                "✅ Expert medical professionals who interpret results and provide guidance."
+              ]
+            },
+            {
+              "title": "📌 Applications of Infectious and Non-Infectious Disease Screening",
+              "content": [
+                "🦠 **Infectious Disease Detection** – Identifying infections like **HIV**, **Hepatitis**, **COVID-19**, and other viral or bacterial infections.",
+                "🏥 **Chronic Disease Monitoring** – Screening for non-infectious diseases like **diabetes**, **hypertension**, **cholesterol**, and **cancer**.",
+                "🔍 **Early Detection** – Detecting diseases before symptoms appear, helping to prevent complications.",
+                "🧬 **Health Risk Assessment** – Evaluating an individual’s risk for certain diseases based on family history, lifestyle, and other factors."
+              ]
+            },
+            {
+              "title": "🏥 Importance of Disease Screening",
+              "content": "Disease screening is crucial for early detection and management of both infectious and non-infectious diseases. Early detection often leads to more effective treatment and better outcomes, reducing the impact of diseases on an individual’s life. Screening is a proactive approach to healthcare, allowing individuals to take control of their health and receive timely interventions."
+            }
+          ],
+          "contact": {
+            "address": "79a Afikpo Road, Abakaliki",
+            "phone": "+012 345 67890",
+            "email": "agapelovemedicallab@gmail.com"
+          },
+          "cta": "Book a Disease Screening Now",
+          "image": "img/disease-screening.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .email-header {
+            background-color: #6a0dad;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .email-header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .email-body {
+            padding: 20px;
+        }
+        .email-body h2 {
+            color: #6a0dad;
+            margin-top: 0;
+        }
+        .promo-section {
+            border-left: 4px solid #6a0dad;
+            padding: 15px;
+            background-color: #f9f9f9;
+            margin: 20px 0;
+        }
+        .promo-section h3 {
+            color: #6a0dad;
+            margin: 0;
+        }
+        .email-footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            color: #777;
+            background-color: #f4f4f4;
+        }
+        .email-footer a {
+            color: #6a0dad;
+            text-decoration: none;
+        }
+        .email-footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            max-width: 250px;
+        }
+
+        .logo-slogan {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .logo-slogan img {
+            width: 100px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .logo-slogan p {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>{{title}}</h1>
+            <p>Exclusive updates and promotions just for you!</p>
+        </div>
+        <div class="email-body">
+            <h2>Dear {{recipientName}},</h2>
+            <p>We’re excited to share our latest promotions with you:</p>
+           
+                <div class="promo-section">
+                    <p>{{content}}</p>
+                    <a href="{{link}}" style="color: #673ab7;">Learn More</a>
+                </div>
+
+            <p>Stay tuned for more great offers!</p>
+            <br>
+            <p>Best regards, <br><strong>{{senderName}}</strong></p>
+        </div>
+        <div class="email-footer">
+            <p>You’re receiving this email because you subscribed to our updates.</p>
+            <p>
+                <a href="{{unsubscribeLink}}">Unsubscribe</a> | 
+                <a href="{{preferencesLink}}">Manage Preferences</a>
+            </p>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/YourPage" target="_blank">Facebook</a></li>
+                <li><a href="https://www.twitter.com/YourHandle" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/YourProfile" target="_blank">Instagram</a></li>
+            </ul>
+            <div class="logo-slogan">
+                <img src="./images/CROWNTIPS_LOGO_3.png" alt="Crowntips Logo" onerror="this.style.display='none';">
+                <p>&copy; 2024 Crowntips. All rights reserved.</p>
+             </div>
+        </div>
+    </div>
+</body>
+</html>

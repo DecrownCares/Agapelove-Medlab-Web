@@ -1,0 +1,143 @@
+[
+    {
+      "role": "Writer/Journalist",
+      "description": "Create well-researched and engaging articles that align with Infohub Naija' standards and values.",
+      "responsibilities": [
+        "Write articles, reports, and opinion pieces on assigned topics.",
+        "Conduct interviews and gather information for investigative stories.",
+        "Collaborate with editors to ensure clarity and tone align with Infohub Naija' style."
+      ],
+      "requirements": [
+        "Excellent writing and research skills.",
+        "Previous experience in journalism or blogging is a plus.",
+        "Ability to meet tight deadlines and adapt to fast-paced environments."
+      ]
+    },
+    {
+      "role": "Copy Editor",
+      "description": "Proofread and edit content to maintain high-quality standards and consistency across all published material.",
+      "responsibilities": [
+        "Edit articles for grammar, punctuation, clarity, and style.",
+        "Ensure factual accuracy and compliance with Infohub Naija' editorial guidelines.",
+        "Collaborate with writers to improve content quality."
+      ],
+      "requirements": [
+        "Exceptional editing and proofreading skills.",
+        "Familiarity with AP Style or similar editorial standards.",
+        "Previous experience in copy editing or publishing is preferred."
+      ]
+    },
+    {
+      "role": "Photo/Videographer",
+      "description": "Capture high-quality images and videos to complement Infohub Naija' articles and social media presence.",
+      "responsibilities": [
+        "Attend events and produce visual content for stories.",
+        "Edit and enhance photos and videos for publication.",
+        "Collaborate with writers and editors to create multimedia content."
+      ],
+      "requirements": [
+        "Experience in photography and videography.",
+        "Proficiency in photo and video editing software (e.g., Adobe Suite).",
+        "Strong portfolio demonstrating relevant skills."
+      ]
+    },
+    {
+      "role": "Graphic Designer",
+      "description": "Design visually appealing graphics for articles, social media, and promotional materials.",
+      "responsibilities": [
+        "Create infographics, banners, and custom images for blog posts.",
+        "Design promotional material for campaigns.",
+        "Ensure visual consistency across all Infohub Naija platforms."
+      ],
+      "requirements": [
+        "Strong graphic design skills with a focus on branding.",
+        "Proficiency in design tools like Photoshop, Illustrator, or Canva.",
+        "Previous experience in a similar role is preferred."
+      ]
+    },
+    {
+      "role": "Ad Manager",
+      "description": "Oversee the planning, execution, and optimization of Infohub Naija' advertising campaigns.",
+      "responsibilities": [
+        "Collaborate with advertisers to define goals and budgets.",
+        "Monitor ad performance and provide regular reports.",
+        "Ensure ads align with Infohub Naija' content and audience interests."
+      ],
+      "requirements": [
+        "Experience in digital advertising platforms (Google Ads, Facebook Ads).",
+        "Strong analytical skills to track and optimize campaigns.",
+        "Ability to build relationships with potential advertisers."
+      ]
+    },
+    {
+      "role": "IT/Technical Support",
+      "description": "Ensure the technical stability and security of Infohub Naija' website and other digital infrastructure.",
+      "responsibilities": [
+        "Monitor and maintain website performance.",
+        "Provide technical support to the team and resolve issues promptly.",
+        "Collaborate with developers to implement site updates."
+      ],
+      "requirements": [
+        "Experience with website management and troubleshooting.",
+        "Knowledge of web technologies (HTML, CSS, JavaScript, CMS).",
+        "Strong problem-solving skills and attention to detail."
+      ]
+    },
+    {
+      "role": "Marketing Specialist",
+      "description": "Develop marketing campaigns to grow Infohub Naija' audience and enhance brand visibility.",
+      "responsibilities": [
+        "Plan and execute marketing campaigns across digital platforms.",
+        "Analyze campaign performance and adjust strategies as needed.",
+        "Collaborate with content and social media teams for promotions."
+      ],
+      "requirements": [
+        "Proven experience in digital marketing.",
+        "Strong understanding of audience engagement strategies.",
+        "Proficiency in analytics tools and marketing platforms."
+      ]
+    },
+    {
+      "role": "Content Strategist",
+      "description": "Develop content strategies aligned with Infohub Naija' mission, ensuring the right mix of topics across niches.",
+      "responsibilities": [
+        "Analyze reader trends and behavior to determine content priorities.",
+        "Plan editorial calendars and assign topics to writers.",
+        "Ensure content aligns with SEO best practices."
+      ],
+      "requirements": [
+        "Strong background in content marketing or journalism.",
+        "Familiarity with analytics tools like Google Analytics.",
+        "Experience in creating editorial calendars."
+      ]
+    },
+    {
+      "role": "SEO Specialist",
+      "description": "Optimize the site’s content and structure for search engine visibility to attract organic traffic.",
+      "responsibilities": [
+        "Conduct keyword research to guide content creators.",
+        "Audit and improve on-page SEO (meta tags, alt texts, etc.).",
+        "Monitor site performance using tools like Ahrefs or SEMrush."
+      ],
+      "requirements": [
+        "Proven experience in SEO strategies.",
+        "Familiarity with tools like Google Search Console, Ahrefs, or Yoast SEO.",
+        "Knowledge of the latest Google algorithms."
+      ]
+    },
+    {
+      "role": "Social Media Manager",
+      "description": "Build and manage our presence across social platforms to grow our audience and engagement.",
+      "responsibilities": [
+        "Develop a social media content strategy.",
+        "Manage posts and engage with followers across platforms.",
+        "Collaborate with the content team to share newly published articles."
+      ],
+      "requirements": [
+        "Proven experience managing social media accounts for brands.",
+        "Strong understanding of trends and analytics.",
+        "Creativity and excellent communication skills."
+      ]
+    }
+  ]
+  

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#" style="--vh: 6.67px;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= metaTags.title %>
+    </title>
+    <meta name="author" content="Decrowncares">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="InfoHub Naija" />
+    <meta property="og:type" content="article">
+    <meta property="twitter:site" content="@infohubnaija">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="fb:app_id" content="3615070035457741">
+
+    <meta name="description" content="<%- metaTags.description %>">
+    <meta name="keywords" content="<%- metaTags.keywords %>">
+    <meta property="og:title" content="<%- metaTags.ogTitle %>">
+    <meta property="og:description" content="<%- metaTags.ogDescription %>">
+    <meta property="og:image" content="https://www.infohubnaija.com.ng<%- metaTags.ogImage %>">
+    <meta property="og:url" content="https://www.infohubnaija.com.ng/api/posts/post/<%- post.slug %>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%- metaTags.twitterTitle %>">
+    <meta name="twitter:description" content="<%- metaTags.twitterDescription %>">
+    <meta name="twitter:image" content="https://www.infohubnaija.com.ng<%- metaTags.twitterImage %>">
+    <meta name="twitter:url" content="https://www.infohubnaija.com.ng/api/posts/post/<%- post.slug %>">
+    <meta name="robots" content="<%- metaTags.robots %>">
+    <meta name="last-modified" content="<%- metaTags.lastModified %>">
+    <link rel="canonical" href="https://www.infohubnaija.com.ng/api/posts/post/<%- post.slug %>">
+
+
+    <meta property="fb:pages" content="530802930122135">
+    <!-- <meta name="robots" content="index, follow"> -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/infohubnaija-favicon.svg">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/infohubnaija-favicon.svg">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/infohubnaija-favicon.svg">
+    <link href="/images/infohubnaija-favicon.svg" type="image/png" rel="icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/infohubnaija-favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/infohubnaija-favicon.svg">
+    <link rel="manifest" href="/images/infohubnaija-favicon.svg">
+    <link rel="stylesheet" href="/postPage.css">
+    <link rel="stylesheet" href="/login.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="/blog-css/index.css">
+    <!-- Favicon -->
+    <link href="/img/AMLAD-LOGO.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- <link rel="stylesheet" href="./css/567media.css"> -->
+    <link rel="canonical" href="https://www.infohubnaija.com.ng/posts">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0"
+        nonce="random"></script>
+</head>
+
+<body>
+<!-- <center> -->
+
+<!-- Spinner Start -->
+<div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+</div>
+<!-- Spinner End -->
+
+
+<!-- Topbar Start -->
+<div class="container-fluid py-2 d-none d-lg-flex">
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <div>
+                <small class="me-3"><i class="fa fa-map-marker-alt me-2"></i>79a Afikpo Road, Abakaliki Ebonyi
+                    State, Nigeria</small>
+                <small class="me-3"><i class="fa fa-clock me-2"></i>Mon-Sat 09am-5pm, Sun Closed</small>
+            </div>
+            <nav class="breadcrumb mb-0">
+                <a class="breadcrumb-item small text-body" href="/patient-login">Sign In</a>
+                <a class="breadcrumb-item small text-body" href="/patient-login">Check Result</a>
+                <a class="breadcrumb-item small text-body" href="/career">Career</a>
+                <!-- <a class="breadcrumb-item small text-body" href="/support">Support</a> -->
+                <a class="breadcrumb-item small text-body" href="/terms-of-service">Terms</a>
+                <a class="breadcrumb-item small text-body" href="/cookie">Cookies</a>
+                <a class="breadcrumb-item small text-body" href="/faq">FAQs</a>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+
+<!-- Brand Start -->
+<div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex">
+    <div class="container pb-2">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex">
+                <i class="bi bi-telephone-inbound fs-2"></i>
+                <div class="ms-3">
+                    <h5 class="text-white mb-0">Call Now</h5>
+                    <a href="tel:+2347034600382" style="text-decoration: none; color: inherit;">+234 703 4600 382</a>
+                </div>
+            </div>
+            <div class="logo-area">
+                <img src="/img/AMLAD-LOGO.jpg" alt="Agapelove Medical Laboratory and Diagnostic Ltd Logo">
+                <a href="/" class="h1 text-white mb-0">AM<span class="text-dark">LAD</span></a>
+            </div>
+            <div class="d-flex">
+                <i class="bi bi-envelope fs-2"></i>
+                <div class="ms-3 mail">
+                    <h5 class="text-white mb-0">Mail Now</h5>
+                    <a href="mailto:agagelovemedicallab@gmail.com"><span>agapelovemedicallab@gmail.com</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Brand End -->
+
+
+<!-- Navbar Start -->
+<div class="container-fluid sticky-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+            <div class="logo-area">
+                <img src="/img/AMLAD-LOGO.jpg" alt="Agapelove Medical Laboratory and Diagnostic Ltd Logo"
+                    class="d-lg-none">
+                <a href="/" class="navbar-brand d-lg-none">
+                    <h1 class="text-primary m-0">AM<span class="text-dark">LAD</span></h1>
+                </a>
+            </div>
+            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="/" class="nav-item nav-link">Home</a>
+                    <a href="/about" class="nav-item nav-link">About</a>
+                    <a href="/service" class="nav-item nav-link">Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu bg-light m-0">
+                            <a href="/resources" class="dropdown-item">Resources</a>
+                            <a href="/career" class="dropdown-item">Career</a>
+                            <a href="/our-team" class="dropdown-item">Our Team</a>
+                            <a href="/client-testimonial" class="dropdown-item">Testimonial</a>
+                            <a href="/book-appointment" class="dropdown-item">Appointment</a>
+                            <a href="/api/posts/all/blog-list" class="dropdown-item active">Our Blogs</a>
+                            <a href="/faq" class="dropdown-item">FAQ</a>
+                            <a href="/patient-login" class="dropdown-item">Sign In</a>
+                            <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
+                        </div>
+                    </div>
+                    <a href="/contact" class="nav-item nav-link">Contact</a>
+
+                </div>
+                <a href="/patient-login" class="btn animated-border me-2">Check Result</a>
+                <!-- search feature  -->
+                <div class="d-flex align-items-center ms-auto">
+                    <!-- <input type="text" class="form-control me-2" placeholder="Search"> -->
+                    <button class="btn btn-primary me-2">Request A Test</button>
+                </div>
+                <!-- social media icons  -->
+                <div class="ms-auto d-none d-lg-flex">
+                    <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center py-5 mt-4">
+        <h1 class="display-2 text-white mb-3 animated slideInDown"><%= post.title %></h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">Our Blogs</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<div id="notification" class="notification bottom-right"></div>
+
+<!-- Static Advertisement Banner -->
+<div class="container text-center my-4">
+    <p class="text-muted">Advertisement!</p>
+    <div class="ad-banner first-ad">
+      <a href="#" target="_blank">
+        <img src="https://via.placeholder.com/728x90" class="img-fluid" alt="Ad Banner">
+      </a>
+    </div>
+  </div>
+  
+  <!-- Popup Advertisement Modal -->
+  <div id="popupAdModal" class="modal fade" tabindex="-1" aria-labelledby="adModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content ad-content">
+        <div class="modal-header ad-header bg-dark text-white">
+          <h5 class="modal-title" id="adModalLabel">Sponsored Ad</h5>
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ad-body text-center potraite-ads">
+          <a href="#" target="_blank">
+            <img src="https://via.placeholder.com/728x90" class="img-fluid rounded shadow" alt="Popup Ad">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- <div id="post-spinner" class="container-skeleton-loaders large">
+                    <div class="container-spinners"></div>
+                </div> -->
+
+<!-- <div class="section outer-div light-mode" id="postContainer" style="display: none;"> -->
+
+<main>
+  <div class="section outer-div light-mode" id="postContainer">
+    <div class="post-header">
+      <% if (post.isSponsored) { %>
+        <div class="sponsored-label"><i class="fas fa-bullhorn"></i>&nbsp; Sponsored</div>
+      <% } %>
+
+      <div class="post-image">
+        <img src="<%- post.image ? `http://localhost:3002${post.image}` : 'default-image-path.jpg' %>" 
+             title="<%- post.title %>" 
+             alt="<%- post.title %>" 
+             loading="lazy" />
+      </div>
+
+      <div class="post-breadcrumb">
+        <a href="/">Home</a>
+        <span><i class="fas fa-angle-right"></i></span>
+        <a class="post-meta-a" style="color: #3368c6;" href="/api/posts/all/blog-list?postType=<%- encodeURIComponent(post.types.join(', ')) %>">
+          <%- post.types.join(", ") %>
+        </a>
+        <span><i class="fas fa-angle-right"></i></span>
+        <a class="post-meta-a" style="color: #3368c6;" href="/api/posts/all/blog-list?category=<%- encodeURIComponent(post.categories.join(', ')) %>">
+          <%- post.categories.join(", ") %>
+        </a>
+        <span><i class="fas fa-angle-right"></i></span>
+        <%- post.subCategories.map(subCategory => 
+          `<a style="color: #3368c6;" class="post-label-a" href="/api/posts/all/blog-list?subCategory=${encodeURIComponent(subCategory)}">${subCategory}</a>`).join(' <span><i class="fas fa-angle-right"></i></span> ') %>
+      </div>
+
+      <h1><a style="color: #007bff;" href="/api/posts/post/<%- post.slug %>"><%- post.title %></a></h1>
+
+      <div class="post-meta-wrapper">
+        <span><i class="fa-regular fa-comment fa-flip fa-lg fa-light"></i> 
+          <span class="post-meta-detail"><%- post.comments ? post.comments.length : 0 %></span>
+        </span>
+        <span><i class="fa-regular fa-eye fa-lg fa-light"></i> 
+          <span class="post-meta-detail"><%- post.views || 0 %></span>
+        </span>
+        <span><i class="fa-regular fa-user fa-lg fa-light"></i> 
+          <span class="post-meta-detail"><%- post.author ? post.author.fullName : 'Unknown author' %></span>
+        </span>
+        <span><i class="fa-regular fa-clock fa-lg fa-light"></i> 
+          <span class="post-meta-detail"><%- formatPostDate(new Date(post.createdAt)) %></span>
+        </span>
+      </div>
+    </div>
+
+    <div class="post-body entry-content" itemprop="description articleBody">
+      <%- post.content %>
+    </div>
+
+    <div class="post-footer">
+      <div class="post-label post-section">
+        <h4 class="post-section-title">
+          <i class="fas fa-tag"></i> Labels
+        </h4>
+        <%- post.tags.map(tag => 
+          `<a class="post-label-a" href="/api/posts/all/blog-list?tag=${encodeURIComponent(tag)}">
+            <span class="bg label-name">${tag}</span>
+          </a>`
+        ).join(" ") %>
+      </div>
+
+      <div class="post-section post-share-buttons">
+        <h4 class="post-section-title">
+          <i class="fas fa-share-alt"></i>
+          SHARE (<span id="share-count"><%- post.shares %></span>):
+        </h4>
+        <div class="post-share-buttons-holder">
+          <% let shareUrl = `https://agapelovemedicallaboratory.com/api/posts/post/${post.slug}`; %>
+          <a href="https://www.facebook.com/sharer.php?u=<%- shareUrl %>" target="_blank" class="post-label p-facebook">
+            <span class="bg label-name"><i class="fab fa-facebook-f"></i> Share</span>
+          </a>
+          <a href="https://twitter.com/share?url=<%- shareUrl %>" target="_blank" class="post-label twitter">
+            <span class="bg label-name"><i class="fab fa-x"></i> Twitter</span>
+          </a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=<%- shareUrl %>" target="_blank" class="post-label linkedin">
+            <span class="bg label-name"><i class="fab fa-linkedin-in"></i> Share</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="comments-section">
+      <h4><i class="fas fa-comments"></i> Comments</h4>
+      <div class="comment-toggle-buttons">
+        <button onclick="showSiteComments()">Site (<%- post.comments ? post.comments.length : 0 %>)</button>
+        <button onclick="showFacebookComments()">Facebook</button>
+      </div>
+
+      <div id="siteCommentsSection">
+        <% if (Array.isArray(post.comments)) { %>
+          <% post.comments.forEach(comment => { %>
+            <div class="comment">
+              <div class="avatar-image-container">
+                <img src="/images/default-user-icon.png" alt="Avatar">
+              </div>
+              <div class="comment-block">
+                <cite><%- comment.commenter || "Anonymous" %></cite>
+                <span class="comment-date"><%- formatCommentDate(new Date(comment.createdAt)) %></span>
+                <p><%- comment.content %></p>
+                <button onclick="showReplyInput('<%= post._id %>', '<%= comment._id %>')">Reply</button>
+              </div>
+
+              <% if (Array.isArray(comment.replies)) { %>
+                <div class="comment-replies-container">
+                  <% comment.replies.forEach(reply => { %>
+                    <div class="comment reply">
+                      <div class="avatar-image-container">
+                        <img src="/images/default-user-icon.png" alt="Avatar">
+                      </div>
+                      <div class="comment-block">
+                        <cite><%- reply.replyer || "Anonymous" %></cite>
+                        <span class="comment-date"><%- formatCommentDate(new Date(reply.createdAt)) %></span>
+                        <p><%- reply.content %></p>
+                      </div>
+                    </div>
+                  <% }) %>
+                </div>
+              <% } %>
+            </div>
+          <% }) %>
+        <% } %>
+
+        <textarea id="newComment" placeholder="Add a comment"></textarea>
+        <button onclick="addComment('<%= post._id %>')">Post Comment</button>
+      </div>
+
+      <div id="facebookCommentsSection" style="display: none;">
+        <div class="fb-comments" data-href="http://localhost:3002/api/posts/<%= post._id %>" data-width="100%" data-numposts="5"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+</div>
+
+<div class="container text-center my-4">
+    <p class="text-muted">Advertisement!</p>
+    <div class="ad-banner second-ad">
+      <a href="#" target="_blank">
+        <img src="https://via.placeholder.com/728x90" class="img-fluid" alt="Ad Banner">
+      </a>
+    </div>
+  </div>
+<div class="second-category-title header" style="margin-top: 30px; margin-bottom: 0; width: 95%; margin-left: 20px;">
+    <a href="/api/posts/all/blog-list" title="more blog posts">
+        <h2>MORE OF OUR BLOGS...</h2>
+    </a>
+    <a href="/api/posts/all/blog-list">
+        <p>View All <span><i class="fas fa-eye icon"></i></p>
+    </a>
+</div>
+
+<!-- <div class="similar-content"> -->
+    <div id="similar-content-spinner" class="spinner-hidden flex-column align-items-center justify-content-center text-primary">
+        <div class="spinner-border" role="status"></div>
+        <span class="mt-2 fw-semibold">Loading...</span>
+    </div>
+    
+
+<div class="posts" id="postContainers" style="display: none;"></div>
+
+<!-- Footer Start -->
+<div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row g-5 py-5">
+            <div class="col-lg-6 pe-lg-5">
+                <a href="/" class="navbar-brand">
+                    <h1 class="h1 text-primary mb-0">AM<span class="text-white">LAD</span></h1>
+                </a>
+                <p class="fs-5 mb-4">
+                    At Agapelove Medical Laboratory, we are committed to providing reliable, accurate
+                    diagnostics and exceptional care. Your health is our priority.
+                </p>
+
+                <p><i class="fa fa-map-marker-alt me-2"></i>79a Afikpo Road, Abakaliki Ebonyi
+                    State, Nigeria</p>
+                <p><i class="fa fa-phone-alt me-2"></i><a href="tel:+2347034600382" style="text-decoration: none; color: inherit;">+234 703 4600 382</a></p>
+                <p><i class="fa fa-envelope me-2"></i><a href="mailto:agagelovemedicallab@gmail.com"><span>agapelovemedicallab@gmail.com</span></a></p>
+                <div class="d-flex mt-4">
+                    <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+                <div class="row g-5">
+                    <div class="col-sm-6">
+                        <h4 class="text-light mb-4">Quick Links</h4>
+                        <a class="btn btn-link" href="/about">About Us</a>
+                        <a class="btn btn-link" href="/contact">Contact Us</a>
+                        <a class="btn btn-link" href="/service">Our Services</a>
+                        <a class="btn btn-link" href="/support">Support</a>
+                        <a class="btn btn-link" href="/patient-login">Sign In</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4 class="text-light mb-4">Popular Links</h4>
+                        <a class="btn btn-link" href="/api/posts/all/blog-list">Our Blog</a>
+                        <a class="btn btn-link" href="/resource">Resources</a>
+                        <a class="btn btn-link" href="/career">Career</a>
+                        <a class="btn btn-link" href="/our-team">Our Team</a>
+                        <a class="btn btn-link" href="/book-appointment">Appoinment</a>
+                        <a class="btn btn-link" href="/testimonials">Testimonial</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4 class="text-light mb-4">Legal</h4>
+                        <a class="btn btn-link" href="/terms-of-service">Terms & Condition</a>
+                        <a class="btn btn-link" href="/privacy-policy">Policy</a>
+                        <a class="btn btn-link" href="/cookie">Cookies</a>
+                    </div>
+                    <div class="col-sm-12">
+                        <h4 class="text-light mb-4">Newsletter</h4>
+                        <div class="w-100">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-0 py-3 px-4"
+                                    style="background: rgba(255, 255, 255, .1);"
+                                    placeholder="Your Email Address"><button class="btn btn-primary px-4">Sign
+                                    Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright bg-dark text-white-50 py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0">&copy; <span id="get-year"></span> <a href="/">AMLAD</a>. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Designed & Developed by <a href="https://decrowncares-sol.com.ng" target="_blank">DSL</a>
+                </p>
+            </div>
+            <script>
+                document.getElementById('get-year').innerHTML = new Date().getFullYear();
+            </script>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+<!-- Floating Chat Support Button -->
+<div id="chat-support-widget" class="d-none">
+    <div id="chat-button">
+        <i class="bi bi-whatsapp"></i>
+        <span>Message Us</span>
+    </div>
+</div>
+<!-- Hidden Chat Window -->
+<div id="chat-window">
+    <div class="chat-header">
+        <img src="/img/AMLAD-LOGO.jpg" alt="Lab Logo" />
+        <div>
+            <h6>AMLAD</h6>
+            <small class="online-status">Online</small>
+        </div>
+        <span class="close-chat">&times;</span>
+    </div>
+    <div class="chat-body">
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" style="display: none;">
+            <div class="lab-message-sender" style="color: #8a91acd4; font-size: 10px; margin-right: 5px;">AMLAD
+            </div>
+            <span></span><span></span><span></span>
+        </div>
+
+        <!-- Lab Message -->
+        <div class="lab-message" style="display: none;">
+            <div class="lab-message-sender" style="color: #8a91acd4; font-size: 10px;">AMLAD</div>
+            Hi there 👋!<br />
+            How can we help you?
+        </div>
+    </div>
+    <div class="chat-footer">
+        <button id="startChatBtn"><i class="bi bi-whatsapp"></i> Start Chat</button>
+    </div>
+</div>
+
+<audio id="chatSound" src="/sounds/notification-1-269296.mp3" preload="auto"></audio>
+
+
+<div id="notification-popup" class="notification-popup">
+    <div class="popup-content">
+        <img src="/img/AMLAD-LOGO.jpg" alt="Lab Logo" />
+        <h2>Stay Updated!</h2>
+        <p>Would you like to receive notifications on our latest updates and promotions?</p>
+        <button id="allow-notifications">Allow</button>
+        <button id="deny-notifications">No, Thanks</button>
+    </div>
+</div>
+
+<div id="notification" class="notification bottom-right"></div>
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+<script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = '5898b3dbf83a84684a9910c1889ab2cbcdea55d5';
+    window.smartsupp||(function(d) {
+      var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+      s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+      c.type='text/javascript';c.charset='utf-8';c.async=true;
+      c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+    })(document);
+    </script>
+    <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/wow/wow.min.js"></script>
+<script src="/lib/easing/easing.min.js"></script>
+<script src="/lib/waypoints/waypoints.min.js"></script>
+<script src="/lib/counterup/counterup.min.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/blog-js/indez.js"></script>
+<script src="/blog-js/index.js"></script>
+<script src="/blog-js/postPage.js"></script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+[
+    {
+      "title": "SEO Toolkit",
+      "description": "Boost your blog's ranking with this powerful SEO toolkit.",
+      "image": "images/seo_toolkit.jpg",
+      "link": "https://affiliate-link.com",
+      "buttonText": "Get the Tool",
+      "category": "tools"
+    },
+    {
+      "title": "SEO Toolkit",
+      "description": "Boost your blog's ranking with this powerful SEO toolkit.",
+      "image": "images/seo_toolkit.jpg",
+      "link": "https://affiliate-link.com",
+      "buttonText": "Get the Tool",
+      "category": "tools"
+    },
+    {
+      "title": "Content Planner Template",
+      "description": "Free downloadable content planner to organize your posts.",
+      "image": "images/content_planner.jpg",
+      "link": "/downloads/content-planner.pdf",
+      "buttonText": "Download Now",
+      "category": "downloads"
+    },
+    {
+      "title": "Content Planner Template",
+      "description": "Free downloadable content planner to organize your posts.",
+      "image": "images/content_planner.jpg",
+      "link": "/downloads/content-planner.pdf",
+      "buttonText": "Download Now",
+      "category": "downloads"
+    },
+    {
+      "title": "Email Marketing Guide",
+      "description": "Learn how to build and monetize your email list effectively.",
+      "image": "images/email_marketing.jpg",
+      "link": "https://affiliate-link.com/guide",
+      "buttonText": "Read the Guide",
+      "category": "guides"
+    },
+    {
+      "title": "Email Marketing Guide",
+      "description": "Learn how to build and monetize your email list effectively.",
+      "image": "images/email_marketing.jpg",
+      "link": "https://affiliate-link.com/guide",
+      "buttonText": "Read the Guide",
+      "category": "guides"
+    }
+  ]
+  

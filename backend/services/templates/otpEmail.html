@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/CROWNTIPS_LOGO_3.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>
+        Password Reset Request
+    </title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+        .header {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #6a0dadbc;
+            border-radius: 8px;
+        }
+
+        h1 {
+
+            color: #ffffff;
+            font-weight: 400;
+
+        }
+
+        .content { margin: 20px 0; font-size: 16px; line-height: 1.6; }
+        .footer { 
+            background-color: #f1f1f1;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #888; 
+            line-height: 1.8;
+            border-radius: 8px;
+        }
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+            max-width: 250px;
+        }
+        .logo-slogan {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .logo-slogan img {
+            width: 100px;
+            height: 40px;
+            object-fit: contain;
+        }
+        .logo-slogan p {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>Password Reset Request</h1></div>
+        <div class="content">
+            <h4>Hello {{username}},</h4>
+            <p>Your OTP for password reset is:</p>
+            <h2>{{otp}}</h2>
+            <p>This OTP will expire in 15 minutes. If you did not request a password reset, please ignore this email.</p>
+        </div>
+        <div class="footer">
+            <p>If you have any questions, feel free to <a href="mailto:support@crowntips_info_hub.com">contact us</a>.</p>
+            <ul class="social-icons">
+              <li><a href="https://www.facebook.com/YourPage" target="_blank">Facebook</a></li>
+              <li><a href="https://www.twitter.com/YourHandle" target="_blank">Twitter</a></li>
+              <li><a href="https://www.instagram.com/YourProfile" target="_blank">Instagram</a></li>
+          </ul>
+              
+              <div class="logo-slogan">
+                <img src="./images/CROWNTIPS_LOGO_3.png" alt="Crowntips Logo" onerror="this.style.display='none';">
+                <p>&copy; 2024 Crowntips. All rights reserved.</p>
+             </div>
+        </div>
+    </div>
+</body>
+</html>

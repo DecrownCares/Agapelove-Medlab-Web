@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Patient Dashboard - Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD)</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="img/AMLAD-LOGO.jpg" rel="icon">
+	<link rel="shortcut icon" href="Agapelove Logo1.png"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="Agapelove Logo1.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="Agapelove Logo1.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Agapelove Logo1.png">
+    <link href="Agapelove Logo1.png" type="image/png" rel="icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="Agapelove Logo1.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Agapelove Logo1.png">
+    <link rel="manifest" href="/manifest.json">
+	<meta name="description" content="AMLAD - Management Dashboard">
+	<meta name="author" content="Decrowncares Solutions">
+
+	<!-- Google Web Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Icon Font Stylesheet -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+	<!-- Libraries Stylesheet -->
+	<link href="lib/animate/animate.min.css" rel="stylesheet">
+	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+	<!-- Customized Bootstrap Stylesheet -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="plugins/fontawesome/js/all.min.js"></script>
+
+	<!-- App CSS -->
+	<link id="theme-style" rel="stylesheet" href="css/login.css">
+	<!-- <link href="css/style.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="app">
+	<!-- Spinner Start -->
+	<div id="spinner"
+		class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+		<div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+	</div>
+	<!-- Spinner End -->
+
+	<header class="app-header fixed-top">
+		<div class="app-header-inner">
+			<div class="container-fluid py-2">
+				<div class="app-header-content">
+					<div class="row justify-content-between align-items-center">
+
+						<div class="col-auto">
+							<a id="sidepanel-toggler" class="sidepanel-toggler d-inline-block d-xl-none" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+									role="img">
+									<title>Menu</title>
+									<path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+										stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+								</svg>
+							</a>
+						</div><!--//col-->
+						<div class="search-mobile-trigger d-sm-none col">
+							<i class="search-mobile-trigger-icon fa-solid fa-magnifying-glass"></i>
+						</div><!--//col-->
+						<div class="app-search-box col">
+							<form class="app-search-form">
+								<input type="text" placeholder="Search..." name="search"
+									class="form-control search-input">
+								<button type="submit" class="btn search-btn btn-primary" value="Search"><i
+										class="fa-solid fa-magnifying-glass"></i></button>
+							</form>
+						</div><!--//app-search-box-->
+
+						<div class="app-utilities col-auto">
+							<div class="app-utility-item app-notifications-dropdown dropdown">
+								<a class="dropdown-toggle no-toggle-arrow" id="notifications-dropdown-toggle"
+								   data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"
+								   title="Notifications">
+								  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell icon"
+									   fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z" />
+									<path fill-rule="evenodd"
+										  d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+								  </svg>
+								  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="notificationCount">0</span>
+								</a>
+							  
+								<div class="dropdown-menu p-0" aria-labelledby="notifications-dropdown-toggle">
+								  <div class="dropdown-menu-header p-3">
+									<h5 class="dropdown-menu-title mb-0">Notifications</h5>
+								  </div>
+								  <div class="dropdown-menu-content" id="notificationList">
+									<!-- Notifications will populate here -->
+								  </div>
+							  
+								  <div class="dropdown-menu-footer p-2 text-center">
+									<a href="/notifications">View all</a>
+								  </div>
+								</div>
+							  </div><!--//app-utility-item-->
+							<div class="app-utility-item">
+								<a href="/settings" title="Settings">
+									<!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear icon"
+										fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd"
+											d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z" />
+										<path fill-rule="evenodd"
+											d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z" />
+									</svg>
+								</a>
+							</div><!--//app-utility-item-->
+
+							<div class="app-utility-item app-user-dropdown dropdown">
+								<a class="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#"
+									role="button" aria-expanded="false"><img class="rounded-circle"
+										src="img/ImageUnavailable.jpeg" id="nav-current-image"
+										alt="user profile"></a>
+								<ul class="dropdown-menu" aria-labelledby="user-dropdown-toggle">
+									<li><a class="dropdown-item" href="/patient-account">Account</a></li>
+									<li><a class="dropdown-item" href="/settings">Settings</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item text-danger" href="#" onclick="logout()"><svg
+												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path d="M12 2v10" />
+												<path d="M17.5 7.5a7 7 0 1 1-11 0" />
+											</svg>
+											Log Out</a></li>
+								</ul>
+							</div><!--//app-user-dropdown-->
+						</div><!--//app-utilities-->
+					</div><!--//row-->
+				</div><!--//app-header-content-->
+			</div><!--//container-fluid-->
+		</div><!--//app-header-inner-->
+		<div id="app-sidepanel" class="app-sidepanel">
+			<div id="sidepanel-drop" class="sidepanel-drop"></div>
+			<div class="sidepanel-inner d-flex flex-column">
+				<a href="#" id="sidepanel-close" class="sidepanel-close d-xl-none">&times;</a>
+				<div class="app-branding">
+					<a class="app-logo" href="/patient-dashboard"><img class="logo-icon me-2"
+							src="images/AMLAD-LOGO.jpg" alt="logo"><span class="text-primary m-0 logo-text">AM<span
+								class="text-dark">LAD</span></span></a>
+
+				</div>
+
+				<nav id="app-nav-main" class="app-nav app-nav-main flex-grow-1">
+					<ul class="app-menu list-unstyled accordion" id="menu-accordion">
+						<li class="nav-item">
+							<!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+							<a class="nav-link active" href="/patient-account">
+								<span class="nav-icon">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door"
+										fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd"
+											d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" />
+										<path fill-rule="evenodd"
+											d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+									</svg>
+								</span>
+								<span class="nav-link-text">Overview</span>
+							</a><!--//nav-link-->
+						</li><!--//nav-item-->
+						<li class="nav-item">
+							<!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+							<a class="nav-link" href="/patient-results">
+								<span class="nav-icon">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-folder"
+										fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z" />
+										<path fill-rule="evenodd"
+											d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z" />
+									</svg>
+								</span>
+								<span class="nav-link-text">My Results</span>
+							</a><!--//nav-link-->
+						</li><!--//nav-item-->
+						
+						<li class="nav-item has-submenu">
+							<!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+							<a class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse"
+								data-bs-target="#submenu-1" aria-expanded="false" aria-controls="submenu-1">
+								<span class="nav-icon">
+									<!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-files"
+										fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd"
+											d="M4 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4z" />
+										<path
+											d="M6 0h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1H4a2 2 0 0 1 2-2z" />
+									</svg>
+								</span>
+								<span class="nav-link-text">Pages</span>
+								<span class="submenu-arrow">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down"
+										fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd"
+											d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+									</svg>
+								</span><!--//submenu-arrow-->
+							</a><!--//nav-link-->
+							<div id="submenu-1" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
+								<ul class="submenu-list list-unstyled">
+									<li class="submenu-item"><a class="submenu-link"
+											href="#">Notifications</a></li>
+									<li class="submenu-item"><a class="submenu-link" href="/patient-account">Account</a></li>
+									<li class="submenu-item"><a class="submenu-link" href="#">Settings</a></li>
+								</ul>
+							</div>
+						</li><!--//nav-item-->
+
+						<li class="nav-item">
+							<!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+							<!-- <a class="nav-link" href="/help">
+								<span class="nav-icon">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle"
+										fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd"
+											d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+										<path
+											d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+									</svg>
+								</span>
+								<span class="nav-link-text">Help</span>
+							</a>//nav-link -->
+						</li><!--//nav-item-->
+					</ul><!--//app-menu-->
+				</nav><!--//app-nav-->
+				<div class="app-sidepanel-footer">
+					<nav class="app-nav app-nav-footer">
+						<ul class="app-menu footer-menu list-unstyled">
+							<li class="nav-item">
+								<!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+								<a class="nav-link" href="/settings">
+									<span class="nav-icon">
+										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear"
+											fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd"
+												d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z" />
+											<path fill-rule="evenodd"
+												d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z" />
+										</svg>
+									</span>
+									<span class="nav-link-text">Settings</span>
+								</a><!--//nav-link-->
+							</li><!--//nav-item-->
+							
+							<li class="nav-item">
+								<!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+								<a class="nav-link" href="/">
+									<span class="nav-icon">
+										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door"
+											fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd"
+												d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" />
+											<path fill-rule="evenodd"
+												d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+										</svg>
+									</span>
+									<span class="nav-link-text">Go To Home</span>
+								</a><!--//nav-link-->
+							</li><!--//nav-item-->
+						</ul><!--//footer-menu-->
+					</nav>
+				</div><!--//app-sidepanel-footer-->
+
+			</div><!--//sidepanel-inner-->
+		</div><!--//app-sidepanel-->
+	</header><!--//app-header-->
+
+	<div class="app-wrapper">
+
+		<div class="app-content pt-3 p-md-3 p-lg-4">
+			<div class="container-xl">
+
+				<h1 class="app-page-title">My Account</h1>
+				<div class="row gy-4">
+					<div class="col-12 col-lg-6">
+						<div class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">
+							<div class="app-card-header p-3 border-bottom-0">
+								<div class="row align-items-center gx-3">
+									<div class="col-auto">
+										<div class="app-icon-holder">
+											<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person"
+												fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd"
+													d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+											</svg>
+										</div><!--//icon-holder-->
+
+									</div><!--//col-->
+									<div class="col-auto">
+										<h4 class="app-card-title">Profile</h4>
+									</div><!--//col-->
+								</div><!--//row-->
+							</div><!--//app-card-header-->
+							<div class="app-card-body px-4 w-100">
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label mb-2"><strong>Photo</strong></div>
+											<div class="item-data">
+												<img id="current-image" class="profile-image rounded-circle"
+													src="img/ImageUnavailable.jpeg" alt="Profile Image">
+											</div>
+										</div><!--//col-->
+
+										<div class="col text-end">
+											<button id="change-image-btn"
+												class="btn-sm app-btn-secondary">Change</button>
+										</div><!--//col-->
+
+										<!-- Hidden file input for selecting an image -->
+										<input type="file" id="image-upload-input" accept="image/*"
+											style="display: none;">
+									</div><!--//row-->
+								</div><!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>ID </strong></div>
+											<div class="item-data" id="userStaffId"></div>
+										</div><!--//col-->
+										<div class="col text-end">
+											<!-- <a class="btn-sm app-btn-secondary" href="#">Change</a> -->
+										</div><!--//col-->
+									</div><!--//row-->
+								</div><!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Name</strong></div>
+											<div class="item-data" id="username"></div>
+										</div><!--//col-->
+										<div class="col text-end">
+											<!-- <a class="btn-sm app-btn-secondary" href="#">Change</a> -->
+										</div><!--//col-->
+									</div><!--//row-->
+								</div><!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Date Of Birth</strong></div>
+											<div class="item-data" id="userDateOfBirth"
+												data-field="dateOfBirth">
+											</div>
+										</div>
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary edit-btn"
+												data-field="dateOfBirth" data-type="text"
+												href="#">Change</a>
+										</div>
+									</div>
+								</div>
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Email</strong></div>
+											<div class="item-data" id="userEmail" data-field="email">staff@example.com
+											</div>
+										</div>
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary edit-btn" data-field="email"
+												data-type="text" href="#">Change</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Phone</strong></div>
+											<div class="item-data" id="userPhone" data-field="phone">+1234567890</div>
+										</div>
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary edit-btn" data-field="phone"
+												data-type="text" href="#">Change</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Address</strong></div>
+											<div class="item-data" id="userAddress" data-field="address">New York, USA
+											</div>
+										</div>
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary edit-btn" data-field="address"
+												data-type="text" href="#">Change</a>
+										</div>
+									</div>
+								</div>
+							</div><!--//app-card-body-->
+							<div class="app-card-footer p-4 mt-auto">
+								<a class="btn app-btn-secondary" href="#">Manage Profile</a>
+							</div><!--//app-card-footer-->
+
+						</div><!--//app-card-->
+					</div><!--//col-->
+					<div class="col-12 col-lg-6">
+						<div class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">
+							<div class="app-card-header p-3 border-bottom-0">
+								<div class="row align-items-center gx-3">
+									<div class="col-auto">
+										<div class="app-icon-holder">
+											<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sliders"
+												fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd"
+													d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
+											</svg>
+										</div><!--//icon-holder-->
+
+									</div><!--//col-->
+									<div class="col-auto">
+										<h4 class="app-card-title">Preferences</h4>
+									</div><!--//col-->
+								</div><!--//row-->
+							</div><!--//app-card-header-->
+							<div class="app-card-body px-4 w-100">
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Role</strong></div>
+											<div class="item-data" id="userRole"></div>
+										</div><!--//col-->
+										<div class="col text-end">
+											<!-- <a class="btn-sm app-btn-secondary" href="#">Change</a> -->
+										</div><!--//col-->
+									</div><!--//row-->
+								</div><!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Gender</strong></div>
+											<div class="item-data" id="userGender"></div>
+										</div><!--//col-->
+										<div class="col text-end">
+											<!-- <a class="btn-sm app-btn-secondary" href="#">Change</a> -->
+										</div><!--//col-->
+									</div><!--//row-->
+								</div><!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Blood Group </strong></div>
+											<div class="item-data" id="bloodGroup"></div>
+										</div><!--//col-->
+										<div class="col text-end">
+											<!-- <a class="btn-sm app-btn-secondary" href="#">Change</a> -->
+										</div><!--//col-->
+									</div><!--//row-->
+								</div><!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Registered By</strong></div>
+											<div class="item-data" id="registeredBy"></div>
+										</div><!--//col-->
+										<div class="col text-end">
+											<!-- <a class="btn-sm app-btn-secondary" href="#">Change</a> -->
+										</div><!--//col-->
+									</div><!--//row-->
+								</div><!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Status</strong></div>
+											<div class="item-data" id="status"></div>
+										</div><!--//col-->
+										<div class="col text-end">
+											<!-- <a class="btn-sm app-btn-secondary" href="#">Change</a> -->
+										</div><!--//col-->
+									</div><!--//row-->
+								</div><!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Registration Date</strong></div>
+											<div class="item-data" id="registrationDate"></div>
+										</div><!--//col-->
+										<div class="col text-end">
+											<!-- <a class="btn-sm app-btn-secondary" href="#">Change</a> -->
+										</div><!--//col-->
+									</div><!--//row-->
+								</div><!--//item-->
+								
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Email Subscription</strong></div>
+											<div class="item-data">Off</div>
+										</div><!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Change</a>
+										</div><!--//col-->
+									</div><!--//row-->
+								</div><!--//item-->
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="form-check form-switch pl-0" style="padding-left: 10px;">
+											<label class="form-check-label" for="settings-switch-2"><strong>Enable browser push notifications</strong></label>
+											
+											
+										</div>
+										<div class="col text-end form-switch mb-3">
+											<input class="form-check-input" type="checkbox" id="settings-switch-2" onchange="togglePushNotifications(this)">
+										</div>
+									</div><!--//row-->
+								</div><!--//item-->
+							</div><!--//app-card-body-->
+							<div class="app-card-footer p-4 mt-auto">
+								<a class="btn app-btn-secondary" href="#">Manage Preferences</a>
+							</div><!--//app-card-footer-->
+
+						</div><!--//app-card-->
+					</div><!--//col-->
+
+					<div class="col-12 col-lg-6">
+						<div
+							class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">
+							<div class="app-card-header p-3 border-bottom-0">
+								<div class="row align-items-center gx-3">
+									<div class="col-auto">
+										<div class="app-icon-holder">
+											<span>
+												<i class="bi bi-telephone-plus-fill"></i>
+											</span>
+
+										</div><!--//icon-holder-->
+
+									</div><!--//col-->
+									<div class="col-auto">
+										<h4 class="app-card-title">Emergency Contact</h4>
+									</div><!--//col-->
+								</div><!--//row-->
+							</div><!--//app-card-header-->
+							<div class="app-card-body px-4 w-100">
+
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Name</strong></div>
+											<div class="item-data" id="emergencyContactName"
+												data-field="name"></div>
+										</div>
+										<!-- <div class="col text-end">
+											<a class="btn-sm app-btn-secondary edit-btn" data-field="name"
+												data-type="text" href="#">Change</a>
+										</div> -->
+									</div>
+								</div>
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Phone</strong></div>
+											<div class="item-data" id="emergencyContactPhone"
+												data-field="phone"></div>
+										</div>
+										<!-- <div class="col text-end">
+											<a class="btn-sm app-btn-secondary edit-btn" data-field="phone"
+												data-type="text" href="#">Change</a>
+										</div> -->
+									</div>
+								</div>
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Relationship</strong></div>
+											<div class="item-data" id="emergencyContactRelationship"
+												data-field="relationship"></div>
+										</div>
+										<!-- <div class="col text-end">
+											<a class="btn-sm app-btn-secondary edit-btn"
+												data-field="relationship" data-type="text"
+												href="#">Change</a>
+										</div> -->
+									</div>
+								</div><!--//item-->
+							</div>
+						</div><!--//app-card-->
+					</div>
+
+					<div class="col-12 col-lg-6">
+						<div class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">
+							<div class="app-card-header p-3 border-bottom-0">
+								<div class="row align-items-center gx-3">
+									<div class="col-auto">
+										<div class="app-icon-holder">
+											<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-shield-check"
+												fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd"
+													d="M5.443 1.991a60.17 60.17 0 0 0-2.725.802.454.454 0 0 0-.315.366C1.87 7.056 3.1 9.9 4.567 11.773c.736.94 1.533 1.636 2.197 2.093.333.228.626.394.857.5.116.053.21.089.282.11A.73.73 0 0 0 8 14.5c.007-.001.038-.005.097-.023.072-.022.166-.058.282-.111.23-.106.525-.272.857-.5a10.197 10.197 0 0 0 2.197-2.093C12.9 9.9 14.13 7.056 13.597 3.159a.454.454 0 0 0-.315-.366c-.626-.2-1.682-.526-2.725-.802C9.491 1.71 8.51 1.5 8 1.5c-.51 0-1.49.21-2.557.491zm-.256-.966C6.23.749 7.337.5 8 .5c.662 0 1.77.249 2.813.525a61.09 61.09 0 0 1 2.772.815c.528.168.926.623 1.003 1.184.573 4.197-.756 7.307-2.367 9.365a11.191 11.191 0 0 1-2.418 2.3 6.942 6.942 0 0 1-1.007.586c-.27.124-.558.225-.796.225s-.526-.101-.796-.225a6.908 6.908 0 0 1-1.007-.586 11.192 11.192 0 0 1-2.417-2.3C2.167 10.331.839 7.221 1.412 3.024A1.454 1.454 0 0 1 2.415 1.84a61.11 61.11 0 0 1 2.772-.815z" />
+												<path fill-rule="evenodd"
+													d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+											</svg>
+										</div><!--//icon-holder-->
+
+									</div><!--//col-->
+									<div class="col-auto">
+										<h4 class="app-card-title">Security</h4>
+									</div><!--//col-->
+								</div><!--//row-->
+							</div><!--//app-card-header-->
+							<div class="app-card-body px-4 w-100">
+
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Password</strong></div>
+											<div class="item-data" id="userPassword" data-field="password">••••••••
+											</div>
+										</div>
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="/reset-password">Change</a>
+										</div>
+									</div>
+								</div>
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Two-Factor Authentication</strong></div>
+											<div class="item-data">You haven't set up two-factor authentication. </div>
+										</div><!--//col-->
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">Set up</a>
+										</div><!--//col-->
+									</div><!--//row-->
+								</div><!--//item-->
+							</div><!--//app-card-body-->
+
+							<div class="app-card-footer p-4 mt-auto">
+								<a class="btn app-btn-secondary" href="#">Manage Security</a>
+							</div><!--//app-card-footer-->
+
+						</div><!--//app-card-->
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">
+							<div class="app-card-header p-3 border-bottom-0">
+								<div class="row align-items-center gx-3">
+									<div class="col-auto">
+										<div class="app-icon-holder">
+											<svg width="1em" height="1em" viewBox="0 0 16 16"
+												class="bi bi-clock-history" fill="none"
+												xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
+												stroke-width="1.5">
+												<path fill-rule="evenodd"
+													d="M8.515 3.5a.5.5 0 0 1 .485.5v4.5h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z" />
+												<path fill-rule="evenodd"
+													d="M8 1a7 7 0 1 0 4.546 12.255.5.5 0 0 1 .908.417A8 8 0 1 1 8 0v1z" />
+												<path d="M8.5 8.5v-4h-1v4h1z" />
+											</svg>
+										</div><!--//icon-holder-->
+
+									</div><!--//col-->
+									<div class="col-auto">
+										<h4 class="app-card-title">Activity Logs</h4>
+									</div><!--//col-->
+								</div><!--//row-->
+							</div><!--//app-card-header-->
+							<div class="app-card-body px-4 w-100">
+
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Last Login</strong></div>
+											<div class="item-data" id="lastLogin">Feb 18, 2025 - 10:45 AM
+											</div>
+										</div>
+										<div class="col text-end">
+											<!-- <button class="btn-sm app-btn-secondary" id="viewMoreBtn">View More</button> -->
+										</div>
+									</div>
+								</div>
+
+								<div class="item border-bottom py-3">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
+											<div class="item-label"><strong>Activity History</strong></div>
+											<div class="item-data">3 activities history found</div>
+										</div>
+										<div class="col text-end">
+											<a class="btn-sm app-btn-secondary" href="#">View</a>
+										</div>
+									</div>
+								</div>
+
+							</div><!--//app-card-body-->
+							<div class="app-card-footer p-4 mt-auto">
+								<a class="btn app-btn-secondary" href="#">Manage Activities</a>
+							</div><!--//app-card-footer-->
+
+						</div><!--//app-card-->
+					</div>
+				</div><!--//row-->
+
+			</div><!--//container-fluid-->
+
+			<!-- Collapsible Sections -->
+			<div class="accordion mt-3" id="patientDetailsAccordion">
+				<!-- Test Results -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingTestResults">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseTestResults">
+							Test Results
+						</button>
+					</h2>
+					<div id="collapseTestResults" class="accordion-collapse collapse show">
+						<div class="accordion-body">
+							<div class="table-responsive">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th>Sample ID</th>
+											<th>Report Date</th>
+											<th>Diagnosis</th>
+											<th>Prescription</th>
+											<th>Status</th>
+											<th>Uploaded By</th>
+											<th>Action</th>
+										</tr>
+									</thead>
+									<tbody id="testResultsList"></tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Appointments -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingAppointments">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseAppointments">
+							Appointments
+						</button>
+					</h2>
+					<div id="collapseAppointments" class="accordion-collapse collapse">
+						<div class="accordion-body">
+							<div class="table-responsive">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th>Date</th>
+											<th>Time</th>
+											<th>Doctor</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody id="appointmentsList"></tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Notifications -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingNotifications">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseNotifications">
+							Notifications
+						</button>
+					</h2>
+					<div id="collapseNotifications" class="accordion-collapse collapse">
+						<div class="accordion-body">
+							<div class="table-responsive">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th>Date</th>
+											<th>Message</th>
+										</tr>
+									</thead>
+									<tbody id="notificationsList"></tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Messages -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingMessages">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseMessages">
+							Messages
+						</button>
+					</h2>
+					<div id="collapseMessages" class="accordion-collapse collapse">
+						<div class="accordion-body">
+							<div class="table-responsive">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th>Date</th>
+											<th>From</th>
+											<th>Message</th>
+										</tr>
+									</thead>
+									<tbody id="messagesList"></tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Medical Records -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingMedicalRecords">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseMedicalRecords">
+							Medical Records
+						</button>
+					</h2>
+					<div id="collapseMedicalRecords" class="accordion-collapse collapse">
+						<div class="accordion-body">
+							<div class="table-responsive">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th>Sample ID</th>
+											<th>Status</th>
+											<th>Test Run</th>
+											<th>Collection Date</th>
+											<th>Registrar</th>
+										</tr>
+									</thead>
+									<tbody id="medicalRecordsList"></tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--//app-content-->
+
+
+		<div id="lastLoginModal" class="modal fade" tabindex="-1">
+			<div class="modal-dialog modal-sm modal-dialog-bottom-right">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Login History</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<ul id="loginHistoryList" class="list-group">
+							<!-- Login history will be injected here -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<footer class="app-footer">
+			<div class="container text-center py-3">
+				<small class="copyright acc-copy">&copy; <span id="get-year"></span> <a class="app-link" href="/">AMLAD</a>. All Rights Reserved.</small>
+
+			</div>
+		</footer><!--//app-footer-->
+
+		<!-- Patient Registration Modal -->
+		<div class="modal fade custom-modal" id="patientRegisterModal" tabindex="-1"
+			aria-labelledby="registerModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-bottom-left">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Register a Patient to AMLAD</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form id="patient-registration-form" class="auth-form">
+
+							<!-- Full Name -->
+							<div class="mb-3">
+								<input id="signup-name" name="fullName" type="text" class="form-control"
+									placeholder="Full Name" required>
+							</div>
+
+							<!-- Date of Birth -->
+							<div class="mb-3">
+								<input id="signup-dob" name="dateOfBirth" type="date" class="form-control" required>
+							</div>
+
+							<!-- Gender -->
+							<div class="mb-3">
+								<select id="signup-gender" name="gender" class="form-control" required>
+									<option value="" disabled selected>Select Gender</option>
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+									<option value="Other">Other</option>
+								</select>
+							</div>
+
+							<!-- Phone Number -->
+							<div class="mb-3">
+								<input id="signup-phone" name="phone" type="tel" class="form-control"
+									placeholder="Phone Number" required>
+							</div>
+
+							<!-- Email Address -->
+							<div class="mb-3">
+								<input id="signup-email" name="email" type="email" class="form-control"
+									placeholder="Email Address" required>
+							</div>
+
+							<!-- Address -->
+							<div class="mb-3">
+								<input id="signup-address" name="address" type="text" class="form-control"
+									placeholder="Address" required>
+							</div>
+
+							<!-- Blood Group -->
+							<div class="mb-3">
+								<select id="signup-blood" name="bloodGroup" class="form-control">
+									<option value="" disabled selected>Select Blood Group</option>
+									<option value="A+">A+</option>
+									<option value="A-">A-</option>
+									<option value="B+">B+</option>
+									<option value="B-">B-</option>
+									<option value="O+">O+</option>
+									<option value="O-">O-</option>
+									<option value="AB+">AB+</option>
+									<option value="AB-">AB-</option>
+								</select>
+							</div>
+
+							<!-- Underlying Conditions -->
+							<div class="mb-3">
+								<label class="form-label">Underlying Conditions (Select if applicable)</label>
+								<div class="dropdown">
+									<button class="btn btn-light dropdown-toggle w-100" type="button"
+										id="underlyingConditionsDropdown" data-bs-toggle="dropdown"
+										aria-expanded="false">
+										Select Conditions
+									</button>
+									<ul class="dropdown-menu p-3" aria-labelledby="underlyingConditionsDropdown"
+										id="underlying-conditions-menu">
+										<li><input type="checkbox" name="underlyingConditions" value="Diabetes">
+											Diabetes</li>
+										<li><input type="checkbox" name="underlyingConditions" value="Hypertension">
+											Hypertension</li>
+										<li><input type="checkbox" name="underlyingConditions" value="Asthma"> Asthma
+										</li>
+										<li><input type="checkbox" name="underlyingConditions" value="Heart Disease">
+											Heart Disease</li>
+										<li><input type="checkbox" name="underlyingConditions"
+												value="Chronic Kidney Disease"> Chronic Kidney Disease</li>
+										<li><input type="checkbox" name="underlyingConditions" value="Liver Disease">
+											Liver Disease</li>
+										<li><input type="checkbox" name="underlyingConditions" value="Cancer"> Cancer
+										</li>
+										<li><input type="checkbox" name="underlyingConditions" value="Tuberculosis">
+											Tuberculosis</li>
+										<li><input type="checkbox" name="underlyingConditions" value="HIV/AIDS">
+											HIV/AIDS</li>
+										<li><input type="checkbox" name="underlyingConditions" value="None"> None</li>
+										<li>
+											<input type="checkbox" name="underlyingConditions" value="Other"
+												id="underlying-other">
+											Other (Specify)
+											<input type="text" id="other-condition" class="form-control mt-2 d-none"
+												placeholder="Enter other condition">
+										</li>
+									</ul>
+								</div>
+								<input type="hidden" name="underlyingConditions" id="underlyingConditionsInput">
+							</div>
+
+							<!-- Allergies -->
+							<div class="mb-3">
+								<label class="form-label">Allergies (Select if applicable)</label>
+								<div class="dropdown">
+									<button class="btn btn-light dropdown-toggle w-100" type="button"
+										id="allergiesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+										Select Allergies
+									</button>
+									<ul class="dropdown-menu p-3" aria-labelledby="allergiesDropdown"
+										id="allergies-menu">
+										<li><input type="checkbox" name="allergies" value="Peanuts"> Peanuts</li>
+										<li><input type="checkbox" name="allergies" value="Shellfish"> Shellfish</li>
+										<li><input type="checkbox" name="allergies" value="Dust"> Dust</li>
+										<li><input type="checkbox" name="allergies" value="Pollen"> Pollen</li>
+										<li><input type="checkbox" name="allergies" value="Milk"> Milk</li>
+										<li><input type="checkbox" name="allergies" value="Eggs"> Eggs</li>
+										<li><input type="checkbox" name="allergies" value="Soy"> Soy</li>
+										<li><input type="checkbox" name="allergies" value="Gluten"> Gluten</li>
+										<li><input type="checkbox" name="allergies" value="None"> None</li>
+										<li>
+											<input type="checkbox" name="allergies" value="Other" id="allergy-other">
+											Other (Specify)
+											<input type="text" id="other-allergy" class="form-control mt-2 d-none"
+												placeholder="Enter other allergy">
+										</li>
+									</ul>
+								</div>
+								<input type="hidden" name="allergies" id="allergiesInput">
+							</div>
+
+
+							<!-- Emergency Contact -->
+							<div class="mb-3">
+								<input id="signup-emergency-name" name="emergencyName" type="text" class="form-control"
+									placeholder="Emergency Contact Name">
+							</div>
+							<div class="mb-3">
+								<input id="signup-emergency-phone" name="emergencyPhone" type="tel" class="form-control"
+									placeholder="Emergency Contact Phone">
+							</div>
+							<div class="mb-3">
+								<input id="signup-emergency-relation" name="emergencyRelation" type="text"
+									class="form-control" placeholder="Relationship to Patient">
+							</div>
+
+							<!-- Profile Image Upload -->
+							<!-- <div class="mb-3">
+						<label class="sr-only" for="signup-image">Profile Image</label>
+                        <input id="signup-image" name="imageUrl" type="file" class="form-control">
+                    </div> -->
+
+							<div id="alertBox"></div>
+
+							<!-- Submit Button -->
+							<div class="text-center">
+								<button type="submit" class="btn app-btn-primary w-100 theme-btn">Register
+									Patient</button>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- sample regiteration section  -->
+		<!-- Bootstrap Sample Registration Modal -->
+		<div class="modal fade" id="regSampleModal" tabindex="-1" aria-labelledby="regSampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header bg-primary text-white">
+						<h5 class="modal-title" id="regSampleModalLabel">Sample Registration</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form id="sampleForm" enctype="multipart/form-data" onsubmit="submitForm(); return false;">
+							<div class="row">
+								<div class="col-md-6">
+									<label for="sampleType" class="form-label">Sample Type:</label>
+									<input type="text" id="sampleType" name="sampleType" class="form-control" required>
+								</div>
+								<div class="col-md-6">
+									<label for="collectionDate" class="form-label">Collection Date:</label>
+									<input type="datetime-local" id="collectionDate" name="collectionDate"
+										class="form-control" required>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-md-6">
+									<label for="owner" class="form-label">Patient Name:</label>
+									<input type="text" id="owner" name="owner" class="form-control" required>
+								</div>
+								<div class="col-md-3">
+									<label for="age" class="form-label">Age:</label>
+									<input type="number" id="age" name="age" class="form-control" required>
+								</div>
+								<div class="col-md-3">
+									<label for="sex" class="form-label">Sex:</label>
+									<select id="sex" name="sex" class="form-select" required>
+										<option value="">Select</option>
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-md-6">
+									<label for="testRun" class="form-label">Test Type:</label>
+									<input type="text" id="testRun" name="testRun" class="form-control" readonly
+										onclick="openTestRunModal()">
+								</div>
+								<div class="col-md-6">
+									<label for="emailPhone" class="form-label">Email or Phone No:</label>
+									<input type="text" id="emailPhone" name="emailPhone" class="form-control" required>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-md-6">
+									<label for="referral" class="form-label">Referral:</label>
+									<input type="text" id="referral" name="referral" class="form-control" required>
+								</div>
+								<div class="col-md-3">
+									<label for="totalBill" class="form-label">Total Bill:</label>
+									<input type="text" id="totalBill" name="totalBill" class="form-control" readonly
+										required>
+								</div>
+								<div class="col-md-3">
+									<label for="amountPaid" class="form-label">Amount Paid:</label>
+									<input type="text" id="amountPaid" name="amountPaid" class="form-control" required>
+								</div>
+							</div>
+
+							<div class="mt-3">
+								<label for="staffId" class="form-label">Staff ID:</label>
+								<input type="text" id="staffId" name="staffId" class="form-control" required>
+							</div>
+
+							<div class="d-flex justify-content-between mt-4">
+								<button type="button" class="btn btn-primary" onclick="submitForm()">
+									<i class="bi bi-save"></i> Submit
+								</button>
+								<button type="button" class="btn btn-secondary" onclick="printInvoice()">
+									<i class="bi bi-printer"></i> Print Invoice
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bootstrap Test Run Modal -->
+		<div class="modal fade" id="testRunModal" tabindex="-1" aria-labelledby="testRunModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="testRunModalLabel">Select Tests</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div id="testCategories" class="container">
+							<!-- Tests will be injected here -->
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-success" onclick="applySelectedTests()">Apply</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Update Sample Modal -->
+		<div class="modal fade" id="updateResultSampleModal" tabindex="-1" aria-labelledby="resultSampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="resultSampleModalLabel">Update Sample Result</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form id="updateForm" enctype="multipart/form-data">
+							<div class="mb-3">
+								<label for="sampleId" class="form-label">Sample ID:</label>
+								<input type="text" class="form-control" id="sampleId" name="sampleId" required>
+							</div>
+
+							<div class="mb-3">
+								<label for="result" class="form-label">Result:</label>
+								<input type="text" class="form-control" id="result" name="result" required>
+							</div>
+
+							<div class="mb-3">
+								<label for="notes" class="form-label">Notes:</label>
+								<input type="text" class="form-control" id="notes" name="notes">
+							</div>
+
+							<div class="mb-3">
+								<label for="reportDate" class="form-label">Report Date:</label>
+								<input type="datetime-local" class="form-control" id="reportDate" name="reportDate">
+							</div>
+
+							<div class="mb-3">
+								<label for="resultFile" class="form-label">Result File (PDF only):</label>
+								<div class="input-group">
+									<label class="input-group-text" for="resultFile">
+										<i class="bi bi-file-earmark-pdf"></i>
+									</label>
+									<input type="file" class="form-control" id="resultFile" name="resultFile"
+										accept="application/pdf">
+								</div>
+							</div>
+
+							<div class="mb-3">
+								<label for="updateStaffId" class="form-label">Staff ID:</label>
+								<input type="text" class="form-control" id="updateStaffId" name="staffId" required>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-success" onclick="submitUpdate()">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Confirm Balance Modal -->
+		<div class="modal fade" id="balanceModal" tabindex="-1" aria-labelledby="balanceModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="balanceModalLabel">Confirm Balance Payment</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form id="balanceForm">
+							<div class="mb-3">
+								<label for="balanceSampleId" class="form-label">Sample ID:</label>
+								<input type="text" class="form-control" id="balanceSampleId" name="sampleId" required>
+							</div>
+
+							<div class="mb-3">
+								<label for="amountPaid" class="form-label">Amount Paid:</label>
+								<input type="text" class="form-control" id="amountPaid" name="amountPaid" required>
+							</div>
+
+							<div class="mb-3">
+								<label for="confirmationCode" class="form-label">Payment Confirmed By (Staff
+									ID):</label>
+								<input type="text" class="form-control" id="confirmationCode" name="confirmationCode"
+									required>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary"
+									onclick="submitBalanceConfirmation()">Confirm</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Bootstrap Notification Modal -->
+<div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+	  <div class="modal-content">
+		<div class="modal-header bg-danger text-white">
+		  <h5 class="modal-title" id="notificationModalLabel">Access Denied</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body" id="notificationMessage">
+		  <!-- Dynamic message goes here -->
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">OK</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+
+     <!-- Floating Chat Support Button -->
+<div id="chat-support-widget" class="d-none">
+    <div id="chat-button">
+        <i class="bi bi-whatsapp"></i>
+        <span>Message Us</span>
+    </div>
+</div>
+<!-- Hidden Chat Window -->
+<div id="chat-window">
+    <div class="chat-header">
+        <img src="img/AMLAD-LOGO.jpg" alt="Lab Logo" />
+        <div>
+            <h6>AMLAD</h6>
+            <small class="online-status">Online</small>
+        </div>
+        <span class="close-chat">&times;</span>
+    </div>    
+    <div class="chat-body">
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" style="display: none;">
+            <div class="lab-message-sender" style="color: #8a91acd4; font-size: 10px; margin-right: 5px;">AMLAD</div>
+            <span></span><span></span><span></span>
+        </div>
+    
+        <!-- Lab Message -->
+        <div class="lab-message" style="display: none;">
+            <div class="lab-message-sender" style="color: #8a91acd4; font-size: 10px;">AMLAD</div>
+            Hi there 👋!<br />
+            How can we help you?
+        </div>
+    </div>
+    <div class="chat-footer">
+        <button id="startChatBtn"><i class="bi bi-whatsapp"></i> Start Chat</button>
+    </div>
+</div>
+
+<audio id="chatSound" src="/sounds/notification-1-269296.mp3" preload="auto"></audio>
+
+
+<div id="notification-popup" class="notification-popup">
+    <div class="popup-content">
+        <img src="img/AMLAD-LOGO.jpg" alt="Lab Logo" />
+        <h2>Stay Updated!</h2>
+        <p>Would you like to receive notifications on our latest updates and promotions?</p>
+        <button id="allow-notifications">Allow</button>
+        <button id="deny-notifications">No, Thanks</button>
+    </div>
+</div>
+
+<div id="notification" class="notification bottom-right"></div>
+
+	</div><!--//app-wrapper-->
+
+	<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '5898b3dbf83a84684a9910c1889ab2cbcdea55d5';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+	
+
+
+
+	<!-- JavaScript Libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
+	<script src="lib/wow/wow.min.js"></script>
+	<script src="lib/easing/easing.min.js"></script>
+	<script src="lib/waypoints/waypoints.min.js"></script>
+	<script src="lib/counterup/counterup.min.js"></script>
+	<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+	<!-- Javascript -->
+	<script>
+		document.getElementById('get-year').innerHTML = new Date().getFullYear();
+	</script>
+	
+	<script src="plugins/popper.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Charts JS -->
+	<script src="plugins/chart.js/chart.min.js"></script>
+	<script src="js/index-charts.js"></script>
+
+	<!-- Page Specific JS -->
+	 <script src="js/account.js"></script>
+	<script src="js/app.js"></script>
+	<!-- <script src="scripts/dashboard.js"></script> -->
+	<!-- <script src="scripts/regSample.js"></script> -->
+	<script src="js/main.js"></script>
+	<!-- <script src="js/login.js"></script> -->
+
+</body>
+
+</html>

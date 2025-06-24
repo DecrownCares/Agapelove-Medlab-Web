@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Get help - Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD)</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Portal - Bootstrap 5 Admin Dashboard Template For Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="img/AMLAD-LOGO.jpg"> 
+
+	<!-- Favicon & Apple Touch Icon -->
+    <link rel="icon" href="img/AMLAD-LOGO.jpg" type="image/jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/AMLAD-LOGO.jpg">
+    <link rel="manifest" href="/manifest.json">
+  
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/about.html">
+  
+    <!-- Social Media Profile Links -->
+    <link rel="me" href="https://www.facebook.com/yourlabprofile">
+    <link rel="me" href="https://www.twitter.com/yourlabprofile">
+    <link rel="me" href="https://www.instagram.com/yourlabprofile">
+    <link rel="me" href="https://www.linkedin.com/company/yourlabprofile">
+  
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+  
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap" rel="stylesheet">
+  
+    <!-- Icon Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  
+    <!-- Libraries Stylesheets -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  
+    <!-- Bootstrap & Main Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+</head> 
+
+<body class="app">   	
+ <!-- Spinner Start -->
+ <div id="spinner"
+ class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+ <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+</div>
+<!-- Spinner End -->
+
+
+<!-- Topbar Start -->
+<div class="container-fluid py-2 d-none d-lg-flex">
+ <div class="container">
+	 <div class="d-flex justify-content-between">
+		 <div>
+			 <small class="me-3"><i class="fa fa-map-marker-alt me-2"></i>79a Afikpo Road, Abakaliki Ebonyi
+				 State, Nigeria</small>
+			 <small class="me-3"><i class="fa fa-clock me-2"></i>Mon-Sat 09am-5pm, Sun Closed</small>
+		 </div>
+		 <nav class="breadcrumb mb-0">
+			 <a class="breadcrumb-item small text-body" href="/patient-login">Sign In</a>
+			 <a class="breadcrumb-item small text-body" href="/patient-login">Check Result</a>
+			 <a class="breadcrumb-item small text-body" href="/career">Career</a>
+			 <!-- <a class="breadcrumb-item small text-body" href="/support">Support</a> -->
+			 <a class="breadcrumb-item small text-body" href="/terms-of-service">Terms</a>
+			 <a class="breadcrumb-item small text-body" href="/cookie">Cookies</a>
+			 <a class="breadcrumb-item small text-body" href="/faq">FAQs</a>
+		 </nav>
+	 </div>
+ </div>
+</div>
+<!-- Topbar End -->
+
+
+<!-- Brand Start -->
+<div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex">
+ <div class="container pb-2">
+	 <div class="d-flex align-items-center justify-content-between">
+		 <div class="d-flex">
+			 <i class="bi bi-telephone-inbound fs-2"></i>
+			 <div class="ms-3">
+				 <h5 class="text-white mb-0">Call Now</h5>
+				 <a href="tel:+2347034600382" style="text-decoration: none; color: inherit;">+234 703 4600 382</a>
+			 </div>
+		 </div>
+		 <div class="logo-area">
+			 <img src="/img/AMLAD-LOGO.jpg" alt="Agapelove Medical Laboratory and Diagnostic Ltd Logo">
+			 <a href="/" class="h1 text-white mb-0">AM<span class="text-dark">LAD</span></a>
+		 </div>
+		 <div class="d-flex">
+			 <i class="bi bi-envelope fs-2"></i>
+			 <div class="ms-3 mail">
+				 <h5 class="text-white mb-0">Mail Now</h5>
+				 <a href="mailto:agagelovemedicallab@gmail.com"><span>agapelovemedicallab@gmail.com</span></a>
+			 </div>
+		 </div>
+	 </div>
+ </div>
+</div>
+<!-- Brand End -->
+
+
+<!-- Navbar Start -->
+<div class="container-fluid sticky-top">
+ <div class="container">
+	 <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+		 <div class="logo-area">
+			 <img src="/img/AMLAD-LOGO.jpg" alt="Agapelove Medical Laboratory and Diagnostic Ltd Logo"
+				 class="d-lg-none">
+			 <a href="/" class="navbar-brand d-lg-none">
+				 <h1 class="text-primary m-0">AM<span class="text-dark">LAD</span></h1>
+			 </a>
+		 </div>
+		 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+			 data-bs-target="#navbarCollapse">
+			 <span class="navbar-toggler-icon"></span>
+		 </button>
+		 <div class="collapse navbar-collapse" id="navbarCollapse">
+			 <div class="navbar-nav">
+				 <a href="/" class="nav-item nav-link">Home</a>
+				 <a href="/about" class="nav-item nav-link">About</a>
+				 <a href="/service" class="nav-item nav-link">Services</a>
+				 <div class="nav-item dropdown">
+					 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+					 <div class="dropdown-menu bg-light m-0">
+						 <a href="/resources" class="dropdown-item">Resources</a>
+						 <a href="/career" class="dropdown-item">Career</a>
+						 <a href="/our-team" class="dropdown-item">Our Team</a>
+						 <a href="/client-testimonial" class="dropdown-item">Testimonial</a>
+						 <a href="/book-appointment" class="dropdown-item">Appointment</a>
+						 <a href="/api/posts/all/blog-list" class="dropdown-item">Our Blogs</a>
+						 <a href="/faq" class="dropdown-item active">FAQ</a>
+						 <a href="/patient-login" class="dropdown-item">Sign In</a>
+						 <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
+					 </div>
+				 </div>
+				 <a href="/contact" class="nav-item nav-link">Contact</a>
+				 
+			 </div>
+			 <a href="/patient-login" class="btn animated-border me-2">Check Result</a>
+			 <!-- search feature  -->
+			 <div class="d-flex align-items-center ms-auto">
+				 <!-- <input type="text" class="form-control me-2" placeholder="Search"> -->
+				 <button class="btn btn-primary me-2">Request A Test</button>
+			 </div>
+			 <!-- social media icons  -->
+			 <div class="ms-auto d-none d-lg-flex">
+				 <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-facebook-f"></i></a>
+				 <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-twitter"></i></a>
+				 <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+				 <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-youtube"></i></a>
+			 </div>
+		 </div>
+	 </nav>
+ </div>
+</div>
+<!-- Navbar End -->
+
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+ <div class="container text-center py-5 mt-4">
+	 <h1 class="display-2 text-white mb-3 animated slideInDown">FAQ</h1>
+	 <nav aria-label="breadcrumb animated slideInDown">
+		 <ol class="breadcrumb justify-content-center mb-0">
+			 <li class="breadcrumb-item"><a href="/">Home</a></li>
+			 <li class="breadcrumb-item" aria-current="page">FAQ</li>
+		 </ol>
+	 </nav>
+ </div>
+</div>
+<!-- Page Header End -->
+    
+    <div class="app-wrapper">
+	    
+	    <div class="app-content pt-3 p-md-3 p-lg-4">
+		    <div class="container-xl">
+			    
+			    <h1 class="app-page-title">Help Center</h1>
+                <div class="app-card app-card-accordion shadow-sm mb-4">
+					<div class="app-card-header p-4 pb-2 border-0">
+						<h4 class="app-card-title">Services</h4>
+					</div>
+					<div class="app-card-body p-4 pt-0">
+						<div id="faq1-accordion" class="faq1-accordion faq-accordion accordion">
+							
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq1-heading-1">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq1-1" aria-expanded="false" aria-controls="faq1-1">
+										How can I book an appointment?
+									</button>
+								</h2>
+								<div id="faq1-1" class="accordion-collapse collapse border-0" aria-labelledby="faq1-heading-1">
+									<div class="accordion-body text-start p4">
+										You can book an appointment through our **online portal** by logging in and selecting your preferred date and time. Alternatively, hospitals and healthcare providers can schedule appointments on behalf of patients. Once booked, you will receive a confirmation email and SMS.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq1-heading-2">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq1-2" aria-expanded="false" aria-controls="faq1-2">
+										Can I request a test online?
+									</button>
+								</h2>
+								<div id="faq1-2" class="accordion-collapse collapse border-0" aria-labelledby="faq1-heading-2">
+									<div class="accordion-body text-start p4">
+										Yes, patients and hospitals can request lab tests using our **Patient Test Request Form** available in the patient portal. Once submitted, our team will review the request and confirm the test details.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq1-heading-3">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq1-3" aria-expanded="false" aria-controls="faq1-3">
+										How can I access my medical records?
+									</button>
+								</h2>
+								<div id="faq1-3" class="accordion-collapse collapse border-0" aria-labelledby="faq1-heading-3">
+									<div class="accordion-body text-start p4">
+										You can access your medical records anytime by logging into your **patient portal**. Here, you can view past test results, prescriptions, and diagnosis reports. If you need physical copies, you can request a download or print option directly from the portal.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq1-heading-4">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq1-4" aria-expanded="false" aria-controls="faq1-4">
+										Can I make payments online?
+									</button>
+								</h2>
+								<div id="faq1-4" class="accordion-collapse collapse border-0" aria-labelledby="faq1-heading-4">
+									<div class="accordion-body text-start p4">
+										Yes, we accept **online payments** through our secure payment gateway. Once you book an appointment or request a test, you will be guided to the payment section where you can complete the transaction using **credit/debit cards, mobile money, or bank transfer**.
+									</div>
+								</div>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+				
+				<div class="app-card app-card-accordion shadow-sm mb-4">
+					<div class="app-card-header p-3">
+						<h4 class="app-card-title">Account & Support</h4>
+					</div>
+					<div class="app-card-body p-4 pt-0">
+						<div id="faq2-accordion" class="faq2-accordion faq-accordion accordion">
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq2-heading-1">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-1" aria-expanded="false" aria-controls="faq2-1">
+										How do I create an account?
+									</button>
+								</h2>
+								<div id="faq2-1" class="accordion-collapse collapse border-0" aria-labelledby="faq2-heading-1">
+									<div class="accordion-body text-start p4">
+										To create an account, click on the **"Sign Up"** button on our website and fill in your personal details. Once registered, you will receive a verification email to activate your account.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq2-heading-2">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-2" aria-expanded="false" aria-controls="faq2-2">
+										What should I do if I forget my password?
+									</button>
+								</h2>
+								<div id="faq2-2" class="accordion-collapse collapse border-0" aria-labelledby="faq2-heading-2">
+									<div class="accordion-body text-start p4">
+										If you forget your password, click on the **"Forgot Password"** link on the login page. Enter your registered email, and we will send you a password reset link.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq2-heading-3">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-3" aria-expanded="false" aria-controls="faq2-3">
+										How do I contact customer support?
+									</button>
+								</h2>
+								<div id="faq2-3" class="accordion-collapse collapse border-0" aria-labelledby="faq2-heading-3">
+									<div class="accordion-body text-start p4">
+										You can reach our **customer support team** via email at **support@yourlab.com**, through our **live chat feature** on the website, or by calling our **helpline at +123-456-7890**.
+									</div>
+								</div>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+
+				<div class="app-card app-card-accordion shadow-sm mb-4">
+					<div class="app-card-header p-4 pb-2 border-0">
+						<h4 class="app-card-title">Patient Portal</h4>
+					</div>
+					<div class="app-card-body p-4 pt-0">
+						<div id="faq1-accordion" class="faq1-accordion faq-accordion accordion">
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq1-heading-1">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq1-1" aria-expanded="false" aria-controls="faq1-1">
+										How do I access my patient portal?
+									</button>
+								</h2>
+								<div id="faq1-1" class="accordion-collapse collapse border-0" aria-labelledby="faq1-heading-1">
+									<div class="accordion-body text-start p4">
+										You can access your patient portal by logging in on our website with your registered email and password. If you haven’t registered yet, click on "Sign Up" and follow the instructions.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq1-heading-2">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq1-2" aria-expanded="false" aria-controls="faq1-2">
+										What can I do on the patient portal?
+									</button>
+								</h2>
+								<div id="faq1-2" class="accordion-collapse collapse border-0" aria-labelledby="faq1-heading-2">
+									<div class="accordion-body text-start p4">
+										The patient portal allows you to view your medical records, test results, book appointments, request tests, and make online payments securely.
+									</div>
+								</div>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+				
+				<div class="app-card app-card-accordion shadow-sm mb-4">
+					<div class="app-card-header p-4 pb-2 border-0">
+						<h4 class="app-card-title">Medical Records</h4>
+					</div>
+					<div class="app-card-body p-4 pt-0">
+						<div id="faq2-accordion" class="faq2-accordion faq-accordion accordion">
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq2-heading-1">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-1" aria-expanded="false" aria-controls="faq2-1">
+										How can I view my medical records?
+									</button>
+								</h2>
+								<div id="faq2-1" class="accordion-collapse collapse border-0" aria-labelledby="faq2-heading-1">
+									<div class="accordion-body text-start p4">
+										Log in to your patient portal and navigate to the "Medical Records" section. You can view your past test results, prescriptions, and health history.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq2-heading-2">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-2" aria-expanded="false" aria-controls="faq2-2">
+										Can I download my test results?
+									</button>
+								</h2>
+								<div id="faq2-2" class="accordion-collapse collapse border-0" aria-labelledby="faq2-heading-2">
+									<div class="accordion-body text-start p4">
+										Yes, you can download your test results in PDF format from the patient portal. Click on the "Download" button next to the test result.
+									</div>
+								</div>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+				
+				<div class="app-card app-card-accordion shadow-sm mb-4">
+					<div class="app-card-header p-4 pb-2 border-0">
+						<h4 class="app-card-title">Appointments</h4>
+					</div>
+					<div class="app-card-body p-4 pt-0">
+						<div id="faq3-accordion" class="faq3-accordion faq-accordion accordion">
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq3-heading-1">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq3-1" aria-expanded="false" aria-controls="faq3-1">
+										How do I book an appointment?
+									</button>
+								</h2>
+								<div id="faq3-1" class="accordion-collapse collapse border-0" aria-labelledby="faq3-heading-1">
+									<div class="accordion-body text-start p4">
+										You can book an appointment through the patient portal under the "Appointments" section. Select the service, choose a date and time, and confirm your booking.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq3-heading-2">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq3-2" aria-expanded="false" aria-controls="faq3-2">
+										Can I reschedule or cancel an appointment?
+									</button>
+								</h2>
+								<div id="faq3-2" class="accordion-collapse collapse border-0" aria-labelledby="faq3-heading-2">
+									<div class="accordion-body text-start p4">
+										Yes, appointments can be rescheduled or canceled through the portal, but changes must be made at least 24 hours before the scheduled time.
+									</div>
+								</div>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+				
+				<div class="app-card app-card-accordion shadow-sm mb-4">
+					<div class="app-card-header p-4 pb-2 border-0">
+						<h4 class="app-card-title">Payments</h4>
+					</div>
+					<div class="app-card-body p-4 pt-0">
+						<div id="faq4-accordion" class="faq4-accordion faq-accordion accordion">
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq4-heading-1">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq4-1" aria-expanded="false" aria-controls="faq4-1">
+										What payment methods do you accept?
+									</button>
+								</h2>
+								<div id="faq4-1" class="accordion-collapse collapse border-0" aria-labelledby="faq4-heading-1">
+									<div class="accordion-body text-start p4">
+										We accept online payments via credit/debit cards, bank transfers, and mobile payment platforms. You can complete your payment securely through the patient portal.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq4-heading-2">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq4-2" aria-expanded="false" aria-controls="faq4-2">
+										Can I get a refund if I cancel a service?
+									</button>
+								</h2>
+								<div id="faq4-2" class="accordion-collapse collapse border-0" aria-labelledby="faq4-heading-2">
+									<div class="accordion-body text-start p4">
+										Refunds are issued based on our cancellation policy. If eligible, refunds will be processed within 5-7 business days.
+									</div>
+								</div>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+
+
+				<div class="app-card app-card-accordion shadow-sm mb-4">
+					<div class="app-card-header p-4 pb-2 border-0">
+						<h4 class="app-card-title">Test Requests</h4>
+					</div>
+					<div class="app-card-body p-4 pt-0">
+						<div id="faq5-accordion" class="faq5-accordion faq-accordion accordion">
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq5-heading-1">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq5-1" aria-expanded="false" aria-controls="faq5-1">
+										How do I request a lab test online?
+									</button>
+								</h2>
+								<div id="faq5-1" class="accordion-collapse collapse border-0" aria-labelledby="faq5-heading-1">
+									<div class="accordion-body text-start p4">
+										You can request a lab test by logging into your patient portal, selecting the "Request Test" option, and choosing the test you need. Once submitted, our team will review your request and schedule a sample collection if required.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq5-heading-2">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq5-2" aria-expanded="false" aria-controls="faq5-2">
+										Do I need a doctor's prescription to request a test?
+									</button>
+								</h2>
+								<div id="faq5-2" class="accordion-collapse collapse border-0" aria-labelledby="faq5-heading-2">
+									<div class="accordion-body text-start p4">
+										Some tests require a doctor's prescription, while others can be requested directly. You will be informed during the request process if a prescription is needed.
+									</div>
+								</div>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+				
+				<div class="app-card app-card-accordion shadow-sm mb-4">
+					<div class="app-card-header p-4 pb-2 border-0">
+						<h4 class="app-card-title">Home Sample Collection</h4>
+					</div>
+					<div class="app-card-body p-4 pt-0">
+						<div id="faq6-accordion" class="faq6-accordion faq-accordion accordion">
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq6-heading-1">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq6-1" aria-expanded="false" aria-controls="faq6-1">
+										Can I schedule a home sample collection?
+									</button>
+								</h2>
+								<div id="faq6-1" class="accordion-collapse collapse border-0" aria-labelledby="faq6-heading-1">
+									<div class="accordion-body text-start p4">
+										Yes, we offer home sample collection services. You can schedule it via the website by clicking on the request a test button and then follow the on screen instructions there after or by messaging or calling our customer support team.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq6-heading-2">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq6-2" aria-expanded="false" aria-controls="faq6-2">
+										Are there additional charges for home collection?
+									</button>
+								</h2>
+								<div id="faq6-2" class="accordion-collapse collapse border-0" aria-labelledby="faq6-heading-2">
+									<div class="accordion-body text-start p4">
+										Yes, home sample collection may have additional charges depending on your location. The exact fee will be displayed when scheduling the service.
+									</div>
+								</div>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+				
+				<div class="app-card app-card-accordion shadow-sm mb-4">
+					<div class="app-card-header p-4 pb-2 border-0">
+						<h4 class="app-card-title">Insurance & Billing</h4>
+					</div>
+					<div class="app-card-body p-4 pt-0">
+						<div id="faq7-accordion" class="faq7-accordion faq-accordion accordion">
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq7-heading-1">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq7-1" aria-expanded="false" aria-controls="faq7-1">
+										Do you accept insurance for lab tests?
+									</button>
+								</h2>
+								<div id="faq7-1" class="accordion-collapse collapse border-0" aria-labelledby="faq7-heading-1">
+									<div class="accordion-body text-start p4">
+										Yes, we accept a range of insurance providers. Please check our insurance coverage section or contact our billing team for more details.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq7-heading-2">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq7-2" aria-expanded="false" aria-controls="faq7-2">
+										How can I get a receipt for my payment?
+									</button>
+								</h2>
+								<div id="faq7-2" class="accordion-collapse collapse border-0" aria-labelledby="faq7-heading-2">
+									<div class="accordion-body text-start p4">
+										After making a payment, you can download your receipt from the patient portal under the "Billing & Payments" section.
+									</div>
+								</div>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+				
+				<div class="app-card app-card-accordion shadow-sm mb-4">
+					<div class="app-card-header p-4 pb-2 border-0">
+						<h4 class="app-card-title">Account & Security</h4>
+					</div>
+					<div class="app-card-body p-4 pt-0">
+						<div id="faq8-accordion" class="faq8-accordion faq-accordion accordion">
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq8-heading-1">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq8-1" aria-expanded="false" aria-controls="faq8-1">
+										How do I reset my password?
+									</button>
+								</h2>
+								<div id="faq8-1" class="accordion-collapse collapse border-0" aria-labelledby="faq8-heading-1">
+									<div class="accordion-body text-start p4">
+										Click on "Forgot Password" on the login page and follow the steps to reset your password via email.
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="faq8-heading-2">
+									<button class="accordion-button btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq8-2" aria-expanded="false" aria-controls="faq8-2">
+										Is my health data secure?
+									</button>
+								</h2>
+								<div id="faq8-2" class="accordion-collapse collapse border-0" aria-labelledby="faq8-heading-2">
+									<div class="accordion-body text-start p4">
+										Yes, we use encryption and other security measures to protect your health data in compliance with healthcare privacy laws.
+									</div>
+								</div>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+				
+				<div class="row g-4">
+					<div class="col-12 col-md-6">
+						<div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
+							<div class="app-card-header p-3 border-bottom-0">
+								<div class="row align-items-center gx-3">
+									<div class="col-auto">
+										<div class="app-icon-holder icon-holder-mono">
+											<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-headset" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" d="M8 1a5 5 0 0 0-5 5v4.5H2V6a6 6 0 1 1 12 0v4.5h-1V6a5 5 0 0 0-5-5z"/>
+												<path d="M11 8a1 1 0 0 1 1-1h2v4a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V8zM5 8a1 1 0 0 0-1-1H2v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V8z"/>
+												<path fill-rule="evenodd" d="M13.5 8.5a.5.5 0 0 1 .5.5v3a2.5 2.5 0 0 1-2.5 2.5H8a.5.5 0 0 1 0-1h3.5A1.5 1.5 0 0 0 13 12V9a.5.5 0 0 1 .5-.5z"/>
+												<path d="M6.5 14a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1z"/>
+											</svg>
+										</div>
+									</div>
+									<div class="col-auto">
+										<h4 class="app-card-title">Need Assistance?</h4>
+									</div>
+								</div>
+							</div>
+							<div class="app-card-body px-4">
+								<div class="intro mb-3">
+									Our support team is available to help you with any questions or issues. Feel free to reach out to us!
+								</div>
+								<ul class="list-unstyled">
+									<li><strong>Phone:</strong> <a href="tel:+2347034600382" style="text-decoration: none; color: inherit;">+234 703 4600 382</a></li>
+									<li><strong>Email:</strong> <a href="mailto:support@agagelovemedicallaboratory.com">support@agagelovemedicallaboratory.com</a></li>
+								</ul>
+							</div>
+							<div class="app-card-footer p-4 mt-auto">
+								<a class="btn app-btn-secondary" href="/contact">Contact Us</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </div><!--//container-fluid-->
+	    </div><!--//app-content-->
+    </div><!--//app-wrapper-->  
+	
+	<!-- Footer Start -->
+    <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <div class="col-lg-6 pe-lg-5">
+                    <a href="/" class="navbar-brand">
+                        <h1 class="h1 text-primary mb-0">AM<span class="text-white">LAD</span></h1>
+                    </a>
+                    <p class="fs-5 mb-4">
+                        At Agapelove Medical Laboratory, we are committed to providing reliable, accurate
+                        diagnostics and exceptional care. Your health is our priority.
+                    </p>
+
+                    <p><i class="fa fa-map-marker-alt me-2"></i>79a Afikpo Road, Abakaliki Ebonyi
+                        State, Nigeria</p>
+                    <p><i class="fa fa-phone-alt me-2"></i><a href="tel:+2347034600382" style="text-decoration: none; color: inherit;">+234 703 4600 382</a></p>
+                    <p><i class="fa fa-envelope me-2"></i><a href="mailto:agagelovemedicallab@gmail.com"><span>agapelovemedicallab@gmail.com</span></a></p>
+                    <div class="d-flex mt-4">
+                        <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="row g-5">
+                        <div class="col-sm-6">
+                            <h4 class="text-light mb-4">Quick Links</h4>
+                            <a class="btn btn-link" href="/about">About Us</a>
+                            <a class="btn btn-link" href="/contact">Contact Us</a>
+                            <a class="btn btn-link" href="/service">Our Services</a>
+                            <a class="btn btn-link" href="/faq">FAQ</a>
+                            <a class="btn btn-link" href="/patient-login">Sign In</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4 class="text-light mb-4">Popular Links</h4>
+                            <a class="btn btn-link" href="/api/posts/all/blog-list">Our Blog</a>
+                            <a class="btn btn-link" href="/resource">Resources</a>
+                            <a class="btn btn-link" href="/career">Career</a>
+                            <a class="btn btn-link" href="/our-team">Our Team</a>
+                            <a class="btn btn-link" href="/book-appointment">Appoinment</a>
+                            <a class="btn btn-link" href="/testimonials">Testimonial</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4 class="text-light mb-4">Legal</h4>
+                            <a class="btn btn-link" href="/terms-of-service">Terms & Condition</a>
+                            <a class="btn btn-link" href="/privacy-policy">Policy</a>
+                            <a class="btn btn-link" href="/cookie">Cookies</a>
+                        </div>
+                        <div class="col-sm-12">
+                            <h4 class="text-light mb-4">Newsletter</h4>
+                            <div class="w-100">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-0 py-3 px-4"
+                                        style="background: rgba(255, 255, 255, .1);"
+                                        placeholder="Your Email Address"><button class="btn btn-primary px-4">Sign
+                                        Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; <span id="get-year"></span> <a href="/">AMLAD</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed & Developed by <a href="https://decrowncares-sol.com.ng" target="_blank">DSL</a>
+                    </p>
+                </div>
+                <script>
+                    document.getElementById('get-year').innerHTML = new Date().getFullYear();
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+     <!-- Floating Chat Support Button -->
+<div id="chat-support-widget" class="d-none">
+    <div id="chat-button">
+        <i class="bi bi-whatsapp"></i>
+        <span>Message Us</span>
+    </div>
+</div>
+<!-- Hidden Chat Window -->
+<div id="chat-window">
+    <div class="chat-header">
+        <img src="img/AMLAD-LOGO.jpg" alt="Lab Logo" />
+        <div>
+            <h6>AMLAD</h6>
+            <small class="online-status">Online</small>
+        </div>
+        <span class="close-chat">&times;</span>
+    </div>    
+    <div class="chat-body">
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" style="display: none;">
+            <div class="lab-message-sender" style="color: #8a91acd4; font-size: 10px; margin-right: 5px;">AMLAD</div>
+            <span></span><span></span><span></span>
+        </div>
+    
+        <!-- Lab Message -->
+        <div class="lab-message" style="display: none;">
+            <div class="lab-message-sender" style="color: #8a91acd4; font-size: 10px;">AMLAD</div>
+            Hi there 👋!<br />
+            How can we help you?
+        </div>
+    </div>
+    <div class="chat-footer">
+        <button id="startChatBtn"><i class="bi bi-whatsapp"></i> Start Chat</button>
+    </div>
+</div>
+
+<audio id="chatSound" src="/sounds/notification-1-269296.mp3" preload="auto"></audio>
+
+<div id="notification-popup" class="notification-popup">
+    <div class="popup-content">
+        <img src="img/AMLAD-LOGO.jpg" alt="Lab Logo" />
+        <h2>Stay Updated!</h2>
+        <p>Would you like to receive notifications on our latest updates and promotions?</p>
+        <button id="allow-notifications">Allow</button>
+        <button id="deny-notifications">No, Thanks</button>
+    </div>
+</div>
+
+<div id="notification" class="notification bottom-right"></div>
+
+	
+	
+
+	  <!-- Back to Top -->
+	  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+	  <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '5898b3dbf83a84684a9910c1889ab2cbcdea55d5';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+	
+
+	  <!-- JavaScript Libraries -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+	  <script src="lib/wow/wow.min.js"></script>
+	  <script src="lib/easing/easing.min.js"></script>
+	  <script src="lib/waypoints/waypoints.min.js"></script>
+	  <script src="lib/counterup/counterup.min.js"></script>
+	  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+	  <!-- Template Javascript -->
+	  <script src="js/main.js"></script>
+
+</body>
+</html> 
+

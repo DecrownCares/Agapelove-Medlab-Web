@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .email-header {
+            background-color: #6a0dad;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .email-header h1 {
+            color: #ffffff;
+            font-weight: 400;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .email-body {
+            padding: 20px;
+        }
+
+        .email-body h2 {
+            color: #007BFF;
+            margin-top: 0;
+        }
+
+        .email-body p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .email-body a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .email-body a:hover {
+            text-decoration: underline;
+        }
+
+        .niches-section {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f1f1f1;
+            border-left: 4px solid #007BFF;
+        }
+
+        .niche-item {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .email-footer {
+            background-color: #f1f1f1;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            border-radius: 8px;
+        }
+
+        .email-footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .email-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            max-width: 250px;
+        }
+
+        .logo-slogan {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .logo-slogan img {
+            width: 100px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .logo-slogan p {
+            margin-top: 5px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100%;
+                margin: 10px;
+            }
+
+            .email-header h1 {
+                font-size: 20px;
+            }
+
+            .email-body p {
+                font-size: 14px;
+            }
+
+            .email-body h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <!-- Header Section -->
+        <div class="email-header">
+            <h1>RE: {{subject}}</h1>
+        </div>
+
+        <!-- Body Section -->
+        <div class="email-body">
+            <h3>Hello {{recipientName}},</h3>
+            <br>
+            <!-- <blockquote style="background-color: #f9f9f9; padding: 10px 20px; font-size: 15px; border-left: 4px solid #6a0dad; margin: 0; line-height: 1.8;"> -->
+                <p>{{replyContent}}</p>
+            <!-- </blockquote> -->
+            <br>
+            <p>Best regards,</p>
+            <h4>{{supportName}}</h4>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="email-footer">
+            <p>
+            <p>If you have any questions or need further assistance, please don't hesitate to reach out to our support
+                team at
+                <a href="mailto:support@crowntips.com">support@crowntips.com</a>.
+            </p>
+            <p>Thank you for contacting us! We appreciate your time and look forward to assisting you further.</p>
+            </p>
+            <!-- social meadia handle icons -->
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/YourPage" target="_blank">Facebook</a></li>
+                <li><a href="https://www.twitter.com/YourHandle" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/YourProfile" target="_blank">Instagram</a></li>
+            </ul>
+            <div class="logo-slogan">
+                <img src="./images/CROWNTIPS_LOGO_3.png" alt="Crowntips Logo" onerror="this.style.display='none';">
+                <p>&copy; 2024 Crowntips. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
