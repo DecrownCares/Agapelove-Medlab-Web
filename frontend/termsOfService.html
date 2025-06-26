@@ -78,10 +78,21 @@
         }
 
         footer {
-            margin-top: 20px;
             text-align: center;
-            font-size: 0.9rem;
-            color: #666;
+            padding: 10px 0;
+            background: #00796B;
+            color: white;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        a {
+            color: #38b17a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -134,7 +145,7 @@
 
         <section>
             <h2>6. Data Protection & Privacy</h2>
-            <p>Your personal and medical data is handled according to our <a href="privacy-policy.html">Privacy Policy</a>. We implement strict security measures to protect patient information.</p>
+            <p>Your personal and medical data is handled according to our <a style="text-decoration: none; color: #039be5;" href="privacy-policy">Privacy Policy</a>. We implement strict security measures to protect patient information.</p>
         </section>
 
         <section>
@@ -171,15 +182,27 @@
             <h2>12. Contact Information</h2>
             <p>For inquiries, please contact us:</p>
             <ul>
-                <li>Email: <a href="mailto:support@amlad.com.ng">support@amlad.com.ng</a></li>
-                <li>Phone: +234-802-555-4150</li>
-                <li>Address: 123 AMLAD Street, Lagos, Nigeria</li>
+                <li>Email: <a style="text-decoration: none; color: #039be5;" href="mailto:agapelovemedicallab@gmail.com">agapelovemedicallab@gmail.com</a></li>
+                <li>Phone: +234 703 4600 382</li>
+                <li>Address: 79a Afikpo Road Abakaliki, Ebonyi, Nigeria</li>
             </ul>
         </section>
 
         <footer>
-            <p>&copy; 2025 Agapelove Medical Laboratory and Diagnostic Ltd (AMLAD). All Rights Reserved.</p>
-        </footer>
+        <div class="container-fluid copyright bg-dark text-white-50 py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; <span id="get-year"></span> <a href="/">AMLAD</a>. All Rights Reserved.</p>
+                    </div>
+                    <script>
+                        document.getElementById('get-year').innerHTML = new Date().getFullYear();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+    </footer>
     </main>
 </body>
 

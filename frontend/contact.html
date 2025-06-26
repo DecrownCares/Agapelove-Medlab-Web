@@ -165,8 +165,32 @@
                     <!-- search feature  -->
                     <div class="d-flex align-items-center ms-auto">
                         <!-- <input type="text" class="form-control me-2" placeholder="Search"> -->
-                        <button class="btn btn-primary me-2">Request A Test</button>
+                        <button class="btn btn-primary me-2" type="button" data-bs-toggle="modal"
+                            data-bs-target="#featureModal">Request A Test</button>
+
                     </div>
+
+                    <div class="modal fade" id="featureModal" tabindex="-1" aria-labelledby="featureModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-header bg-warning-subtle">
+                    <h5 class="modal-title" id="featureModalLabel">Feature Coming Soon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-3">🚧 This feature is currently <strong>unavailable</strong>, but it will be available
+                        very soon.</p>
+                    <p>We value your input! 🗣️ Please <a href="#contact" class="text-decoration-underline">chat</a> or
+                        <a href="#contact" class="text-decoration-underline">write to us</a> to tell us how you'd like
+                        this feature to serve your needs and enhance your lab experience.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#contact" class="btn btn-success">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
                     <!-- social media icons  -->
                     <div class="ms-auto d-none d-lg-flex">
                         <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-facebook-f"></i></a>
@@ -211,7 +235,7 @@
                     </div>
                     <div class="ms-3">
                         <h5 class="text-white">Call Us</h5>
-                        <h2 class="text-white mb-0">+234 803 123 4567</h2>
+                        <h2 class="text-white mb-0">+234 703 4600 382</h2>
                     </div>
                 </a>
             </div>
@@ -222,7 +246,7 @@
                     </div>
                     <div class="ms-3">
                         <h5 class="text-white">Email Us</h5>
-                        <h2 class="text-white mb-0">agapelovemedicallab@gmail.com</h2>
+                        <h2 class="text-white mb-0 text-break">agapelovemedicallab@gmail.com</h2>
                     </div>
                 </a>
             </div>
