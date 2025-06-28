@@ -127,6 +127,7 @@ app.get('/', async (req, res) => {
   app.get('/reset-password', activityLogger('pageView'), logActivity, (req, res) =>
     res.sendFile(path.join(__dirname, '..',  'frontend','reset-password.html'))
   );
+app.get('/new-password', (req, res) => res.sendFile(path.join(__dirname, '..', 'frontend', 'new-password.html')));
   app.get('/new-password', activityLogger('pageView'), logActivity, (req, res) =>
     res.sendFile(path.join(__dirname, '..',  'frontend', 'resetPassword.html'))
   );
