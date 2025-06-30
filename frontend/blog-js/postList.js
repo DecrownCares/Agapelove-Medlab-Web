@@ -236,7 +236,7 @@ async function fetchPosts(category = null, trending = false, searchQuery = '', p
 
     // Updated logic to display categories in order of their popularity score
     const categories = [
-      "Chemistry", "Microbiology", "Haematology", "Serology", "Scan Investigation"
+      "Health News", "Health Tips", "Trending Topics"
     ];
 
     // Create an array of categories with their scores

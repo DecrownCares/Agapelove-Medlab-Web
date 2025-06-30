@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Predefined CTA buttons
-  const ctaButtons = ["Call Now", "Visit", "Buy Now", "Click Link", "Learn More"];
+  const ctaButtons = ["Click Link", "Learn More"];
 
   async function fetchAds() {
     try {
@@ -1026,7 +1026,7 @@ async function fetchPosts() {
       const postElement = document.createElement("div");
       postElement.className = "post";
 
-      const imageUrl = post.image ? `https://agapelove-medlab-ms.onrender.com${post.image}` : 'default-image-path.jpg';
+      const imageUrl = post.image || 'default-image-path.jpg';
       const authorName = post.author ? post.author.fullName : 'Unknown Author';
       let sponsoredLabel = post.isSponsored
     ? '<div class="badge bg-warning text-dark position-absolute top-0 start-0 m-2"><i class="fas fa-bullhorn"></i> Sponsored</div>'
