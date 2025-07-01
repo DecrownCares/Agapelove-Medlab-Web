@@ -163,7 +163,7 @@ app.get('/new-password', (req, res) => res.sendFile(path.join(__dirname, '..', '
   );
   app.get('/faq', activityLogger('pageView'), logActivity, (req, res) =>
     res.sendFile(path.join(__dirname, '..', 'frontend', 'help.html'))
-  );
+  ); 
   app.get('/notifications', activityLogger('pageView'), logActivity, (req, res) =>
     res.sendFile(path.join(__dirname, '..', 'frontend', 'notifications.html'))
   );  
