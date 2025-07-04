@@ -232,6 +232,9 @@ app.get('/new-password', (req, res) => res.sendFile(path.join(__dirname, '..', '
   app.get('/test-details', activityLogger('pageView'), logActivity, (req, res) =>
     res.sendFile(path.join(__dirname, '..', 'frontend', 'tests-view-page.html'))
   );
+app.get('/sitemap.xml', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'frontend', 'sitemap.xml'));
+});
   
 
 // Public API routes
