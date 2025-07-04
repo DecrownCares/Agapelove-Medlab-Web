@@ -1,66 +1,6 @@
 {
   "categories": [
-    {
-      "category": "Pathology Testing",
-      "tests": [
-        {
-          "id": "pathology-testing",
-          "name": "Pathology Testing",
-          "subName": "Pathology",
-          "description": "Advanced pathology testing provides precise, reliable results to support accurate diagnoses and effective treatment plans.",
-          "fullDetails": "Pathology testing is a critical component of modern medicine, serving as the foundation for diagnosing and treating various health conditions. At Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD), we leverage cutting-edge technology to provide precise, reliable, and timely pathology results, ensuring that every patient receives the best care possible.",
-          "sections": [
-            {
-              "title": "🔬 Understanding Pathology Testing",
-              "content": "Our pathology services help in the detection, diagnosis, and monitoring of diseases by analyzing tissues, blood, and other bodily fluids. Our highly advanced pathology department is equipped to deliver exceptional accuracy in test results."
-            },
-            {
-              "title": "🧬 What is Pathology?",
-              "content": "Pathology is the branch of medicine that studies the causes and effects of diseases. It plays a vital role in understanding how diseases develop, spread, and respond to treatments."
-            },
-            {
-              "title": "🏆 Why Choose AMLAD for Pathology Testing?",
-              "content": "At Agapelove Medical Laboratory & Diagnostics Ltd, we prioritize:\n-  ✅ Efficiency in delivering reports\n- ✅ Cutting-edge equipment and expert pathologists\n- ✅ Fast turnaround time for patient care",
-              "content": [
-                "✅ Accuracy in test results\n-",
-                "✅ Efficiency in delivering reports",
-                "✅ Cutting-edge equipment and expert pathologists",
-                "✅ Fast turnaround time for patient care"
-              ]
-            },
-            {
-              "title": "📌 How Pathology Testing Works",
-              "content": [
-                "🩸 Sample Collection – A medical professional collects a sample.",
-                "🧪 Processing & Examination – The sample is analyzed using specialized equipment.",
-                "📋 Interpretation by Pathologists – Experts review and generate a report.",
-                "📤 Report Delivery – Results are sent for consultation.",
-                "🏥 Follow-Up & Treatment – A treatment plan is developed if needed."
-              ]
-            },
-            {
-              "title": "🏥 Common Conditions Diagnosed Through Pathology Testing",
-              "content": [
-                "🩸 Blood Disorders",
-                "🦠 Infectious Diseases",
-                "🦠 Cancer Detection",
-                "🫁 Autoimmune Disorders",
-                "🫀 Cardiovascular Conditions"
-              ]
-            }
-          ],
-          "contact": {
-            "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
-            "email": "agapelovemedicallab@gmail.com"
-          },
-          "cta": "Book an Appointment Now",
-          "image": "img/pathology-tes-img.jpg"
-        }
-      ]
-    },
-
-    {
+ {
       "category": "Microbiology Testing",
       "tests": [
         {
@@ -120,7 +60,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book an Appointment Now",
@@ -191,7 +131,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book an Appointment Now",
@@ -260,7 +200,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book an Appointment Now",
@@ -334,7 +274,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book an Appointment Now",
@@ -364,6 +304,9 @@
                 "Urinary Tract Infections (UTIs) 🦠",
                 "Diabetes Monitoring 🩸",
                 "Dehydration 💧",
+                "Urine Acidity and Alkalinity 🔬",
+                "Ketonuria 🔬",
+                "Cystinuria 🔬",
                 "Protein or Blood in Urine 🔬"
               ]
             },
@@ -371,7 +314,7 @@
               "title": "🏆 Why Choose AMLAD for Urine Testing?",
               "content": [
                 "✅ Non-invasive and easy testing method",
-                "✅ Highly accurate and fast results",
+                "✅ Automation for highly accurate and fast results",
                 "✅ Expert analysis by experienced medical professionals",
                 "✅ Comprehensive test reports for better diagnosis and treatment"
               ]
@@ -403,82 +346,11 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book an Appointment Now",
           "image": "img/urine-testing.jpg"
-        }
-      ]
-    },
-
-    {
-      "category": "Blood Testing",
-      "tests": [
-        {
-          "id": "blood-testing",
-          "name": "Blood Tests",
-          "subName": "Blood Analysis",
-          "description": "Our blood tests offer vital information about your health status, helping to detect early signs of diseases and ensure timely treatment.",
-          "fullDetails": "Blood testing is one of the most essential diagnostic tools in modern medicine. It provides crucial insights into your overall health, enabling the detection of various conditions such as infections, anemia, diabetes, and heart disease. At Agapelove Medical Laboratory & Diagnostics Ltd (AMLAD), we use state-of-the-art technology to perform accurate and comprehensive blood tests that support effective diagnoses and treatment planning.",
-          "sections": [
-            {
-              "title": "🔬 Understanding Blood Testing",
-              "content": "Blood tests are laboratory tests that analyze a sample of your blood to help detect medical conditions and evaluate organ function. They are key in diagnosing infections, checking for chronic diseases, and monitoring medication effects."
-            },
-            {
-              "title": "🧬 Key Conditions Diagnosed Through Blood Testing",
-              "content": [
-                "Anemia 🩸",
-                "Diabetes 🧬",
-                "Heart Disease 💖",
-                "Infections 🦠",
-                "Liver Disease 🍋",
-                "Kidney Disease 🧑‍⚕️"
-              ]
-            },
-            {
-              "title": "🏆 Why Choose AMLAD for Blood Testing?",
-              "content": [
-                "✅ Comprehensive range of blood tests available",
-                "✅ High accuracy and reliability",
-                "✅ Fast result turnaround for timely decision-making",
-                "✅ Expert interpretation of results by qualified professionals",
-                "✅ Safe and hygienic testing process"
-              ]
-            },
-            {
-              "title": "📌 How Blood Testing Works",
-              "content": [
-                "1️⃣ Sample Collection – Blood is drawn from a vein in your arm by a trained phlebotomist.",
-                "2️⃣ Laboratory Analysis – The sample is analyzed using specialized laboratory equipment to measure different parameters.",
-                "3️⃣ Result Interpretation – Blood test results are carefully examined by qualified medical professionals.",
-                "4️⃣ Report Generation – A detailed blood test report is generated.",
-                "5️⃣ Follow-Up – Based on the results, further testing or treatment may be recommended."
-              ]
-            },
-            {
-              "title": "🏥 Common Tests Included in Blood Testing",
-              "content": [
-                "Complete Blood Count (CBC) 🩸",
-                "Blood Sugar Level Tests 🍬",
-                "Cholesterol Profile 🫀",
-                "Liver Function Tests 🍊",
-                "Kidney Function Tests 🧑‍⚕️"
-              ]
-            },
-            {
-              "title": "🧬 Importance of Blood Testing",
-              "content": "Blood testing is a vital tool for the early detection of health conditions. It helps in identifying risks related to chronic diseases, such as heart disease and diabetes, and allows healthcare providers to monitor your health status over time."
-            }
-          ],
-          "contact": {
-            "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
-            "email": "agapelovemedicallab@gmail.com"
-          },
-          "cta": "Book an Appointment Now",
-          "image": "img/blood-testing.jpg"
         }
       ]
     },
@@ -500,11 +372,12 @@
             {
               "title": "🧬 Key Causes of Fever",
               "content": [
-                "Bacterial Infections 🦠",
-                "Viral Infections 🦠",
-                "Inflammatory Diseases 🧬",
+                "Malaria Parasites including Plasmodium Falciparum, Plasmodium Ovale, Plasmodium Malarie etc🦠",
+                "Bacterial Infections 🦠 like Tiphoid Fever, Community Acquired Pneumonias etc. ",
+                "Viral Infections 🦠 like Viral Haemorragic Fever (VHF) e.g Lassa Fever, Hepatitis Virus",
+                "Inflammatory Diseases 🧬 like Rheumatoid Arthritis",
                 "Heatstroke ☀️",
-                "Medications Reactions 💊"
+                "Medication Reactions 💊"
               ]
             },
             {
@@ -532,6 +405,8 @@
               "content": [
                 "Malaria 🦠",
                 "Typhoid Fever 💉",
+                "Pheumonia Fever 💉",
+                "Lassa Fever 💉",
                 "Tuberculosis 🫁",
                 "Dengue Fever 🦟",
                 "COVID-19 🦠"
@@ -544,7 +419,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book an Appointment Now",
@@ -613,7 +488,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book an Appointment Now",
@@ -668,7 +543,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book a Paternity Test Now",
@@ -703,7 +578,7 @@
             {
               "title": "🏆 Why Choose AMLAD for Mycobacteria PCR?",
               "content": [
-                "✅ Rapid and accurate diagnosis of mycobacterial infections",
+                "✅ Rapid and accurate diagnosis of mycobacterial infections using gene xpert machine",
                 "✅ High sensitivity for detecting early or latent infections",
                 "✅ Utilizes state-of-the-art PCR technology",
                 "✅ Suitable for both symptomatic and asymptomatic patients",
@@ -725,7 +600,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book a Mycobacteria PCR Test Now",
@@ -733,6 +608,207 @@
         }
       ]
     },
+
+    {
+  "category": "Fertility Testings",
+  "tests": [
+    {
+      "id": "fertility-testing",
+      "name": "Fertility Testing",
+      "subName": "Hormonal & Reproductive Health",
+      "description": "Comprehensive fertility testing for males and females to assess reproductive health and improve chances of conception.",
+      "fullDetails": "Our fertility testing services at Agapelove Medical Laboratory & Diagnostics Ltd are designed to help couples and individuals understand their reproductive health. We offer a wide range of hormone and semen analysis tests to evaluate fertility status and identify possible underlying conditions that may affect conception. Early and accurate diagnosis plays a key role in effective fertility treatment and family planning.",
+      "sections": [
+        {
+          "title": "🧪 What is Fertility Testing?",
+          "content": "Fertility testing involves a series of lab investigations that assess hormonal levels, reproductive organ function, and overall fertility status in both men and women. It is essential for identifying causes of infertility and planning treatment options."
+        },
+        {
+          "title": "🔍 Types of Fertility Tests We Offer",
+          "content": [
+            "👩‍⚕️ Female Hormonal Profile – FSH, LH, Prolactin, Estradiol (E2), AMH, TSH, and more.",
+            "👨 Semen Analysis – Volume, sperm count, motility, morphology.",
+            "🧬 Progesterone & Estrogen Testing – For ovulation and cycle monitoring.",
+            "🩺 Pelvic & Transvaginal Ultrasound – To assess ovaries and uterus (optional referral)."
+          ]
+        },
+        {
+          "title": "💡 Benefits of Fertility Testing at AMLAD",
+          "content": [
+            "✅ Accurate hormone testing with quick turnaround time",
+            "✅ Confidential and compassionate care",
+            "✅ Detailed semen analysis using advanced equipment",
+            "✅ Fertility counseling and lab support for treatment planning",
+            "✅ Ideal for couples trying to conceive or exploring IVF/IUI options"
+          ]
+        },
+        {
+          "title": "📌 Common Reasons for Fertility Testing",
+          "content": [
+            "⏳ Difficulty conceiving after 6–12 months of trying",
+            "📉 Irregular or absent menstrual cycles",
+            "⚠️ History of miscarriage or pregnancy complications",
+            "🧫 Suspected hormonal imbalance or PCOS",
+            "🧍‍♂️ Low sperm count or poor sperm quality"
+          ]
+        },
+        {
+          "title": "🌟 Why Choose AMLAD for Fertility Tests?",
+          "content": "At Agapelove Medical Laboratory in Abakaliki, we combine science and sensitivity to provide accurate, reliable fertility tests. Whether you're preparing for assisted reproductive treatment or seeking clarity on your reproductive health, our lab is here to support your journey to parenthood."
+        }
+      ],
+      "contact": {
+        "address": "79a Afikpo Road, Abakaliki",
+        "phone": "+234 703 4600 382",
+        "email": "agapelovemedicallab@gmail.com"
+      },
+      "cta": "Schedule Your Fertility Test Today",
+      "image": "img/fertility-testing.webp"
+    }
+  ]
+},
+
+
+{
+  "category": "IUI (Intra Uterine Insemination)",
+  "tests": [
+    {
+      "id": "iui-procedure",
+      "name": "Intra Uterine Insemination (IUI)",
+      "subName": "Fertility Treatment Preparation & Procedure",
+      "description": "IUI is a fertility procedure that places processed sperm directly into the uterus to enhance the chances of conception.",
+      "fullDetails": "Intra Uterine Insemination (IUI) is a widely-used fertility treatment that involves placing specially prepared sperm directly into a woman’s uterus during ovulation. The procedure is designed to increase the number of sperm that reach the fallopian tubes, thereby improving the chances of fertilization. At Agapelove Medical Laboratory & Diagnostics Ltd in Abakaliki, we provide essential diagnostic support and preparation for couples undergoing IUI, including hormone monitoring, ovulation tracking, and semen processing.",
+      "sections": [
+        {
+          "title": "💡 What is IUI?",
+          "content": "IUI, or Intra Uterine Insemination, is a simple and non-invasive fertility procedure used to help couples who are experiencing difficulty conceiving. It is often recommended for cases of mild male infertility, unexplained infertility, or cervical factor infertility."
+        },
+        {
+          "title": "🧪 IUI Preparation Services at AMLAD",
+          "content": [
+            "📅 Ovulation Tracking – Hormonal assays (LH surge, progesterone) to identify the fertile window.",
+            "🧬 Semen Analysis – Evaluation of sperm count, motility, and morphology.",
+            "🔬 Semen Washing – Sperm is processed to concentrate motile sperm for IUI.",
+            "🩸 Hormone Testing – FSH, LH, Estradiol, Progesterone to support timing and cycle planning.",
+            "📈 Ultrasound Monitoring (Referral-based) – Assesses follicle development (optional)."
+          ]
+        },
+        {
+          "title": "⚙️ IUI Procedure Steps",
+          "content": [
+            "1️⃣ Ovulation Induction (if needed) – Medications may be used to stimulate egg release.",
+            "2️⃣ Monitoring – Blood tests and scans to determine ovulation timing.",
+            "3️⃣ Semen Preparation – Sperm is washed and concentrated at our lab.",
+            "4️⃣ Insemination – Prepared sperm is introduced directly into the uterus using a sterile catheter."
+          ]
+        },
+        {
+          "title": "✅ Why Choose AMLAD for IUI Support?",
+          "content": [
+            "✅ Accurate hormone and semen diagnostics",
+            "✅ Fertility-focused lab procedures to support IUI success",
+            "✅ Compassionate care in a confidential environment",
+            "✅ Located in Abakaliki with easy access for fertility couples"
+          ]
+        },
+        {
+          "title": "👩‍❤️‍👨 Ideal Candidates for IUI",
+          "content": [
+            "📉 Unexplained infertility",
+            "🧫 Mild male factor infertility (low motility or count)",
+            "⚠️ Cervical mucus problems",
+            "⏳ Couples who want a less invasive option before IVF"
+          ]
+        },
+        {
+          "title": "📍 IUI in Abakaliki – AMLAD’s Role",
+          "content": "Agapelove Medical Laboratory provides crucial lab support for IUI cycles. While the insemination is usually performed by a fertility specialist, our laboratory plays a vital role in monitoring ovulation, performing hormone analysis, and preparing sperm for insemination – all of which significantly enhance the chances of a successful outcome."
+        }
+      ],
+      "contact": {
+        "address": "79a Afikpo Road, Abakaliki",
+        "phone": "+234 703 4600 382",
+        "email": "agapelovemedicallab@gmail.com"
+      },
+      "cta": "Get Started with IUI Preparation Today",
+      "image": "img/iui-procedure.webp"
+    }
+  ]
+},
+
+{
+  "category": "Research Works",
+  "tests": [
+    {
+      "id": "research-works",
+      "name": "Research Works & Academic Support",
+      "subName": "Biomedical, Public Health, Clinical & Laboratory Research",
+      "description": "Comprehensive research support services for students, professionals, and institutions in biomedical, clinical, and health-related fields.",
+      "fullDetails": "Agapelove Medical Laboratory & Diagnostics Ltd in Abakaliki offers professional support for research projects across health and life sciences. Whether you're a student working on a final year project, a postgraduate conducting thesis research, or an institution seeking lab collaboration, we provide high-quality laboratory testing, data analysis, and consultation. Our services support both primary lab-based investigations and secondary data-driven research, ensuring credibility and accuracy.",
+      "sections": [
+        {
+          "title": "📘 What We Offer for Research Works",
+          "content": [
+            "🎓 Final year project support (ND, HND, BSc, MSc, PhD)",
+            "🔬 Laboratory-based data collection and experiments",
+            "📊 Data analysis using SPSS, Excel, R, and Python",
+            "🧾 Results interpretation and research guidance",
+            "🗂 Ethical documentation and project assistance"
+          ]
+        },
+        {
+          "title": "📚 Research Areas We Cover",
+          "content": [
+            "🧬 Microbiology and Molecular Biology",
+            "💉 Clinical Chemistry and Hematology",
+            "🧫 Parasitology and Pathology",
+            "🌍 Public Health and Epidemiology",
+            "👩‍⚕️ Reproductive and Fertility Research"
+          ]
+        },
+        {
+          "title": "🔧 How We Assist Researchers",
+          "content": [
+            "1️⃣ Sample collection and lab test execution",
+            "2️⃣ Providing standard lab results and documentation",
+            "3️⃣ Guidance on methodology and data presentation",
+            "4️⃣ Assistance in structuring results and discussions",
+            "5️⃣ Expert review and final touch-up for defense or publication"
+          ]
+        },
+        {
+          "title": "🎯 Why AMLAD for Research Support?",
+          "content": [
+            "✅ Access to experienced lab scientists and research consultants",
+            "✅ Availability of standard diagnostic and testing equipment",
+            "✅ Ethical, timely, and academic-friendly services",
+            "✅ Located in Abakaliki with affordable student packages"
+          ]
+        },
+        {
+          "title": "📌 Who Can Benefit?",
+          "content": [
+            "🎓 Undergraduates and Postgraduates in medical and life sciences",
+            "🏥 Health institutions conducting field research",
+            "🧪 Independent researchers needing lab validation",
+            "📄 NGOs and research-based projects"
+          ]
+        },
+        {
+          "title": "🏛️ Research Works at AMLAD",
+          "content": "At Agapelove Medical Laboratory & Diagnostics Ltd, we understand the importance of quality and precision in academic and clinical research. We provide hands-on lab support and expert-backed research collaboration to promote credible and publishable work. From practical lab experiments to statistical data analysis, AMLAD is your trusted partner for research in Abakaliki."
+        }
+      ],
+      "contact": {
+        "address": "79a Afikpo Road, Abakaliki",
+        "phone": "+234 703 4600 382",
+        "email": "agapelovemedicallab@gmail.com"
+      },
+      "cta": "Start Your Research Project with AMLAD Today",
+      "image": "img/research-works.jpg"
+    }
+  ]
+},
 
     {
       "category": "Viral Load",
@@ -782,7 +858,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book a Viral Load Test Now",
@@ -840,7 +916,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book a Sequencing Test Now",
@@ -898,7 +974,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book a Sequence Analysis Test Now",
@@ -957,7 +1033,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book a DNA Extraction Test Now",
@@ -1016,7 +1092,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book a PCR Test Now",
@@ -1072,7 +1148,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book a DNA/RNA Measurement Now",
@@ -1130,7 +1206,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book a Genetic Mutation Test Now",
@@ -1187,7 +1263,7 @@
           ],
           "contact": {
             "address": "79a Afikpo Road, Abakaliki",
-            "phone": "+012 345 67890",
+            "phone": "+234 703 4600 382",
             "email": "agapelovemedicallab@gmail.com"
           },
           "cta": "Book a Disease Screening Now",

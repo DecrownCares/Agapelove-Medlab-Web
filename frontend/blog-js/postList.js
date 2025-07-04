@@ -1,6 +1,6 @@
 
 
-
+ 
 function showNotificationCenter(message, type = 'warning', position = 'center-overlay', timeout = 5000) {
   const notification = document.getElementById('notification');
   notification.className = `notification ${type} ${position} show`;

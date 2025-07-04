@@ -87,6 +87,7 @@ const adsRoutes = require('./routes/adsRoutes');
 const applicationRoutes = require('./routes/applicationRoutes');
 const rootRoutes = require('./routes/root');
 const reviewsRoutes = require("./routes/reviewsRoutes");
+const testRoutes = require("./routes/testRoutes");
  
 // Serve Home HTML page
 // app.get('/', activityLogger('visitor'), logActivity, (req, res) =>
@@ -250,6 +251,7 @@ app.use('/api/cookie', express.json(), cookiesRoutes);
 app.use('/api/ads', express.json(), adsRoutes);
 app.use('/api/applications', express.json(), applicationRoutes);
 app.use('/api/reviews', express.json(), reviewsRoutes);
+app.use('/api/test', express.json(), testRoutes);
 app.use('/', rootRoutes);
 
 // Fallback 404 handler (MUST be placed after all pages and routes)
