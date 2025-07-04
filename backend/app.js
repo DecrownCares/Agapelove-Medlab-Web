@@ -195,7 +195,7 @@ app.get('/new-password', (req, res) => res.sendFile(path.join(__dirname, '..', '
   app.get('/vacancy', activityLogger('pageView'), logActivity, (req, res) =>
     res.sendFile(path.join(__dirname, '..', 'frontend', 'vacancy.html'))
   );
-  app.get('/resource', activityLogger('pageView'), logActivity, (req, res) =>
+  app.get('/resources', activityLogger('pageView'), logActivity, (req, res) =>
     res.sendFile(path.join(__dirname, '..', 'frontend', 'resource.html'))
   );
   // app.get('/client-testimonial', activityLogger('pageView'), logActivity, (req, res) =>
