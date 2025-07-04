@@ -233,7 +233,7 @@ app.get('/new-password', (req, res) => res.sendFile(path.join(__dirname, '..', '
     res.sendFile(path.join(__dirname, '..', 'frontend', 'tests-view-page.html'))
   );
 app.get('/sitemap.xml', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'frontend', 'sitemap.xml'));
+  res.sendFile(path.join(__dirname, '..', 'sitemap.xml'));
 });
   
 
