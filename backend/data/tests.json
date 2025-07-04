@@ -84,16 +84,28 @@
               "content": "Biochemistry testing focuses on measuring the chemical substances and metabolic markers in your blood, urine, and other bodily fluids. These tests help us understand how well your body is functioning and whether any organs or systems are out of balance."
             },
             {
-              "title": "🧬 Key Biochemical Markers Tested",
-              "content": [
-                "Blood Glucose 🩸",
-                "Cholesterol 🧬",
-                "Electrolytes (Sodium, Potassium) 🧪",
-                "Liver Function Tests (ALT, AST, Bilirubin) 🏥",
-                "Kidney Function Tests (Creatinine, Urea) 🧬",
-                "Proteins (Albumin, Total Protein) 🔬"
-              ]
-            },
+  "title": "🧬 Key Biochemical Markers Tested",
+  "content": [
+    "🩸 Blood Glucose – For diabetes screening and monitoring",
+    "🧬 Cholesterol Profile – Including Total Cholesterol, HDL, LDL, Triglycerides",
+    "🧪 Electrolytes – Sodium, Potassium, Chloride, Bicarbonate",
+    "🏥 Liver Function Tests – ALT, AST, ALP, GGT, Bilirubin, Albumin, Total Protein",
+    "🧬 Kidney Function Tests – Creatinine, Urea, eGFR, BUN",
+    "🔬 Proteins – Albumin, Globulin, Total Protein, A/G Ratio",
+    "🧠 Uric Acid – For gout and kidney stone risk",
+    "🩺 Prostate Health Markers – PSA (Prostate-Specific Antigen)",
+    "🧬 Tumor Markers – Prostate Cancer, Benign Prostate Hyperplasia (BPH), Prostatitis",
+    "🦠 Inflammatory Markers – CRP (C-Reactive Protein), ESR (Erythrocyte Sedimentation Rate)",
+    "🛡️ Autoimmune Screening – ANA (Antinuclear Antibody), Rheumatoid Factor (RF), Anti-CCP",
+    "🦴 Bone Markers – Calcium, Phosphorus, Vitamin D",
+    "🩹 Pancreatic Markers – Amylase, Lipase",
+    "🩺 Thyroid Profile – TSH, T3, T4",
+    "🧬 Hormonal Assays – FSH, LH, Estrogen, Testosterone, Progesterone (depending on patient need)",
+    "🧪 Iron Studies – Serum Iron, Ferritin, TIBC",
+    "🧫 Infection Screening – Hepatitis B/C markers, HIV serology"
+  ]
+}
+
             {
               "title": "🏆 Why Choose AMLAD for Biochemistry Testing?",
               "content": [
