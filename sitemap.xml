@@ -63,7 +63,7 @@
   </url>
   <!-- Blog and Article posts list page -->
   <url>
-    <loc>https://www.agapelovemedicallaboratory.com/our-blogs</loc>
+    <loc>https://www.agapelovemedicallaboratory.com/api/posts/all/blog-list</loc>
     <lastmod>2025-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
