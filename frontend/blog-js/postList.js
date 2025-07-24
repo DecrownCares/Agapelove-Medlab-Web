@@ -120,7 +120,7 @@ async function fetchPosts(category = null, trending = false, searchQuery = '', p
   document.title = `${title} - Blog`;
 
   try {
-    const response = await fetch("https://agapelove-medlab-ms.onrender.com/api/posts");
+    const response = await fetch("https://agapelove-medlab-ms-hxer.onrender.com/api/posts");
     const data = await response.json();
 
     if (!response.ok) {
