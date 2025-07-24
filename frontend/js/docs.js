@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
         showLoading();
 
         try {
-            const response = await fetch("http://localhost:3270/api/documents/upload", {
+            const response = await fetch("https://agapelove-medlab-web-obr7.onrender.com//api/documents/upload", {
                 method: "POST",
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("accessToken")}`
@@ -170,7 +170,7 @@ let allFiles = [];
 // Fetch files from the backend
 async function fetchResults() {
     try {
-        const response = await fetch("http://localhost:3270/api/user/patient-results", {
+        const response = await fetch("https://agapelove-medlab-web-obr7.onrender.com//api/user/patient-results", {
             method: "GET",
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("accessToken")}`
@@ -255,7 +255,7 @@ function renderResults(files) {
 
         const filePath = `${file.resultFile}`;
         const fileName = getFileName(filePath);
-        // const fileUrl = `http://localhost:3270/${file.resultFile.replace(/\\/g, "/")}`;
+        // const fileUrl = `https://agapelove-medlab-web-obr7.onrender.com//${file.resultFile.replace(/\\/g, "/")}`;
         const fileUrl = `${LMS_BASE_URL}/results/${fileName}`;
         const fileExtension = file.resultFile.split('.').pop().toLowerCase();
         const isImage = ["jpg", "jpeg", "png", "gif", "bmp", "webp"].includes(fileExtension);
@@ -501,7 +501,7 @@ document.getElementById("saveEditFileBtn").addEventListener("click", async funct
     showLoading();
 
     try {
-        const response = await fetch(`http://localhost:3270/api/documents/update/${currentFileId}`, {
+        const response = await fetch(`https://agapelove-medlab-web-obr7.onrender.com//api/documents/update/${currentFileId}`, {
             method: "PUT",
             headers: {
                 "Authorization": `Bearer ${localStorage.getItem("accessToken")}`
@@ -547,7 +547,7 @@ document.getElementById("confirmDeleteBtn").addEventListener("click", async func
 
     showLoading();
     try {
-        const response = await fetch(`http://localhost:3270/api/documents/files/${fileToDelete}`, {
+        const response = await fetch(`https://agapelove-medlab-web-obr7.onrender.com//api/documents/files/${fileToDelete}`, {
             method: "DELETE",
             headers: {
                 "Authorization": `Bearer ${localStorage.getItem("accessToken")}`
@@ -581,7 +581,7 @@ async function fetchUserProfile() {
     try {
         const token = localStorage.getItem('accessToken'); // Assuming JWT stored here
 
-        const response = await fetch('http://localhost:3270/api/user/profile/{userId}', {
+        const response = await fetch('https://agapelove-medlab-web-obr7.onrender.com//api/user/profile/{userId}', {
             method: 'GET',
             headers: {
                 Authorization: `Bearer ${token}`, // Ensure correct token format
@@ -590,7 +590,7 @@ async function fetchUserProfile() {
 
         if (response.ok) {
             const userData = await response.json();
-            const imageUrl = userData.imageUrl ? `http://localhost:3270${userData.imageUrl}` : 'img/ImageUnavailable.jpeg';
+            const imageUrl = userData.imageUrl ? `https://agapelove-medlab-web-obr7.onrender.com/${userData.imageUrl}` : 'img/ImageUnavailable.jpeg';
             // const labPatientId = userData.labPatientId;
             console.log("User: " + userData);
             console.log("User: " + userData.emergencyContact?.name);
