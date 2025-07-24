@@ -215,7 +215,7 @@ async function togglePushNotifications(element) {
       return;
     }
   
-    const response = await fetch('https://agapelove-medlab-ms.onrender.com/api/posts/get-vapid-key');
+    const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/posts/get-vapid-key');
     const data = await response.json();
     const publicVapidKey = data.publicVapidKey;
   
@@ -233,7 +233,7 @@ async function togglePushNotifications(element) {
     });
   
     // Send subscription to server
-    await fetch('https://agapelove-medlab-ms.onrender.com/api/posts/subscribe', { // Corrected URL
+    await fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/posts/subscribe', { // Corrected URL
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
@@ -252,7 +252,7 @@ async function togglePushNotifications(element) {
     if (subscription) {
       await subscription.unsubscribe();
       // Inform server to remove subscription
-      await fetch('https://agapelove-medlab-ms.onrender.com/api/posts/unsubscribe', {
+      await fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/posts/unsubscribe', {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
@@ -320,7 +320,7 @@ function registerServiceWorker() {
 
 async function subscribeUser() {
   try {
-    const response = await fetch('https://agapelove-medlab-ms.onrender.com/api/posts/get-vapid-key');
+    const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/posts/get-vapid-key');
     const data = await response.json();
 
     const publicVapidKey = data.publicVapidKey;
@@ -356,7 +356,7 @@ async function subscribeUser() {
     });
 
     // Send the subscription object to the backend
-    await fetch('https://agapelove-medlab-ms.onrender.com/api/posts/visitor-subscribe', {
+    await fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/posts/visitor-subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ subscription })
@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Function to fetch & render notifications
 function fetchNotifications() {
-  fetch('https://agapelove-medlab-ms.onrender.com/api/notifications/get-notifications', {
+  fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/notifications/get-notifications', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -447,7 +447,7 @@ document.addEventListener('click', function (e) {
   // Mark as read
   if (e.target.closest('.link-mask')) {
     const notifId = e.target.closest('.link-mask').dataset.id;
-    fetch(`https://agapelove-medlab-ms.onrender.com/api/notifications/read/${notifId}`, {
+    fetch(`https://agapelove-medlab-ms-hxer.onrender.com//api/notifications/read/${notifId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -465,7 +465,7 @@ document.addEventListener('click', function (e) {
     e.stopPropagation(); // 🚩 This prevents the dropdown from closing
 
     const notifId = e.target.dataset.id;
-    fetch(`https://agapelove-medlab-ms.onrender.com/api/notifications/clear/${notifId}`, {
+    fetch(`https://agapelove-medlab-ms-hxer.onrender.com//api/notifications/clear/${notifId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -613,7 +613,7 @@ displayUserInfo();
 function logout() {
   localStorage.clear(); // Clear user data
   showNotificationTopRight("Logged out successfully.", 'success');
-  fetch("http://localhost:3270/api/logout", { method: "GET", credentials: "include" }) // Inform the server
+  fetch("https://agapelove-medlab-web-obr7.onrender.com//api/logout", { method: "GET", credentials: "include" }) // Inform the server
     .finally(() => {
       window.location.href = "/patient-login"; // Redirect to login page
     });
@@ -621,7 +621,7 @@ function logout() {
 function logOut() {
   localStorage.clear(); // Clear user data
   showNotificationTopRight("Logged out successfully.", 'success');
-  fetch("http://localhost:3270/api/logout", { method: "GET", credentials: "include" }) // Inform the server
+  fetch("https://agapelove-medlab-web-obr7.onrender.com//api/logout", { method: "GET", credentials: "include" }) // Inform the server
     .finally(() => {
       window.location.href = "/patient-login"; // Redirect to login page
     });
@@ -630,7 +630,7 @@ function logOut() {
 
 document.getElementById("logoutButton").addEventListener("click", async () => {
   try {
-    const response = await fetch("http://localhost:3270/api/logout", {
+    const response = await fetch("https://agapelove-medlab-web-obr7.onrender.com//api/logout", {
       method: "GET", // Ensure this matches the server route handling
       credentials: 'include' // Include cookies in the request
     });
@@ -664,7 +664,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchAds() {
     try {
-      const response = await fetch('https://agapelove-medlab-ms.onrender.com/api/ads/get');
+      const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/ads/get');
       const ads = await response.json();
       Object.keys(ads).forEach((key) => {
         setupAdRotation(key, ads[key]);
@@ -698,7 +698,7 @@ document.addEventListener('DOMContentLoaded', () => {
       container.innerHTML = `
               <div class="ad-wrapper">
           <a href="${ad.targetUrl}" target="_blank" class="ad-link">
-            <img loading="lazy" decoding="async" src="https://agapelove-medlab-ms.onrender.com${ad.imageUrl}" alt="Ad Banner" title="Click to visit - ${ad.targetUrl}">
+            <img loading="lazy" decoding="async" src="https://agapelove-medlab-ms-hxer.onrender.com/${ad.imageUrl}" alt="Ad Banner" title="Click to visit - ${ad.targetUrl}">
           </a>
           <div class="ad-description">
             <p>${ad.description || "Discover what we have to offer!"}</p>
