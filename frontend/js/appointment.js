@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             // Send request to the server
-            const response = await fetch("https://agapelove-medlab-ms.onrender.com/api/appointments/book", {
+            const response = await fetch("https://agapelove-medlab-ms-hxer.onrender.com/api/appointments/book", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
