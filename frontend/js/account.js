@@ -68,7 +68,7 @@ async function fetchUserProfile() {
     try {
         const token = localStorage.getItem('accessToken'); // Assuming JWT stored here
 
-        const response = await fetch('http://localhost:3270/api/user/profile/{userId}', {
+        const response = await fetch('https://agapelove-medlab-web-obr7.onrender.com//api/user/profile/{userId}', {
             method: 'GET',
             headers: {
                 Authorization: `Bearer ${token}`, // Ensure correct token format
@@ -77,7 +77,7 @@ async function fetchUserProfile() {
 
         if (response.ok) {
             const userData = await response.json();
-            const imageUrl = userData.imageUrl ? `http://localhost:3270${userData.imageUrl}` : 'img/ImageUnavailable.jpeg';
+            const imageUrl = userData.imageUrl ? `https://agapelove-medlab-web-obr7.onrender.com/${userData.imageUrl}` : 'img/ImageUnavailable.jpeg';
             const labPatientId = userData.labPatientId;
             console.log("User: " + userData);
             console.log("User: " + userData.emergencyContact?.name);
@@ -137,7 +137,7 @@ fetchUserProfile();
 async function viewPatient(labPatientId) {
     console.log("Fetching patient with ID:", labPatientId);
     try {
-        const response = await fetch(`http://localhost:3270/api/user/details/${labPatientId}`, {
+        const response = await fetch(`https://agapelove-medlab-web-obr7.onrender.com//api/user/details/${labPatientId}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -170,7 +170,7 @@ function populateTable(elementId, items, type = "text") {
         ? items.map(item => {
             const filePath = `${item.resultFile}`;
             const fileName = getFileName(filePath);
-            // const fileUrl = `http://localhost:3270/${file.resultFile.replace(/\\/g, "/")}`;
+            // const fileUrl = `https://agapelove-medlab-web-obr7.onrender.com//${file.resultFile.replace(/\\/g, "/")}`;
             const fileUrl = `${LMS_BASE_URL}/results/download/${fileName}`;
             if (type === "testResults") {
                 return `<tr>
@@ -260,7 +260,7 @@ document.getElementById('image-upload-input').addEventListener('change', async (
 
     try {
         const token = localStorage.getItem('accessToken');
-        const response = await fetch('http://localhost:3270/api/user/upload-image', {
+        const response = await fetch('https://agapelove-medlab-web-obr7.onrender.com//api/user/upload-image', {
             method: 'POST',
             headers: {
                 Authorization: `Bearer ${token}`,
@@ -363,7 +363,7 @@ function resetButton(button) {
 
 // Function to send updated data to the backend
 function updateUserData(field, value) {
-    return fetch('http://localhost:3270/api/user/update-profile', {
+    return fetch('https://agapelove-medlab-web-obr7.onrender.com//api/user/update-profile', {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',
@@ -440,7 +440,7 @@ document.querySelectorAll('.edit-btn[data-type="password"]').forEach(button => {
 });
 
 function updateUserPassword(newPassword) {
-    return fetch('http://localhost:3270/api/user/update-password', {
+    return fetch('https://agapelove-medlab-web-obr7.onrender.com//api/user/update-password', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -458,7 +458,7 @@ function resetButton(button) {
 
 
 document.getElementById("viewMoreBtn").addEventListener("click", function () {
-    fetch('http://localhost:3270/api/user/login-history', {
+    fetch('https://agapelove-medlab-web-obr7.onrender.com//api/user/login-history', {
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('accessToken')}`
         }
