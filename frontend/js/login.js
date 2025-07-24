@@ -1,5 +1,5 @@
 // Base API URL
-const BASE_URL = "http://localhost:3270/api/auth";
+const BASE_URL = "https://agapelove-medlab-web-obr7.onrender.com/api/auth";
 
 function showNotificationCenter(message, type = 'warning', position = 'center-overlay', timeout = 5000) {
   const notification = document.getElementById('notification');
