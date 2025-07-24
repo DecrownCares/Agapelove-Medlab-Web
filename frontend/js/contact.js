@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         showLoading();
 
         // Send form data via Fetch API
-        fetch("https://agapelove-medlab-ms.onrender.com/api/contact/submit-contact-form", {
+        fetch("https://agapelove-medlab-ms-hxer.onrender.com/api/contact/submit-contact-form", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),
