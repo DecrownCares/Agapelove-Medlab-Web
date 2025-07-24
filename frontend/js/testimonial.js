@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         showLoading();
 
-        fetch("https://agapelove-medlab-ms.onrender.com/api/reviews/submit-review", {
+        fetch("https://agapelove-medlab-ms-hxer.onrender.com/api/reviews/submit-review", {
             method: "POST",
             body: formData
         })
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     
     function fetchReviews() {
-        fetch("https://agapelove-medlab-ms.onrender.com/api/reviews/get-reviews")
+        fetch("https://agapelove-medlab-ms-hxer.onrender.com/api/reviews/get-reviews")
             .then(response => response.json())
             .then(data => {
                 renderReviews(data);
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     
         reviews.forEach(review => {
-            const reviewImage = `https://agapelove-medlab-ms.onrender.com${review.image}`
+            const reviewImage = `https://agapelove-medlab-ms-hxer.onrender.com${review.image}`
             const testimonialHTML = `
                 <div class="testimonial-item">
                     <div class="icon-box-primary mb-4">
