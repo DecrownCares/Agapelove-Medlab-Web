@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchAds() {
     try {
-      const response = await fetch('https://agapelove-medlab-ms.onrender.com/api/ads/get');
+      const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com/api/ads/get');
       const ads = await response.json();
       Object.keys(ads).forEach((key) => {
         setupAdRotation(key, ads[key]);
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const randomCTA = ctaButtons[Math.floor(Math.random() * ctaButtons.length)];
       container.innerHTML = `
               <a href="${ad.targetUrl}" target="_blank">
-                  <img loading="lazy" decoding="async" src="https://agapelove-medlab-ms.onrender.com${ad.imageUrl}" alt="Ad Banner" title="Click to visit - ${ad.targetUrl} for more inquiries">
+                  <img loading="lazy" decoding="async" src="https://agapelove-medlab-ms-hxer.onrender.com${ad.imageUrl}" alt="Ad Banner" title="Click to visit - ${ad.targetUrl} for more inquiries">
               </a>
               <div class="ad-description">
                   <p>${ad.description || "Discover what we have to offer!"}</p>
@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // const apiBaseUrl = window.location.hostname.includes("localhost") 
 //   ? "http://localhost:3173"
-//   : "https://agapelove-medlab-ms.onrender.com";
+//   : "https://agapelove-medlab-ms-hxer.onrender.com";
 async function fetchSinglePost() {
   // Extract post ID from URL path
   const pathParts = window.location.pathname.split("/");
@@ -360,7 +360,7 @@ async function fetchSinglePost() {
 
   try {
     // Fetch the single post data
-    const response = await fetch(`https://agapelove-medlab-ms.onrender.com/api/posts/blog/post/${postId}?t=${new Date().getTime()}`);
+    const response = await fetch(`https://agapelove-medlab-ms-hxer.onrender.com/api/posts/blog/post/${postId}?t=${new Date().getTime()}`);
     console.log("Fetched post:", response);
     const post = await response.json();
     console.log("Fetched post:", post);
@@ -482,7 +482,7 @@ async function fetchSinglePost() {
         <div class="clear"></div>
         <div class="post-author-box-content">
           <div class="author-profile has-avatar">
-            <img alt="author-avatar" class="author-profile-avatar cir" height="50px" src="https://agapelove-medlab-ms.onrender.com${post.author?.imageUrl}" width="50px" style="border-radius: 100px;"> &nbsp;
+            <img alt="author-avatar" class="author-profile-avatar cir" height="50px" src="https://agapelove-medlab-ms-hxer.onrender.com${post.author?.imageUrl}" width="50px" style="border-radius: 100px;"> &nbsp;
             <a href="#"><strong title="author profile">${authorName}</strong></a>
           </div>
         </div>
@@ -595,7 +595,7 @@ async function fetchSinglePost() {
 
     <!-- Facebook Comments Section (Initially hidden) -->
     <div id="facebookCommentsSection" class="comments-container" style="display: none; border-top: 3px solid #ccc; padding-top: 15px;">
-        <div class="fb-comments" data-href="https://agapelove-medlab-ms.onrender.com/api/posts/${post._id}" data-width="100%" data-numposts="5"></div>
+        <div class="fb-comments" data-href="https://agapelove-medlab-ms-hxer.onrender.com/api/posts/${post._id}" data-width="100%" data-numposts="5"></div>
     </div>
 </div>
 `;
@@ -690,7 +690,7 @@ async function toggleReaction(postId, reactionType) {
   try {
     const visitorID = getUniqueVisitorID();
 
-    const response = await fetch(`https://agapelove-medlab-ms.onrender.com/api/reactions/reaction`, {
+    const response = await fetch(`https://agapelove-medlab-ms-hxer.onrender.com/api/reactions/reaction`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -731,7 +731,7 @@ async function toggleCommentReaction(commentId, reactionType) {
   try {
     const visitorID = getUniqueVisitorID();
 
-    const response = await fetch(`https://agapelove-medlab-ms.onrender.com/api/reactions/${commentId}/reactions`, {
+    const response = await fetch(`https://agapelove-medlab-ms-hxer.onrender.com/api/reactions/${commentId}/reactions`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -790,7 +790,7 @@ async function toggleReplyReaction(replyId, replyReactionType) {
       return;
     }
 
-    const response = await fetch(`https://agapelove-medlab-ms.onrender.com/api/reactions/replies/${replyId}/reaction`, {
+    const response = await fetch(`https://agapelove-medlab-ms-hxer.onrender.com/api/reactions/replies/${replyId}/reaction`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -851,7 +851,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const postId = shareButton.dataset.postId;
 
       try {
-        const response = await fetch(`https://agapelove-medlab-ms.onrender.com/api/social/${postId}/share`, {
+        const response = await fetch(`https://agapelove-medlab-ms-hxer.onrender.com/api/social/${postId}/share`, {
           method: 'POST',
         });
 
@@ -882,7 +882,7 @@ async function addComment(postId) {
   // const tags = parseTags(content);
 
   try {
-    const response = await fetch(`https://agapelove-medlab-ms.onrender.com/api/comments/${postId}`, {
+    const response = await fetch(`https://agapelove-medlab-ms-hxer.onrender.com/api/comments/${postId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -931,7 +931,7 @@ async function submitReply(postId, commentId) {
   }
 
   try {
-    const response = await fetch(`https://agapelove-medlab-ms.onrender.com/api/comments/${postId}/comment/${commentId}/reply`, {
+    const response = await fetch(`https://agapelove-medlab-ms-hxer.onrender.com/api/comments/${postId}/comment/${commentId}/reply`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -989,7 +989,7 @@ async function fetchPosts() {
   postContainer.style.display = "none";
 
   try {
-    const response = await fetch("https://agapelove-medlab-ms.onrender.com/api/posts");
+    const response = await fetch("https://agapelove-medlab-ms-hxer.onrender.com/api/posts");
     const data = await response.json();
 
     if (!response.ok) {
@@ -1002,7 +1002,7 @@ async function fetchPosts() {
     // const postSlug = urlParams.get("slug");
     const pathParts = window.location.pathname.split("/");
     const postSlug = pathParts[pathParts.length - 1]; // Get the last part of the URL path
-    const currentPostResponse = await fetch(`https://agapelove-medlab-ms.onrender.com/api/posts/blog/post/${postSlug}`);
+    const currentPostResponse = await fetch(`https://agapelove-medlab-ms-hxer.onrender.com/api/posts/blog/post/${postSlug}`);
     const currentPost = await currentPostResponse.json();
     const currentPostCategory = Array.isArray(currentPost.categories) ? currentPost.categories[0] : null;
 
@@ -1112,7 +1112,7 @@ function fetchUsers(fullNameFragment, inputId) {
     return;
   }
 
-  fetch(`https://agapelove-medlab-ms.onrender.com/api/user/search?search=${fullNameFragment}`, {
+  fetch(`https://agapelove-medlab-ms-hxer.onrender.com/api/user/search?search=${fullNameFragment}`, {
     headers: {
       'Authorization': `Bearer ${accessToken}`
     },
@@ -1207,7 +1207,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function fetchHeadlines() {
     try {
-      const response = await fetch('https://agapelove-medlab-ms.onrender.com/api/posts/topHeadlines');
+      const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com/api/posts/topHeadlines');
       const data = await response.json();
 
       // Clear previous content
@@ -1351,7 +1351,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function fetchSmallHeadlines() {
     try {
-      const response = await fetch('https://agapelove-medlab-ms.onrender.com/api/posts/topHeadlines');
+      const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com/api/posts/topHeadlines');
       const data = await response.json();
 
       // Clear previous content
@@ -1491,7 +1491,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   spinner.style.display = "block";
 
   try {
-    const response = await fetch("https://agapelove-medlab-ms.onrender.com/api/posts/trending");
+    const response = await fetch("https://agapelove-medlab-ms-hxer.onrender.com/api/posts/trending");
     const trendingPosts = await response.json();
 
     // Log the fetched posts to the console
@@ -1504,7 +1504,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     } else {
       trendingPosts.forEach((post, index) => {
         const imageUrl = post.image
-          ? `https://agapelove-medlab-ms.onrender.com${post.image}`
+          ? `https://agapelove-medlab-ms-hxer.onrender.com${post.image}`
           : "default-image-path.jpg"; // Fallback image if none is provided
 
         const itemHTML = `
@@ -1547,7 +1547,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   spinner.style.display = "block";
 
   try {
-    const response = await fetch("https://agapelove-medlab-ms.onrender.com/api/posts/trending");
+    const response = await fetch("https://agapelove-medlab-ms-hxer.onrender.com/api/posts/trending");
     const trendingPosts = await response.json();
 
     // Log the fetched posts to the console
@@ -1558,7 +1558,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     } else {
       trendingPosts.forEach((post, index) => {
         const imageUrl = post.image
-          ? `https://agapelove-medlab-ms.onrender.com${post.image}`
+          ? `https://agapelove-medlab-ms-hxer.onrender.com${post.image}`
           : "default-image-path.jpg"; // Fallback image if none is provided
 
         const itemHTML = `
@@ -1601,7 +1601,7 @@ document.addEventListener('DOMContentLoaded', () => {
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(async () => {
       try {
-        const response = await fetch(`https://agapelove-medlab-ms.onrender.com/api/post/search?term=${encodeURIComponent(searchTerm)}`);
+        const response = await fetch(`https://agapelove-medlab-ms-hxer.onrender.com/api/post/search?term=${encodeURIComponent(searchTerm)}`);
         const posts = await response.json();
 
         displayPosts(posts, searchTerm); // Pass search term for highlighting
@@ -1633,7 +1633,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const postElement = document.createElement('div');
       postElement.classList.add('post-item');
 
-      const imageUrl = post.image ? `https://agapelove-medlab-ms.onrender.com${post.image}` : 'default-image-path.jpg';
+      const imageUrl = post.image ? `https://agapelove-medlab-ms-hxer.onrender.com${post.image}` : 'default-image-path.jpg';
 
       postElement.innerHTML = `
         <div class="post-item-image">
@@ -1814,7 +1814,7 @@ const subscribeToType = (formId, emailInputId, fullNameInputId, messageId, type,
 
 
     // API call to subscribe
-    fetch("https://agapelove-medlab-ms.onrender.com/api/newsLetter/subscribe", {
+    fetch("https://agapelove-medlab-ms-hxer.onrender.com/api/newsLetter/subscribe", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -1885,7 +1885,7 @@ document.getElementById("closeSignupPostModal").onclick = function () {
 
 
 // Base API URL
-const POST_BASE_URL = "https://agapelove-medlab-ms.onrender.com/api/auth";
+const POST_BASE_URL = "https://agapelove-medlab-ms-hxer.onrender.com/api/auth";
 
 // // Handle Login
 document.getElementById("loginPostForm").addEventListener("submit", async (e) => {
@@ -1945,7 +1945,7 @@ document.getElementById('signupPostForm').addEventListener('submit', async funct
   }
 
   try {
-    const response = await fetch('https://agapelove-medlab-ms.onrender.com/api/reader', {
+    const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com/api/reader', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ fullName, email, password }),
@@ -1990,7 +1990,7 @@ function clearPostSignup() {
 
 document.addEventListener('DOMContentLoaded', async () => {
   try {
-    const response = await fetch('https://agapelove-medlab-ms.onrender.com/api/posts/layout');
+    const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com/api/posts/layout');
     const { 
       recentPosts, 
       topPosts, 
@@ -2218,7 +2218,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const apiBaseUrl = window.location.hostname.includes("localhost") 
   ? "http://localhost:3173"
-  : "https://agapelove-medlab-ms.onrender.com";
+  : "https://agapelove-medlab-ms-hxer.onrender.com";
 
 // Fetch recommendations
 async function fetchRecommendations() {
