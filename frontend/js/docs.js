@@ -1,4 +1,4 @@
-const LMS_BASE_URL = "https://agapelove-medlab-ms.onrender.com/api/documents";
+const LMS_BASE_URL = "https://agapelove-medlab-ms-hxer.onrender.com/api/documents";
 
 document.addEventListener("DOMContentLoaded", () => {
     function getCookie(name) {
