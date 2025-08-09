@@ -99,6 +99,7 @@ const login = async (req, res) => {
         // Respond with Access Token & User Info
         res.status(200).json({
             accessToken,
+            refreshToken,
             user: {
                 _id: foundUser._id,
                 fullName: foundUser.fullName,
