@@ -138,7 +138,7 @@ function displayUserInfo() {
 // // Token Refresh
 async function refreshToken() {
   try {
-    const response = await fetch(`${BASE_URL}/refresh`, {
+    const response = await fetch(`https://agapelove-medlab-web-obr7.onrender.com/api/refresh`, {
       method: "GET",
       credentials: "include", // Send cookies
     });
