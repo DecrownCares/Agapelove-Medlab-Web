@@ -6,7 +6,8 @@ dotenv.config();
 
 const handleRefreshToken = async (req, res) => {
   try {
-    const refreshToken = req.cookies.refreshToken; // Extract from cookies
+    // const refreshToken = req.cookies.refreshToken; // Extract from cookies
+    const refreshToken = req.headers.authorization?.split(" ")[1];
 
     if (!refreshToken) {
         return res.status(403).json({ message: "Refresh token missing" });
