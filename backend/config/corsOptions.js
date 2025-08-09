@@ -1,6 +1,8 @@
 const whiteList = [
     'http://localhost:3270',
     'http://localhost:5120',
+    'https://agapelovemedicallaboratory.com',
+    'https://agapelove-medlab-web-obr7.onrender.com'
 ];
 
 const corsOptions = {
