@@ -86,6 +86,7 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
         localStorage.setItem("patientId", user.labPatientId);
         localStorage.setItem("userRole", role);
         localStorage.setItem("accessToken", accessToken);
+        localStorage.setItem("refreshToken", result.refreshToken); 
 
         // showNotificationCenter("Login successful. Redirecting...", 'success')
         setTimeout(() => {
@@ -140,6 +141,10 @@ async function refreshToken() {
   try {
     const response = await fetch(`https://agapelove-medlab-web-obr7.onrender.com/api/refresh`, {
       method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${localStorage.getItem("refreshToken")}`
+      }
       credentials: "include", // Send cookies
     });
 
@@ -171,6 +176,13 @@ window.addEventListener("load", () => {
     refreshToken();
   }
 });
+
+function logout() {
+  localStorage.removeItem("accessToken");
+  localStorage.removeItem("refreshToken");
+  window.location.href = "/login.html";
+}
+
 
 function showLoading() {
   document.getElementById('loadingIndicator').classList.remove('d-none');
