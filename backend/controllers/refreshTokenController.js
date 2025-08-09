@@ -6,8 +6,7 @@ dotenv.config();
 
 const handleRefreshToken = async (req, res) => {
   try {
-    // const refreshToken = req.cookies.refreshToken; // Extract from cookies
-    const refreshToken = req.headers.authorization?.split(" ")[1];
+    const refreshToken = req.cookies.refreshToken; // Extract from cookies
 
     if (!refreshToken) {
         return res.status(403).json({ message: "Refresh token missing" });
@@ -56,5 +55,4 @@ const handleRefreshToken = async (req, res) => {
     return res.status(403).json({ message: "Invalid or expired refresh token" });
 }
 };
-
 module.exports = { handleRefreshToken };
