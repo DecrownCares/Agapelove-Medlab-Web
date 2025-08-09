@@ -162,7 +162,7 @@ async function viewPatient(labPatientId) {
 }
 
 
-const LMS_BASE_URL = "https://agapelove-medlab-ms.onrender.com/api/documents";
+const LMS_BASE_URL = "https://agapelove-medlab-ms-hxer.onrender.com/api/documents";
 
 function populateTable(elementId, items, type = "text") {
     const tableBody = document.getElementById(elementId);
