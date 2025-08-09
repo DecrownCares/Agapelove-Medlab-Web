@@ -13,14 +13,14 @@ dotenv.config();
 
 
 const login = async (req, res) => {
-    console.log("🔹 patientLogin function called.");
     try {
-        const { email, identifier, password } = req.body; 
+        const { email, identifier, password } = req.body;
 
         console.log("Request Body:", req.body);
+        console.log("Password from frontend:", password);
 
         // Use email if identifier is not provided
-        const userIdentifier = identifier || email;  
+        const userIdentifier = identifier || email;
 
         console.log("Request Body:", req.body);
 
@@ -34,15 +34,26 @@ const login = async (req, res) => {
         }).select("+password"); // Explicitly fetch password
 
         if (!foundUser) {
-            return res.status(401).json({ message: "Invalid credentials." });
+            return res.status(401).json({ message: "User not found." });
         }
+
+        // Check if the user is blocked
+        if (foundUser.isBlocked) {
+            return res.status(403).json({ message: "Your account has been blocked. Contact Admin." });
+        }
+
+        console.log("Password from frontend:", password);
+        console.log("User found:", foundUser.email);
+        console.log("Stored hash from DB:", foundUser.password);
+
 
         // Compare password
         const match = await bcrypt.compare(password, foundUser.password);
+        console.log("Password match result:", match);
         if (!match) {
-            return res.status(401).json({ message: "Invalid credentials." });
+            return res.status(403).json({ message: "Wrong password." });
         }
-
+        console.log("✅ Password matched. Proceeding to token generation...");
         // Generate JWT Access Token
         const accessToken = jwt.sign(
             {
@@ -73,33 +84,33 @@ const login = async (req, res) => {
             ipAddress: req.ip || req.connection.remoteAddress
         };
 
-        // Ensure lastLogin exists and keep only the last 10 records
-        foundUser.lastLogin = foundUser.lastLogin || [];
-        foundUser.lastLogin.unshift(loginRecord); // Add new login at the beginning
-        foundUser.lastLogin = foundUser.lastLogin.slice(0, 10); // Keep only the last 10 logins
+        // Ensure loginHistory exists and keep only the last 10 records
+        foundUser.loginHistory = foundUser.loginHistory || [];
+        foundUser.loginHistory.unshift(loginRecord); // Add new login at the beginning
+        foundUser.loginHistory = foundUser.loginHistory.slice(0, 10); // Keep only the last 10 logins
 
         await foundUser.save();
 
         // Send tokens as HTTP-only cookies
-        res.cookie('accessToken', accessToken, {
+        const isProduction = process.env.NODE_ENV === 'production';
+
+        // Set cookies safely
+        res.cookie("accessToken", accessToken, {
             httpOnly: false,
-            secure: true,
-            sameSite: 'Lax',
-            maxAge: 1 * 24 * 60 * 60 * 1000 // 1 day
+            secure: isProduction,
+            sameSite: isProduction ? "Lax" : "None",
+            maxAge: 24 * 60 * 60 * 1000
         });
 
-        // Set refresh token as HTTP-only cookie
         res.cookie("refreshToken", refreshToken, {
             httpOnly: true,
-            secure: true,
-            sameSite: "Lax",
-            maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
+            secure: isProduction,
+            sameSite: isProduction ? "Lax" : "None",
+            maxAge: 7 * 24 * 60 * 60 * 1000
         });
-
         // Respond with Access Token & User Info
         res.status(200).json({
             accessToken,
-            refreshToken,
             user: {
                 _id: foundUser._id,
                 fullName: foundUser.fullName,
@@ -107,7 +118,7 @@ const login = async (req, res) => {
                 role: foundUser.role,
                 patientId: foundUser.labPatientId
             }
-            
+
         });
     } catch (error) {
         console.error("Login Error:", error);
