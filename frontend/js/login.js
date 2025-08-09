@@ -78,15 +78,15 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
     // const result = await response.json();
 
     if (response.ok) {
-      const { user, accessToken } = result; 
+      const { user, accessToken, refreshToken } = result; 
       const role = user?.role;
-      if (user && accessToken && role) {
+      if (user && accessToken && refreshToken && role) {
         localStorage.setItem("username", user.fullName || "Unknown");
         localStorage.setItem("userEmail", user.email);
         localStorage.setItem("patientId", user.labPatientId);
         localStorage.setItem("userRole", role);
         localStorage.setItem("accessToken", accessToken);
-        localStorage.setItem("refreshToken", result.refreshToken); 
+        localStorage.setItem("refreshToken", refreshToken); 
 
         // showNotificationCenter("Login successful. Redirecting...", 'success')
         setTimeout(() => {
