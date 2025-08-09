@@ -37,12 +37,12 @@ const patientSchema = new Schema({
     phone: {
         type: String,
         required: true,
-        unique: true
+        unique: false
     },
     email: {
         type: String,
         required: false,
-        unique: true
+        unique: false
     },
     address: {
         type: String,
