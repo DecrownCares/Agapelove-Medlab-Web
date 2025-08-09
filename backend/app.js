@@ -45,8 +45,8 @@ app.use((req, res, next) => {
   const allowedOrigins = [
       'http://localhost:3173',
       'http://localhost:5120',
-      'https://infohub-ffez.onrender.com',
-      'https://infohubnaija.com.ng',
+      'https://agapelove-medlab-web-obr7.onrender.com/api/auth',
+      'https://agapelovemedicallaboratory.com',
       'https://www.infohubnaija.com.ng'
   ];
   
