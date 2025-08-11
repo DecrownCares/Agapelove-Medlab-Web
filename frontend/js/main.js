@@ -215,7 +215,7 @@ async function togglePushNotifications(element) {
       return;
     }
   
-    const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/posts/get-vapid-key');
+    const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com/api/posts/get-vapid-key');
     const data = await response.json();
     const publicVapidKey = data.publicVapidKey;
   
@@ -233,7 +233,7 @@ async function togglePushNotifications(element) {
     });
   
     // Send subscription to server
-    await fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/posts/subscribe', { // Corrected URL
+    await fetch('https://agapelove-medlab-ms-hxer.onrender.com/api/posts/subscribe', { // Corrected URL
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
@@ -252,7 +252,7 @@ async function togglePushNotifications(element) {
     if (subscription) {
       await subscription.unsubscribe();
       // Inform server to remove subscription
-      await fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/posts/unsubscribe', {
+      await fetch('https://agapelove-medlab-ms-hxer.onrender.com/api/posts/unsubscribe', {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
@@ -320,7 +320,7 @@ function registerServiceWorker() {
 
 async function subscribeUser() {
   try {
-    const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/posts/get-vapid-key');
+    const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com/api/posts/get-vapid-key');
     const data = await response.json();
 
     const publicVapidKey = data.publicVapidKey;
@@ -356,7 +356,7 @@ async function subscribeUser() {
     });
 
     // Send the subscription object to the backend
-    await fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/posts/visitor-subscribe', {
+    await fetch('https://agapelove-medlab-ms-hxer.onrender.com/api/posts/visitor-subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ subscription })
@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Function to fetch & render notifications
 function fetchNotifications() {
-  fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/notifications/get-notifications', {
+  fetch('https://agapelove-medlab-ms-hxer.onrender.com/api/notifications/get-notifications', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -447,7 +447,7 @@ document.addEventListener('click', function (e) {
   // Mark as read
   if (e.target.closest('.link-mask')) {
     const notifId = e.target.closest('.link-mask').dataset.id;
-    fetch(`https://agapelove-medlab-ms-hxer.onrender.com//api/notifications/read/${notifId}`, {
+    fetch(`https://agapelove-medlab-ms-hxer.onrender.com/api/notifications/read/${notifId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -465,7 +465,7 @@ document.addEventListener('click', function (e) {
     e.stopPropagation(); // 🚩 This prevents the dropdown from closing
 
     const notifId = e.target.dataset.id;
-    fetch(`https://agapelove-medlab-ms-hxer.onrender.com//api/notifications/clear/${notifId}`, {
+    fetch(`https://agapelove-medlab-ms-hxer.onrender.com/api/notifications/clear/${notifId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -664,7 +664,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchAds() {
     try {
-      const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com//api/ads/get');
+      const response = await fetch('https://agapelove-medlab-ms-hxer.onrender.com/api/ads/get');
       const ads = await response.json();
       Object.keys(ads).forEach((key) => {
         setupAdRotation(key, ads[key]);
