@@ -137,7 +137,7 @@ fetchUserProfile();
 async function viewPatient(labPatientId) {
     console.log("Fetching patient with ID:", labPatientId);
     try {
-        const response = await fetch(`https://agapelove-medlab-web-obr7.onrender.com//api/user/details/${labPatientId}`, {
+        const response = await fetch(`https://agapelove-medlab-web-obr7.onrender.com/api/user/details/${labPatientId}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -260,7 +260,7 @@ document.getElementById('image-upload-input').addEventListener('change', async (
 
     try {
         const token = localStorage.getItem('accessToken');
-        const response = await fetch('https://agapelove-medlab-web-obr7.onrender.com//api/user/upload-image', {
+        const response = await fetch('https://agapelove-medlab-web-obr7.onrender.com/api/user/upload-image', {
             method: 'POST',
             headers: {
                 Authorization: `Bearer ${token}`,
@@ -363,7 +363,7 @@ function resetButton(button) {
 
 // Function to send updated data to the backend
 function updateUserData(field, value) {
-    return fetch('https://agapelove-medlab-web-obr7.onrender.com//api/user/update-profile', {
+    return fetch('https://agapelove-medlab-web-obr7.onrender.com/api/user/update-profile', {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',
@@ -440,7 +440,7 @@ document.querySelectorAll('.edit-btn[data-type="password"]').forEach(button => {
 });
 
 function updateUserPassword(newPassword) {
-    return fetch('https://agapelove-medlab-web-obr7.onrender.com//api/user/update-password', {
+    return fetch('https://agapelove-medlab-web-obr7.onrender.com/api/user/update-password', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -458,7 +458,7 @@ function resetButton(button) {
 
 
 document.getElementById("viewMoreBtn").addEventListener("click", function () {
-    fetch('https://agapelove-medlab-web-obr7.onrender.com//api/user/login-history', {
+    fetch('https://agapelove-medlab-web-obr7.onrender.com/api/user/login-history', {
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('accessToken')}`
         }
