@@ -92,22 +92,23 @@ const login = async (req, res) => {
         await foundUser.save();
 
         // Send tokens as HTTP-only cookies
-        const isProduction = process.env.NODE_ENV === 'production';
+        // const isProduction = process.env.NODE_ENV === 'production';
 
         // Set cookies safely
         res.cookie("accessToken", accessToken, {
-            httpOnly: false,
-            secure: isProduction,
-            sameSite: isProduction ? "Lax" : "None",
-            maxAge: 24 * 60 * 60 * 1000
-        });
+  httpOnly: false, 
+  secure: true,
+  sameSite: "None", 
+  maxAge: 24 * 60 * 60 * 1000
+});
 
-        res.cookie("refreshToken", refreshToken, {
-            httpOnly: true,
-            secure: isProduction,
-            sameSite: isProduction ? "Lax" : "None",
-            maxAge: 7 * 24 * 60 * 60 * 1000
-        });
+res.cookie("refreshToken", refreshToken, {
+  httpOnly: true,
+  secure: true,
+  sameSite: "None",
+  maxAge: 7 * 24 * 60 * 60 * 1000
+});
+
         // Respond with Access Token & User Info
         res.status(200).json({
             accessToken,
