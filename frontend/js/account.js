@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return null;
     }
   
-    const accessToken = getCookie("accessToken");
+    const accessToken = localStorage.getItem("accessToken");
     const role = localStorage.getItem("userRole");
     const refreshToken = getCookie("refreshToken");
   
