@@ -45,9 +45,8 @@ app.use((req, res, next) => {
   const allowedOrigins = [
       'http://localhost:3173',
       'http://localhost:5120',
-      'https://agapelove-medlab-web-obr7.onrender.com/api/auth',
+      'https://agapelove-medlab-web-obr7.onrender.com',
       'https://agapelovemedicallaboratory.com',
-      'https://www.infohubnaija.com.ng'
   ];
   
   if (allowedOrigins.includes(req.headers.origin)) {
