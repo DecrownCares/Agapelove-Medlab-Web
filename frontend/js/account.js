@@ -68,7 +68,7 @@ async function fetchUserProfile() {
     try {
         const token = localStorage.getItem('accessToken'); // Assuming JWT stored here
 
-        const response = await fetch('https://agapelove-medlab-web-obr7.onrender.com//api/user/profile/{userId}', {
+        const response = await fetch('https://agapelove-medlab-web-obr7.onrender.com/api/user/profile/{userId}', {
             method: 'GET',
             headers: {
                 Authorization: `Bearer ${token}`, // Ensure correct token format
