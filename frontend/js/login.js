@@ -143,7 +143,7 @@ async function refreshToken() {
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${localStorage.getItem("refreshToken")}`
-      }
+      },
       credentials: "include", // Send cookies
     });
 
