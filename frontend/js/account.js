@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const refreshToken = getCookie("refreshToken");
   
     if (!accessToken || role !== "Patient") {
+         console.log("Access token:", accessToken);
+  console.log("Role from localStorage:", role);
+  console.log("Condition check result:", !accessToken, role !== "Patient");
+        
       console.log("No valid access token found. Redirecting to login...");
       window.location.href = "/patient-login";
     } else {
