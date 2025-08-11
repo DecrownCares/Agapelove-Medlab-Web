@@ -600,7 +600,7 @@ function displayUserInfo() {
   const patientId = localStorage.getItem("patientId");
   const userEmail = localStorage.getItem("userEmail");
   const userRole = localStorage.getItem("userRole");
-  document.getElementById('user-info').textContent = `Welcome, ${username}!`;
+  // document.getElementById('user-info').textContent = `Welcome, ${username}!`;
   document.getElementById('patientId').textContent = `${patientId}!`;
   document.getElementById('userRole').textContent = `${userRole}`;
   document.getElementById('user-info').style.display = 'block';
