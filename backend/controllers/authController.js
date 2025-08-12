@@ -14,13 +14,8 @@ dotenv.config();
 
 const login = async (req, res) => {
     try {
-        const { email, identifier, password } = req.body;
-
-        console.log("Request Body:", req.body);
-        console.log("Password from frontend:", password);
-
         // Use email if identifier is not provided
-        const userIdentifier = identifier || email;
+        const userIdentifier = identifier || email || ptid;
 
         console.log("Request Body:", req.body);
 
@@ -30,8 +25,8 @@ const login = async (req, res) => {
 
         // Check if user exists (either by email or phone)
         const foundUser = await Patients.findOne({
-            $or: [{ email: userIdentifier.trim() }, { phone: userIdentifier.trim() }]
-        }).select("+password"); // Explicitly fetch password
+            $or: [{ email: userIdentifier.trim() }, { phone: userIdentifier.trim() }, { labPatientId: userIdentifier.trim() }]
+        }).select("+password"); // Explicitly fetch passwordsword
 
         if (!foundUser) {
             return res.status(401).json({ message: "User not found." });
