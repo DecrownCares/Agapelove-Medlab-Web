@@ -100,7 +100,7 @@ async function fetchUserProfile() {
                 document.getElementById('userStaffId').textContent = userData.labPatientId;
 
                 // Basic Info
-                document.getElementById("userDateOfBirth").textContent = new Date(userData.dateOfBirth).toLocaleDateString();
+                document.getElementById("userDateOfBirth").textContent = userData.dateOfBirth;
                 document.getElementById("bloodGroup").textContent = userData.bloodGroup;
                 document.getElementById("registeredBy").textContent = userData.registeredBy;
                 document.getElementById("status").textContent = userData.status;
