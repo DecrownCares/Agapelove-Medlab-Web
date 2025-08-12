@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return null;
     }
   
-    const accessToken = getCookie("accessToken");
+    const accessToken = localStorage.getItem("accessToken");
     const refreshToken = getCookie("refreshToken");
   
     if (!accessToken) {
