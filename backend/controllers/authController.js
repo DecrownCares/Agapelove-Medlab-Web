@@ -14,13 +14,14 @@ dotenv.config();
 
 const login = async (req, res) => {
     try {
-        // Use email if identifier is not provided
-        const userIdentifier = identifier || email || ptid;
+        const { identifier, password } = req.body;
+
+        const userIdentifier = identifier;
 
         console.log("Request Body:", req.body);
 
         if (!userIdentifier || !password) {
-            return res.status(400).json({ message: "Email/Phone and password are required." });
+            return res.status(400).json({ message: "Email/Phone/ID and password are required." });
         }
 
         // Check if user exists (either by email or phone)
