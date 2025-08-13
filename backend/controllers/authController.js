@@ -85,7 +85,7 @@ const login = async (req, res) => {
         foundUser.loginHistory.unshift(loginRecord); // Add new login at the beginning
         foundUser.loginHistory = foundUser.loginHistory.slice(0, 10); // Keep only the last 10 logins
 
-        await foundUser.save();
+        await foundUser.save({ validateBeforeSave: false });
 
         // Send tokens as HTTP-only cookies
         // const isProduction = process.env.NODE_ENV === 'production';
