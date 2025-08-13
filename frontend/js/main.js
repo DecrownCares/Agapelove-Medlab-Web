@@ -613,7 +613,7 @@ displayUserInfo();
 function logout() {
   localStorage.clear(); // Clear user data
   showNotificationTopRight("Logged out successfully.", 'success');
-  fetch("https://agapelove-medlab-web-obr7.onrender.com//api/logout", { method: "GET", credentials: "include" }) // Inform the server
+  fetch("https://agapelove-medlab-web-obr7.onrender.com/api/logout", { method: "GET", credentials: "include" }) // Inform the server
     .finally(() => {
       window.location.href = "/patient-login"; // Redirect to login page
     });
@@ -621,7 +621,7 @@ function logout() {
 function logOut() {
   localStorage.clear(); // Clear user data
   showNotificationTopRight("Logged out successfully.", 'success');
-  fetch("https://agapelove-medlab-web-obr7.onrender.com//api/logout", { method: "GET", credentials: "include" }) // Inform the server
+  fetch("https://agapelove-medlab-web-obr7.onrender.com/api/logout", { method: "GET", credentials: "include" }) // Inform the server
     .finally(() => {
       window.location.href = "/patient-login"; // Redirect to login page
     });
@@ -630,7 +630,7 @@ function logOut() {
 
 document.getElementById("logoutButton").addEventListener("click", async () => {
   try {
-    const response = await fetch("https://agapelove-medlab-web-obr7.onrender.com//api/logout", {
+    const response = await fetch("https://agapelove-medlab-web-obr7.onrender.com/api/logout", {
       method: "GET", // Ensure this matches the server route handling
       credentials: 'include' // Include cookies in the request
     });
